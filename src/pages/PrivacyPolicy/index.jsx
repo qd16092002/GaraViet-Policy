@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Layout, Anchor } from "antd";
+import { useTranslation } from "react-i18next";
 import {
   SafetyOutlined,
   LockOutlined,
@@ -17,50 +18,51 @@ const { Title, Paragraph, Text } = Typography;
 const { Sider, Content } = Layout;
 const { Link } = Anchor;
 
-const sections = [
-  { id: "intro", title: "Giới thiệu", icon: <FileTextOutlined /> },
-  {
-    id: "data-collection",
-    title: "Thu thập dữ liệu",
-    icon: <UserOutlined />,
-  },
-  {
-    id: "data-scope",
-    title: "Phạm vi thu thập",
-    icon: <GlobalOutlined />,
-  },
-  {
-    id: "data-sharing",
-    title: "Tiếp cận thông tin",
-    icon: <SecurityScanOutlined />,
-  },
-  {
-    id: "security",
-    title: "Bảo mật & Lưu trữ",
-    icon: <LockOutlined />,
-  },
-  { id: "rights", title: "Quyền người dùng", icon: <KeyOutlined /> },
-  {
-    id: "cookies",
-    title: "Cookie & Định vị",
-    icon: <InfoCircleOutlined />,
-  },
-  {
-    id: "children",
-    title: "Bảo vệ trẻ em",
-    icon: <SafetyOutlined />,
-  },
-  {
-    id: "third-party",
-    title: "Bên thứ ba",
-    icon: <GlobalOutlined />,
-  },
-  { id: "changes", title: "Cập nhật", icon: <FileTextOutlined /> },
-  { id: "contact", title: "Liên hệ", icon: <MailOutlined /> },
-];
-
 const PrivacyPolicy = () => {
+  const { t, i18n } = useTranslation();
   const [activeSection, setActiveSection] = useState("intro");
+
+  const sections = [
+    { id: "intro", title: t("privacyPolicy.nav.intro"), icon: <FileTextOutlined /> },
+    {
+      id: "data-collection",
+      title: t("privacyPolicy.nav.dataCollection"),
+      icon: <UserOutlined />,
+    },
+    {
+      id: "data-scope",
+      title: t("privacyPolicy.nav.dataScope"),
+      icon: <GlobalOutlined />,
+    },
+    {
+      id: "data-sharing",
+      title: t("privacyPolicy.nav.dataSharing"),
+      icon: <SecurityScanOutlined />,
+    },
+    {
+      id: "security",
+      title: t("privacyPolicy.nav.security"),
+      icon: <LockOutlined />,
+    },
+    { id: "rights", title: t("privacyPolicy.nav.rights"), icon: <KeyOutlined /> },
+    {
+      id: "cookies",
+      title: t("privacyPolicy.nav.cookies"),
+      icon: <InfoCircleOutlined />,
+    },
+    {
+      id: "children",
+      title: t("privacyPolicy.nav.children"),
+      icon: <SafetyOutlined />,
+    },
+    {
+      id: "third-party",
+      title: t("privacyPolicy.nav.thirdParty"),
+      icon: <GlobalOutlined />,
+    },
+    { id: "changes", title: t("privacyPolicy.nav.changes"), icon: <FileTextOutlined /> },
+    { id: "contact", title: t("privacyPolicy.nav.contact"), icon: <MailOutlined /> },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,7 +79,7 @@ const PrivacyPolicy = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [sections]);
 
   return (
     <Layout className="privacy-policy-layout">
@@ -87,16 +89,16 @@ const PrivacyPolicy = () => {
             <SafetyOutlined className="header-icon" />
             <div>
               <Title level={1} className="header-title">
-                Chính sách bảo mật
+                {t("privacyPolicy.title")}
               </Title>
               <Text className="header-subtitle">
-                Bảo vệ dữ liệu cá nhân của người dùng
+                {t("privacyPolicy.subtitle")}
               </Text>
             </div>
           </div>
           <div className="header-meta">
             <Text type="secondary" className="last-updated-header">
-              Cập nhật lần cuối: {new Date().toLocaleDateString("vi-VN")}
+              {t("updateTime", { date: new Date().toLocaleDateString(i18n.language === "vi" ? "vi-VN" : "en-US") })}
             </Text>
           </div>
         </div>
@@ -106,7 +108,7 @@ const PrivacyPolicy = () => {
         <Sider width={280} className="policy-sidebar">
           <div className="sidebar-content">
             <Text strong className="sidebar-title">
-              Nội dung
+              {t("common.tableOfContents")}
             </Text>
             <Anchor
               getContainer={() =>
@@ -123,9 +125,8 @@ const PrivacyPolicy = () => {
                   href={`#${section.id}`}
                   title={
                     <div
-                      className={`nav-item ${
-                        activeSection === section.id ? "active" : ""
-                      }`}
+                      className={`nav-item ${activeSection === section.id ? "active" : ""
+                        }`}
                     >
                       <span className="nav-icon">{section.icon}</span>
                       <span>{section.title}</span>
@@ -144,32 +145,20 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <FileTextOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  1. Giới thiệu
+                  {t("privacyPolicy.content.intro.title")}
                 </Title>
               </div>
               <Paragraph>
-                Chào mừng bạn đến với Garage Việt – nền tảng kết nối giữa chủ xe
-                và garage sửa chữa/nâng cấp ô tô trên toàn quốc, được vận hành
-                bởi Công ty TNHH Nền tảng Công nghệ Garage Việt.
+                {t("privacyPolicy.content.intro.p1")}
               </Paragraph>
               <Paragraph>
-                Garage Việt hiểu rằng bảo vệ dữ liệu cá nhân là trách nhiệm quan
-                trọng và cam kết tuân thủ quy định của Nghị định 13/2023/NĐ-CP
-                và các văn bản pháp luật liên quan về bảo vệ dữ liệu cá nhân.
+                {t("privacyPolicy.content.intro.p2")}
               </Paragraph>
               <Paragraph>
-                Chính sách bảo mật này (“Chính sách”) được thiết lập để giúp bạn
-                hiểu rõ cách Garage Việt thu thập, sử dụng, lưu trữ, chia sẻ và
-                bảo vệ thông tin cá nhân khi bạn sử dụng ứng dụng và website
-                Garage Việt, cũng như quyền của bạn liên quan đến các thông tin
-                này.
+                {t("privacyPolicy.content.intro.p3")}
               </Paragraph>
               <Paragraph>
-                Bằng việc truy cập, đăng ký hoặc sử dụng dịch vụ của Garage
-                Việt, bạn xác nhận rằng bạn đồng ý với các điều khoản được quy
-                định trong Chính sách này. Nếu bạn không đồng ý, vui lòng ngừng
-                sử dụng nền tảng hoặc liên hệ với chúng tôi để rút lại sự đồng
-                ý.
+                {t("privacyPolicy.content.intro.p4")}
               </Paragraph>
             </section>
 
@@ -178,42 +167,17 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <UserOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  2. Khi nào Garage Việt thu thập dữ liệu cá nhân
+                  {t("privacyPolicy.content.dataCollection.title")}
                 </Title>
               </div>
               <Paragraph>
-                Chúng tôi có thể thu thập dữ liệu cá nhân của bạn trong các
-                trường hợp sau:
+                {t("privacyPolicy.content.dataCollection.intro")}
               </Paragraph>
               <Paragraph>
                 <ul>
-                  <li>
-                    Khi bạn đăng ký tài khoản hoặc sử dụng dịch vụ của Garage
-                    Việt;
-                  </li>
-                  <li>
-                    Khi bạn điền các biểu mẫu hoặc gửi thông tin liên hệ, yêu
-                    cầu hỗ trợ;
-                  </li>
-                  <li>
-                    Khi bạn thực hiện các giao dịch (đăng yêu cầu, báo giá,
-                    thanh toán, v.v.);
-                  </li>
-                  <li>
-                    Khi bạn tương tác với bộ phận hỗ trợ khách hàng của chúng
-                    tôi;
-                  </li>
-                  <li>
-                    Khi bạn kết nối tài khoản Garage Việt với mạng xã hội
-                    (Facebook, Google,…);
-                  </li>
-                  <li>
-                    Khi bạn phản hồi khảo sát, gửi đánh giá hoặc khiếu nại;
-                  </li>
-                  <li>
-                    Khi bạn truy cập ứng dụng/website của chúng tôi (thông qua
-                    cookies hoặc các công nghệ khác).
-                  </li>
+                  {t("privacyPolicy.content.dataCollection.items", { returnObjects: true }).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </Paragraph>
             </section>
@@ -223,66 +187,41 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <GlobalOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  3. Phạm vi và mục đích thu thập thông tin
+                  {t("privacyPolicy.content.dataScope.title")}
                 </Title>
               </div>
 
-              <Title level={4}>3.1. Phạm vi thu thập</Title>
+              <Title level={4}>{t("privacyPolicy.content.dataScope.scopeTitle")}</Title>
               <Paragraph>
-                <strong>Đối với Chủ xe (Khách hàng):</strong>
+                <strong>{t("privacyPolicy.content.dataScope.forCustomer")}</strong>
               </Paragraph>
               <Paragraph>
-                Họ tên, số điện thoại, email, địa chỉ, biển số xe, loại xe, hình
-                ảnh xe, thông tin thanh toán, lịch sử giao dịch, và các thông
-                tin cần thiết khác để cung cấp dịch vụ.
+                {t("privacyPolicy.content.dataScope.customerInfo")}
               </Paragraph>
 
               <Paragraph>
-                <strong>Đối với Garage (Đối tác):</strong>
+                <strong>{t("privacyPolicy.content.dataScope.forGarage")}</strong>
               </Paragraph>
               <Paragraph>
-                Tên chủ garage, số điện thoại, email, giấy phép kinh doanh (nếu
-                có), số tài khoản ngân hàng, địa chỉ cơ sở, hình ảnh, dịch vụ
-                cung cấp, thông tin về kỹ thuật viên và lịch sử giao dịch.
+                {t("privacyPolicy.content.dataScope.garageInfo")}
               </Paragraph>
 
               <Paragraph>
-                <strong>Thông tin kỹ thuật:</strong>
+                <strong>{t("privacyPolicy.content.dataScope.technicalInfo")}</strong>
               </Paragraph>
               <Paragraph>
-                Địa chỉ IP, thiết bị sử dụng, hệ điều hành, lịch sử truy cập, vị
-                trí địa lý (GPS), cookie, và các dữ liệu liên quan đến hoạt động
-                sử dụng ứng dụng.
+                {t("privacyPolicy.content.dataScope.technicalDetails")}
               </Paragraph>
 
-              <Title level={4}>3.2. Mục đích sử dụng thông tin</Title>
+              <Title level={4}>{t("privacyPolicy.content.dataScope.purposeTitle")}</Title>
               <Paragraph>
-                Garage Việt thu thập và sử dụng dữ liệu cá nhân cho các mục đích
-                sau:
+                {t("privacyPolicy.content.dataScope.purposeIntro")}
               </Paragraph>
               <Paragraph>
                 <ul>
-                  <li>
-                    Xác minh danh tính người dùng, đảm bảo an toàn cho các giao
-                    dịch;
-                  </li>
-                  <li>Kết nối và hỗ trợ trao đổi giữa Chủ xe và Garage;</li>
-                  <li>
-                    Xử lý yêu cầu báo giá, đặt lịch, thanh toán và đánh giá dịch
-                    vụ;
-                  </li>
-                  <li>
-                    Gửi thông báo, khuyến mãi, cập nhật hoặc thay đổi chính
-                    sách;
-                  </li>
-                  <li>
-                    Hỗ trợ kỹ thuật, giải quyết khiếu nại, phản hồi người dùng;
-                  </li>
-                  <li>Nâng cao trải nghiệm người dùng và cải thiện dịch vụ;</li>
-                  <li>
-                    Tuân thủ nghĩa vụ pháp lý và các yêu cầu của cơ quan Nhà
-                    nước có thẩm quyền.
-                  </li>
+                  {t("privacyPolicy.content.dataScope.purposeItems", { returnObjects: true }).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </Paragraph>
             </section>
@@ -292,32 +231,17 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <SecurityScanOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  4. Đối tượng được tiếp cận thông tin
+                  {t("privacyPolicy.content.dataSharing.title")}
                 </Title>
               </div>
               <Paragraph>
-                Garage Việt cam kết không chia sẻ dữ liệu cá nhân của người dùng
-                cho bên thứ ba vì mục đích thương mại mà không có sự đồng ý của
-                bạn, ngoại trừ các trường hợp sau:
+                {t("privacyPolicy.content.dataSharing.intro")}
               </Paragraph>
               <Paragraph>
                 <ul>
-                  <li>
-                    Theo yêu cầu của pháp luật hoặc cơ quan Nhà nước có thẩm
-                    quyền;
-                  </li>
-                  <li>
-                    Các bộ phận nội bộ của Garage Việt được ủy quyền (kỹ thuật,
-                    chăm sóc khách hàng, vận hành,…);
-                  </li>
-                  <li>
-                    Đối tác hỗ trợ kỹ thuật, thanh toán, xác thực danh tính nhằm
-                    phục vụ việc cung cấp dịch vụ;
-                  </li>
-                  <li>
-                    Khi người dùng đồng ý chia sẻ thông tin để thực hiện giao
-                    dịch hoặc dịch vụ liên quan.
-                  </li>
+                  {t("privacyPolicy.content.dataSharing.items", { returnObjects: true }).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </Paragraph>
             </section>
@@ -327,28 +251,20 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <LockOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  5. Bảo mật và lưu trữ thông tin
+                  {t("privacyPolicy.content.security.title")}
                 </Title>
               </div>
               <Paragraph>
-                Dữ liệu cá nhân của bạn được lưu trữ trên hệ thống máy chủ bảo
-                mật của Garage Việt và các nhà cung cấp dịch vụ điện toán đám
-                mây uy tín.
+                {t("privacyPolicy.content.security.p1")}
               </Paragraph>
               <Paragraph>
-                Chúng tôi áp dụng biện pháp kỹ thuật, mã hóa, tường lửa và kiểm
-                soát truy cập nội bộ nghiêm ngặt để bảo vệ thông tin khỏi mất
-                mát, truy cập trái phép hoặc lạm dụng.
+                {t("privacyPolicy.content.security.p2")}
               </Paragraph>
               <Paragraph>
-                <strong>Thời gian lưu trữ:</strong> Dữ liệu cá nhân được lưu trữ
-                cho đến khi người dùng yêu cầu xóa hoặc Garage Việt chấm dứt
-                cung cấp dịch vụ.
+                <strong>{t("privacyPolicy.content.security.storageTime")}</strong> {t("privacyPolicy.content.security.p3")}
               </Paragraph>
               <Paragraph>
-                Trong trường hợp hệ thống bị tấn công dẫn đến mất dữ liệu,
-                Garage Việt sẽ thông báo cho cơ quan chức năng và người dùng
-                trong vòng 72 giờ kể từ khi phát hiện.
+                {t("privacyPolicy.content.security.p4")}
               </Paragraph>
             </section>
 
@@ -357,25 +273,15 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <KeyOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  6. Quyền của người dùng
+                  {t("privacyPolicy.content.rights.title")}
                 </Title>
               </div>
-              <Paragraph>Người dùng có quyền:</Paragraph>
+              <Paragraph>{t("privacyPolicy.content.rights.intro")}</Paragraph>
               <Paragraph>
                 <ul>
-                  <li>
-                    Truy cập, chỉnh sửa, cập nhật hoặc xóa thông tin cá nhân của
-                    mình;
-                  </li>
-                  <li>Rút lại sự đồng ý cho việc xử lý dữ liệu cá nhân;</li>
-                  <li>
-                    Gửi yêu cầu hoặc khiếu nại về việc lộ thông tin cá nhân qua
-                    email: contact@garageviet.vn;
-                  </li>
-                  <li>
-                    Đề nghị Garage Việt ngừng xử lý hoặc chia sẻ dữ liệu cá nhân
-                    trong các trường hợp nhất định.
-                  </li>
+                  {t("privacyPolicy.content.rights.items", { returnObjects: true }).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </Paragraph>
             </section>
@@ -385,28 +291,21 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <InfoCircleOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  7. Cookie và dữ liệu định vị
+                  {t("privacyPolicy.content.cookies.title")}
                 </Title>
               </div>
               <Paragraph>
-                Garage Việt có thể sử dụng cookie, mã định danh thiết bị, hoặc
-                dữ liệu GPS để:
+                {t("privacyPolicy.content.cookies.intro")}
               </Paragraph>
               <Paragraph>
                 <ul>
-                  <li>
-                    Ghi nhớ lựa chọn của người dùng và tối ưu hóa trải nghiệm;
-                  </li>
-                  <li>
-                    Gợi ý garage gần nhất hoặc khuyến nghị dịch vụ phù hợp;
-                  </li>
-                  <li>Phân tích hành vi người dùng nhằm cải thiện hệ thống.</li>
+                  {t("privacyPolicy.content.cookies.items", { returnObjects: true }).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </Paragraph>
               <Paragraph>
-                Người dùng có thể tắt cookie hoặc chia sẻ vị trí trong phần cài
-                đặt của thiết bị. Tuy nhiên, việc này có thể làm giảm chất lượng
-                trải nghiệm dịch vụ.
+                {t("privacyPolicy.content.cookies.p")}
               </Paragraph>
             </section>
 
@@ -415,15 +314,14 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <SafetyOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  8. Bảo vệ thông tin trẻ em
+                  {t("privacyPolicy.content.children.title")}
                 </Title>
               </div>
               <Paragraph>
-                Garage Việt không hướng đến người dùng dưới 18 tuổi.
+                {t("privacyPolicy.content.children.p1")}
               </Paragraph>
               <Paragraph>
-                Nếu phát hiện người dùng dưới 18 tuổi cung cấp dữ liệu cá nhân,
-                chúng tôi sẽ khóa tài khoản và xóa dữ liệu liên quan.
+                {t("privacyPolicy.content.children.p2")}
               </Paragraph>
             </section>
 
@@ -432,17 +330,14 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <GlobalOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  9. Liên kết với bên thứ ba
+                  {t("privacyPolicy.content.thirdParty.title")}
                 </Title>
               </div>
               <Paragraph>
-                Garage Việt có thể chứa liên kết đến website hoặc dịch vụ bên
-                thứ ba. Chúng tôi không chịu trách nhiệm về nội dung, chính sách
-                bảo mật hoặc bảo đảm an toàn dữ liệu trên các nền tảng đó.
+                {t("privacyPolicy.content.thirdParty.p1")}
               </Paragraph>
               <Paragraph>
-                Người dùng nên xem xét chính sách riêng tư của bên thứ ba trước
-                khi cung cấp bất kỳ thông tin nào.
+                {t("privacyPolicy.content.thirdParty.p2")}
               </Paragraph>
             </section>
 
@@ -451,17 +346,14 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <FileTextOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  10. Cập nhật Chính sách
+                  {t("privacyPolicy.content.changes.title")}
                 </Title>
               </div>
               <Paragraph>
-                Garage Việt có thể cập nhật Chính sách này theo từng thời kỳ để
-                phù hợp với thay đổi của pháp luật hoặc hoạt động của nền tảng.
+                {t("privacyPolicy.content.changes.p1")}
               </Paragraph>
               <Paragraph>
-                Bất kỳ thay đổi nào sẽ được thông báo trên website hoặc ứng dụng
-                Garage Việt. Việc tiếp tục sử dụng dịch vụ sau khi có thay đổi
-                đồng nghĩa với việc bạn chấp nhận chính sách sửa đổi.
+                {t("privacyPolicy.content.changes.p2")}
               </Paragraph>
             </section>
 
@@ -470,26 +362,25 @@ const PrivacyPolicy = () => {
               <div className="section-header">
                 <MailOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  11. Thông tin liên hệ
+                  {t("privacyPolicy.content.contact.title")}
                 </Title>
               </div>
               <Paragraph>
-                <strong>Công ty TNHH Nền tảng Công nghệ Garage Việt</strong>
+                <strong>{t("privacyPolicy.content.contact.company")}</strong>
               </Paragraph>
               <Paragraph>
-                <strong>Mã số doanh nghiệp:</strong> 3002300759
+                <strong>{t("privacyPolicy.content.contact.taxCode")}</strong> {t("privacyPolicy.content.contact.taxValue")}
               </Paragraph>
               <Paragraph>
                 <ul>
                   <li>
-                    <strong>Địa chỉ:</strong> Ngã Ba Kỳ Đồng, Xã Kỳ Anh, Tỉnh Hà
-                    Tĩnh, Việt Nam
+                    <strong>{t("privacyPolicy.content.contact.address")}</strong> {t("privacyPolicy.content.contact.addressValue")}
                   </li>
                   <li>
-                    <strong>Email:</strong> support@garageviet.vn
+                    <strong>{t("privacyPolicy.content.contact.email")}</strong> {t("privacyPolicy.content.contact.emailValue")}
                   </li>
                   <li>
-                    <strong>Điện thoại:</strong> 0586 028 881
+                    <strong>{t("privacyPolicy.content.contact.phone")}</strong> {t("privacyPolicy.content.contact.phoneValue")}
                   </li>
                 </ul>
               </Paragraph>
@@ -497,8 +388,7 @@ const PrivacyPolicy = () => {
 
             <div className="policy-footer-section">
               <Text type="secondary" className="footer-text">
-                © {new Date().getFullYear()} Garage Việt. Tất cả quyền được bảo
-                lưu.
+                {t("footer.copyright", { year: 2025 })}
               </Text>
             </div>
           </div>

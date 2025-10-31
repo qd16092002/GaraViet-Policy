@@ -1,0 +1,456 @@
+{
+    "header": {
+        "privacyPolicy": "Chính sách bảo mật",
+        "operationPolicy": "Quy chế hoạt động"
+    },
+    "updateTime": "Cập nhật lần cuối: {{date}}",
+    "common": {
+        "language": "Ngôn ngữ",
+        "english": "Tiếng Anh",
+        "vietnamese": "Tiếng Việt",
+        "tableOfContents": "Nội dung",
+        "step": "Bước"
+    },
+    "privacyPolicy": {
+        "title": "Chính sách bảo mật",
+        "subtitle": "Bảo vệ dữ liệu cá nhân của người dùng",
+        "sections": {
+            "intro": "1. Giới thiệu",
+            "dataCollection": "2. Khi nào Garage Việt thu thập dữ liệu cá nhân",
+            "dataScope": "3. Phạm vi và mục đích thu thập thông tin",
+            "dataSharing": "4. Đối tượng được tiếp cận thông tin",
+            "security": "5. Bảo mật và lưu trữ thông tin",
+            "rights": "6. Quyền của người dùng",
+            "cookies": "7. Cookie và dữ liệu định vị",
+            "children": "8. Bảo vệ thông tin trẻ em",
+            "thirdParty": "9. Liên kết với bên thứ ba",
+            "changes": "10. Cập nhật Chính sách",
+            "contact": "11. Thông tin liên hệ"
+        },
+        "nav": {
+            "intro": "Giới thiệu",
+            "dataCollection": "Thu thập dữ liệu",
+            "dataScope": "Phạm vi thu thập",
+            "dataSharing": "Tiếp cận thông tin",
+            "security": "Bảo mật & Lưu trữ",
+            "rights": "Quyền người dùng",
+            "cookies": "Cookie & Định vị",
+            "children": "Bảo vệ trẻ em",
+            "thirdParty": "Bên thứ ba",
+            "changes": "Cập nhật",
+            "contact": "Liên hệ"
+        },
+        "content": {
+            "intro": {
+                "title": "1. Giới thiệu",
+                "p1": "Chào mừng bạn đến với Garage Việt – nền tảng kết nối giữa chủ xe và garage sửa chữa/nâng cấp ô tô trên toàn quốc, được vận hành bởi Công ty TNHH Nền tảng Công nghệ Garage Việt.",
+                "p2": "Garage Việt hiểu rằng bảo vệ dữ liệu cá nhân là trách nhiệm quan trọng và cam kết tuân thủ quy định của Nghị định 13/2023/NĐ-CP và các văn bản pháp luật liên quan về bảo vệ dữ liệu cá nhân.",
+                "p3": "Chính sách bảo mật này (\"Chính sách\") được thiết lập để giúp bạn hiểu rõ cách Garage Việt thu thập, sử dụng, lưu trữ, chia sẻ và bảo vệ thông tin cá nhân khi bạn sử dụng ứng dụng và website Garage Việt, cũng như quyền của bạn liên quan đến các thông tin này.",
+                "p4": "Bằng việc truy cập, đăng ký hoặc sử dụng dịch vụ của Garage Việt, bạn xác nhận rằng bạn đồng ý với các điều khoản được quy định trong Chính sách này. Nếu bạn không đồng ý, vui lòng ngừng sử dụng nền tảng hoặc liên hệ với chúng tôi để rút lại sự đồng ý."
+            },
+            "dataCollection": {
+                "title": "2. Khi nào Garage Việt thu thập dữ liệu cá nhân",
+                "intro": "Chúng tôi có thể thu thập dữ liệu cá nhân của bạn trong các trường hợp sau:",
+                "items": [
+                    "Khi bạn đăng ký tài khoản hoặc sử dụng dịch vụ của Garage Việt;",
+                    "Khi bạn điền các biểu mẫu hoặc gửi thông tin liên hệ, yêu cầu hỗ trợ;",
+                    "Khi bạn thực hiện các giao dịch (đăng yêu cầu, báo giá, thanh toán, v.v.);",
+                    "Khi bạn tương tác với bộ phận hỗ trợ khách hàng của chúng tôi;",
+                    "Khi bạn kết nối tài khoản Garage Việt với mạng xã hội (Facebook, Google,…);",
+                    "Khi bạn phản hồi khảo sát, gửi đánh giá hoặc khiếu nại;",
+                    "Khi bạn truy cập ứng dụng/website của chúng tôi (thông qua cookies hoặc các công nghệ khác)."
+                ]
+            },
+            "dataScope": {
+                "title": "3. Phạm vi và mục đích thu thập thông tin",
+                "scopeTitle": "3.1. Phạm vi thu thập",
+                "forCustomer": "Đối với Chủ xe (Khách hàng):",
+                "customerInfo": "Họ tên, số điện thoại, email, địa chỉ, biển số xe, loại xe, hình ảnh xe, thông tin thanh toán, lịch sử giao dịch, và các thông tin cần thiết khác để cung cấp dịch vụ.",
+                "forGarage": "Đối với Garage (Đối tác):",
+                "garageInfo": "Tên chủ garage, số điện thoại, email, giấy phép kinh doanh (nếu có), số tài khoản ngân hàng, địa chỉ cơ sở, hình ảnh, dịch vụ cung cấp, thông tin về kỹ thuật viên và lịch sử giao dịch.",
+                "technicalInfo": "Thông tin kỹ thuật:",
+                "technicalDetails": "Địa chỉ IP, thiết bị sử dụng, hệ điều hành, lịch sử truy cập, vị trí địa lý (GPS), cookie, và các dữ liệu liên quan đến hoạt động sử dụng ứng dụng.",
+                "purposeTitle": "3.2. Mục đích sử dụng thông tin",
+                "purposeIntro": "Garage Việt thu thập và sử dụng dữ liệu cá nhân cho các mục đích sau:",
+                "purposeItems": [
+                    "Xác minh danh tính người dùng, đảm bảo an toàn cho các giao dịch;",
+                    "Kết nối và hỗ trợ trao đổi giữa Chủ xe và Garage;",
+                    "Xử lý yêu cầu báo giá, đặt lịch, thanh toán và đánh giá dịch vụ;",
+                    "Gửi thông báo, khuyến mãi, cập nhật hoặc thay đổi chính sách;",
+                    "Hỗ trợ kỹ thuật, giải quyết khiếu nại, phản hồi người dùng;",
+                    "Nâng cao trải nghiệm người dùng và cải thiện dịch vụ;",
+                    "Tuân thủ nghĩa vụ pháp lý và các yêu cầu của cơ quan Nhà nước có thẩm quyền."
+                ]
+            },
+            "dataSharing": {
+                "title": "4. Đối tượng được tiếp cận thông tin",
+                "intro": "Garage Việt cam kết không chia sẻ dữ liệu cá nhân của người dùng cho bên thứ ba vì mục đích thương mại mà không có sự đồng ý của bạn, ngoại trừ các trường hợp sau:",
+                "items": [
+                    "Theo yêu cầu của pháp luật hoặc cơ quan Nhà nước có thẩm quyền;",
+                    "Các bộ phận nội bộ của Garage Việt được ủy quyền (kỹ thuật, chăm sóc khách hàng, vận hành,…);",
+                    "Đối tác hỗ trợ kỹ thuật, thanh toán, xác thực danh tính nhằm phục vụ việc cung cấp dịch vụ;",
+                    "Khi người dùng đồng ý chia sẻ thông tin để thực hiện giao dịch hoặc dịch vụ liên quan."
+                ]
+            },
+            "security": {
+                "title": "5. Bảo mật và lưu trữ thông tin",
+                "p1": "Dữ liệu cá nhân của bạn được lưu trữ trên hệ thống máy chủ bảo mật của Garage Việt và các nhà cung cấp dịch vụ điện toán đám mây uy tín.",
+                "p2": "Chúng tôi áp dụng biện pháp kỹ thuật, mã hóa, tường lửa và kiểm soát truy cập nội bộ nghiêm ngặt để bảo vệ thông tin khỏi mất mát, truy cập trái phép hoặc lạm dụng.",
+                "storageTime": "Thời gian lưu trữ:",
+                "p3": "Dữ liệu cá nhân được lưu trữ cho đến khi người dùng yêu cầu xóa hoặc Garage Việt chấm dứt cung cấp dịch vụ.",
+                "p4": "Trong trường hợp hệ thống bị tấn công dẫn đến mất dữ liệu, Garage Việt sẽ thông báo cho cơ quan chức năng và người dùng trong vòng 72 giờ kể từ khi phát hiện."
+            },
+            "rights": {
+                "title": "6. Quyền của người dùng",
+                "intro": "Người dùng có quyền:",
+                "items": [
+                    "Truy cập, chỉnh sửa, cập nhật hoặc xóa thông tin cá nhân của mình;",
+                    "Rút lại sự đồng ý cho việc xử lý dữ liệu cá nhân;",
+                    "Gửi yêu cầu hoặc khiếu nại về việc lộ thông tin cá nhân qua email: contact@garageviet.vn;",
+                    "Đề nghị Garage Việt ngừng xử lý hoặc chia sẻ dữ liệu cá nhân trong các trường hợp nhất định."
+                ]
+            },
+            "cookies": {
+                "title": "7. Cookie và dữ liệu định vị",
+                "intro": "Garage Việt có thể sử dụng cookie, mã định danh thiết bị, hoặc dữ liệu GPS để:",
+                "items": [
+                    "Ghi nhớ lựa chọn của người dùng và tối ưu hóa trải nghiệm;",
+                    "Gợi ý garage gần nhất hoặc khuyến nghị dịch vụ phù hợp;",
+                    "Phân tích hành vi người dùng nhằm cải thiện hệ thống."
+                ],
+                "p": "Người dùng có thể tắt cookie hoặc chia sẻ vị trí trong phần cài đặt của thiết bị. Tuy nhiên, việc này có thể làm giảm chất lượng trải nghiệm dịch vụ."
+            },
+            "children": {
+                "title": "8. Bảo vệ thông tin trẻ em",
+                "p1": "Garage Việt không hướng đến người dùng dưới 18 tuổi.",
+                "p2": "Nếu phát hiện người dùng dưới 18 tuổi cung cấp dữ liệu cá nhân, chúng tôi sẽ khóa tài khoản và xóa dữ liệu liên quan."
+            },
+            "thirdParty": {
+                "title": "9. Liên kết với bên thứ ba",
+                "p1": "Garage Việt có thể chứa liên kết đến website hoặc dịch vụ bên thứ ba. Chúng tôi không chịu trách nhiệm về nội dung, chính sách bảo mật hoặc bảo đảm an toàn dữ liệu trên các nền tảng đó.",
+                "p2": "Người dùng nên xem xét chính sách riêng tư của bên thứ ba trước khi cung cấp bất kỳ thông tin nào."
+            },
+            "changes": {
+                "title": "10. Cập nhật Chính sách",
+                "p1": "Garage Việt có thể cập nhật Chính sách này theo từng thời kỳ để phù hợp với thay đổi của pháp luật hoặc hoạt động của nền tảng.",
+                "p2": "Bất kỳ thay đổi nào sẽ được thông báo trên website hoặc ứng dụng Garage Việt. Việc tiếp tục sử dụng dịch vụ sau khi có thay đổi đồng nghĩa với việc bạn chấp nhận chính sách sửa đổi."
+            },
+            "contact": {
+                "title": "11. Thông tin liên hệ",
+                "company": "Công ty TNHH Nền tảng Công nghệ Garage Việt",
+                "taxCode": "Mã số doanh nghiệp:",
+                "taxValue": "3002300759",
+                "address": "Địa chỉ:",
+                "addressValue": "Ngã Ba Kỳ Đồng, Xã Kỳ Anh, Tỉnh Hà Tĩnh, Việt Nam",
+                "email": "Email:",
+                "emailValue": "support@garageviet.vn",
+                "phone": "Điện thoại:",
+                "phoneValue": "0586 028 881"
+            }
+        }
+    },
+    "operationPolicy": {
+        "title": "Quy chế hoạt động",
+        "subtitle": "Sàn giao dịch thương mại điện tử Garage Việt",
+        "sections": {
+            "intro": "I. Nguyên tắc chung",
+            "definitions": "II. Quy định chung",
+            "usage": "Hướng dẫn sử dụng",
+            "brand": "Thương hiệu",
+            "transaction": "III. Quy trình giao dịch",
+            "security": "IV. Đảm bảo an toàn giao dịch",
+            "privacy": "V. Bảo vệ thông tin cá nhân",
+            "revenue": "VI. Cơ chế chia sẻ doanh thu",
+            "contentManagement": "VII. Quản lý thông tin xấu",
+            "technical": "VIII. Trách nhiệm trong trường hợp phát sinh lỗi kỹ thuật",
+            "adminRights": "IX. Quyền và nghĩa vụ của Ban Quản lý Ứng dụng Garage Việt",
+            "garageRights": "X. Quyền và nghĩa vụ của Garage (người cung cấp dịch vụ)",
+            "customerRights": "XI. Quyền và nghĩa vụ của Chủ xe (người sử dụng dịch vụ)",
+            "terms": "XII. Điều khoản áp dụng",
+            "commitment": "XIII. Điều khoản cam kết"
+        },
+        "nav": {
+            "intro": "Nguyên tắc chung",
+            "quy_dinh_chung": "Quy định chung",
+            "definitions": "Định nghĩa",
+            "usage": "Hướng dẫn sử dụng",
+            "brand": "Thương hiệu",
+            "transaction": "Quy trình giao dịch",
+            "security": "An toàn giao dịch",
+            "privacy": "Bảo vệ thông tin",
+            "revenue": "Chia sẻ doanh thu",
+            "contentManagement": "Quản lý thông tin",
+            "technical": "Lỗi kỹ thuật",
+            "adminRights": "Quyền Ban Quản lý",
+            "garageRights": "Quyền Garage",
+            "customerRights": "Quyền Khách hàng",
+            "terms": "Điều khoản",
+            "commitment": "Cam kết",
+            "contact": "Liên hệ"
+        },
+        "content": {
+            "intro": {
+                "title": "I. Nguyên tắc chung",
+                "p1": "Sàn giao dịch thương mại điện tử Garage Việt (sau đây gọi tắt là \"Sàn giao dịch\") do Công ty TNHH Nền tảng Công nghệ Garage Việt (sau đây gọi tắt là \"Công ty\") xây dựng và vận hành.",
+                "p2": "Thành viên trên Sàn giao dịch là các garage, thương nhân, tổ chức, cá nhân có hoạt động thương mại hợp pháp được Ban Quản lý Sàn giao dịch Garage Việt (\"Ban Quản lý\") công nhận và cho phép sử dụng dịch vụ.",
+                "p3": "Nguyên tắc này áp dụng cho các Thành viên đăng ký sử dụng và tham gia hoạt động đăng tải thông tin, báo giá, đặt dịch vụ sửa chữa hoặc nâng cấp xe trên nền tảng Garage Việt.",
+                "p4": "Các bên tham gia giao dịch tại Sàn giao dịch được tự do thỏa thuận trên cơ sở tôn trọng quyền và lợi ích hợp pháp của nhau, không trái quy định của pháp luật Việt Nam.",
+                "p5": "Thông tin về Thành viên tham gia phải minh bạch, chính xác.",
+                "p6": "Các dịch vụ, sản phẩm, linh kiện, phụ tùng được cung cấp qua Sàn giao dịch phải hợp pháp, rõ nguồn gốc, không thuộc danh mục cấm kinh doanh, cấm quảng cáo.",
+                "p7": "Mọi nội dung trong Quy chế này đều tuân thủ theo pháp luật Việt Nam. Thành viên khi tham gia có trách nhiệm tìm hiểu và tuân thủ đầy đủ các quy định pháp lý hiện hành."
+            },
+            "definitions": {
+                "title": "II. Quy định chung",
+                "defTitle": "1. Định nghĩa",
+                "platformLabel": "Nền tảng:",
+                "platform": "là ứng dụng Garage Việt do Công ty TNHH Nền tảng Công nghệ Garage Việt phát triển.",
+                "garageLabel": "Garage/Đối tác (Người bán):",
+                "garage": "là các thương nhân, tổ chức, cá nhân có hoạt động hợp pháp trong lĩnh vực bảo dưỡng, sửa chữa, nâng cấp xe ô tô, có nhu cầu giới thiệu dịch vụ, báo giá, tiếp nhận khách hàng thông qua Sàn giao dịch.",
+                "customerLabel": "Chủ xe/Khách hàng (Người mua):",
+                "customer": "là cá nhân, tổ chức sở hữu hoặc sử dụng xe ô tô có nhu cầu tìm kiếm, so sánh giá, đặt dịch vụ sửa chữa/nâng cấp xe.",
+                "memberLabel": "Thành viên:",
+                "member": "bao gồm cả Garage và Chủ xe đã đăng ký tài khoản và được phê duyệt bởi Ban Quản lý.",
+                "productLabel": "Sản phẩm/Dịch vụ:",
+                "product": "bao gồm các dịch vụ bảo dưỡng, sửa chữa, thay thế, độ xe, vệ sinh, chăm sóc xe, nâng cấp nội – ngoại thất, linh kiện phụ tùng ô tô được đăng tải và giao dịch qua nền tảng Garage Việt.",
+                "crmLabel": "CRM Garage:",
+                "crm": "hệ thống quản lý khách hàng, đơn hàng, lịch hẹn và báo giá dành riêng cho garage thành viên.",
+                "quoteLabel": "Báo giá:",
+                "quote": "là cơ chế để nhiều garage cùng đưa ra mức giá thầu (tối đa 5 garage) cho một yêu cầu sửa chữa của khách hàng.",
+                "revenueLabel": "Doanh thu chia sẻ:",
+                "revenue": "Công ty thu 10% phí giao dịch/doanh thu trên mỗi đơn hàng hoàn tất thông qua Sàn giao dịch."
+            },
+            "usage": {
+                "title": "2. Hướng dẫn sử dụng chung",
+                "p1": "Mỗi Thành viên cần đăng ký tài khoản hợp lệ, cung cấp thông tin chính xác và cập nhật kịp thời khi có thay đổi.",
+                "p2": "Thành viên chịu trách nhiệm hoàn toàn về bảo mật tài khoản và mọi hoạt động phát sinh.",
+                "p3": "Thành viên không được ủy quyền hoặc chuyển nhượng tài khoản cho người khác nếu không có sự đồng ý bằng văn bản của Công ty.",
+                "p4": "Việc sử dụng Sàn giao dịch chỉ được thực hiện vì mục đích hợp pháp, không được lợi dụng để lừa đảo, phát tán thông tin sai lệch, quảng cáo trái phép, gây rối hệ thống hoặc xâm phạm quyền của bên thứ ba.",
+                "p5": "Thành viên đồng ý nhận thông tin tiếp thị, thông báo hoạt động, hoặc ưu đãi từ Garage Việt. Nếu muốn ngừng nhận, có thể gửi yêu cầu đến support@garageviet.vn.",
+                "p6": "Công ty giữ quyền tạm khóa hoặc chấm dứt tài khoản nếu phát hiện hành vi vi phạm quy chế, gian lận hoặc gây ảnh hưởng đến uy tín của Sàn giao dịch."
+            },
+            "brand": {
+                "title": "3. Thương hiệu và bản quyền",
+                "p1": "Tất cả nội dung, thiết kế, phần mềm, hình ảnh, dữ liệu, mã nguồn, logo, nhãn hiệu \"Garage Việt\" đều là tài sản sở hữu trí tuệ của Công ty TNHH Nền tảng Công nghệ Garage Việt và được bảo vệ theo Luật Sở hữu trí tuệ Việt Nam.",
+                "p2": "Mọi hành vi sao chép, phân phối, sửa đổi, khai thác trái phép đều bị xử lý theo pháp luật."
+            },
+            "transaction": {
+                "title": "III. Quy trình giao dịch",
+                "customerTitle": "1. Dành cho Khách hàng (Chủ xe)",
+                "customerStep1": "Đăng nhập ứng dụng Garage Việt, chọn \"Tạo yêu cầu\".",
+                "customerStep2": "Nhập thông tin xe, mô tả vấn đề hoặc nhu cầu, có thể kèm hình ảnh/video.",
+                "customerStep3": "Hệ thống gửi yêu cầu đến các garage phù hợp theo khu vực, loại dịch vụ.",
+                "customerStep4": "Các garage gửi báo giá đấu thầu (bao gồm giá, thời gian thực hiện, cam kết).",
+                "customerStep5": "Khách hàng chọn garage mong muốn, có thể lựa chọn đặt cọc trước qua app (3% giá trị đơn hàng) để hưởng một số ưu đãi. Hoặc không đặt cọc.",
+                "customerStep6": "Garage xác nhận, hoàn tất dịch vụ.",
+                "customerStep7": "Khách hàng thanh toán phần còn lại trực tiếp, sau đó đánh giá chất lượng dịch vụ.",
+                "garageTitle": "2. Dành cho Garage (Đối tác)",
+                "garageStep1": "Đăng ký tài khoản Garage trên app, cung cấp giấy phép kinh doanh hoặc CMND/CCCD. Ký hợp đồng điện tử",
+                "garageStep2": "Cập nhật hồ sơ garage: địa chỉ, hình ảnh xưởng, danh mục dịch vụ, bảng giá cơ bản.",
+                "garageStep3": "Nhận thông báo yêu cầu mới từ khách hàng, tham gia báo giá.",
+                "garageStep4": "Sau khi được chọn, xác nhận lịch hẹn và thực hiện dịch vụ.",
+                "garageStep5": "Hoàn tất dịch vụ và cập nhật kết quả trên hệ thống.",
+                "garageStep6": "Thanh toán phí nền tảng định kỳ",
+                "cancelTitle": "3. Hủy hoặc thay đổi dịch vụ",
+                "cancelP1": "Khách hàng có thể hủy yêu cầu nếu garage chưa bắt đầu thực hiện, và sẽ được hoàn lại tiền cọc sau tối đa 7 ngày làm việc.",
+                "cancelP2": "Nếu hủy sau khi garage đã chuẩn bị hoặc mua linh kiện, phí huỷ là 50-100% tùy trường hợp.",
+                "cancelP3": "Garage Việt hỗ trợ thương lượng giữa hai bên để đạt thỏa thuận hợp lý.",
+                "complaintTitle": "4. Giải quyết khiếu nại",
+                "complaintP1": "Khiếu nại được gửi qua email support@garageviet.vn hoặc hotline 0586.028.881 trong vòng 03 ngày kể từ khi phát sinh sự việc.",
+                "complaintP2": "Bộ phận hỗ trợ xác nhận và xử lý trong 03 ngày làm việc.",
+                "complaintP3": "Garage Việt có thể đóng băng tài khoản, giữ tiền cọc trong trường hợp có tranh chấp chưa giải quyết xong.",
+                "complaintP4": "Nếu hai bên không thỏa thuận được, Công ty sẽ chủ trì hòa giải hoặc chuyển cho cơ quan có thẩm quyền."
+            },
+            "security": {
+                "title": "IV. Đảm bảo an toàn giao dịch",
+                "p1": "Tất cả các giao dịch, thanh toán, dữ liệu được mã hóa và lưu trữ bảo mật trên hệ thống của Công ty.",
+                "p2": "Công ty không chịu trách nhiệm cho các giao dịch được thực hiện ngoài nền tảng Garage Việt.",
+                "p3": "Nghiêm cấm mọi hành vi can thiệp hệ thống, lạm dụng API, phá hoại dữ liệu hoặc gian lận đánh giá."
+            },
+            "privacy": {
+                "title": "V. Bảo vệ thông tin cá nhân",
+                "intro": "Thông tin cá nhân được thu thập chỉ phục vụ cho các mục đích:",
+                "items": [
+                    "Xác minh và duy trì tài khoản;",
+                    "Hỗ trợ giao dịch và thanh toán;",
+                    "Cải thiện chất lượng dịch vụ;",
+                    "Giải quyết tranh chấp",
+                    "Cung cấp thông tin cho cơ quan nhà nước khi được yêu cầu."
+                ],
+                "p1": "Thông tin cá nhân bao gồm: họ tên, số điện thoại, email, địa chỉ, thông tin xe.",
+                "p2": "Dữ liệu được lưu trữ trên máy chủ của Công ty, không tiết lộ cho bên thứ ba nếu không có sự đồng ý của chủ thể dữ liệu.",
+                "p3": "Trong trường hợp bị tấn công dữ liệu, Công ty có trách nhiệm thông báo và phối hợp cơ quan chức năng xử lý."
+            },
+            "revenue": {
+                "title": "VI. Cơ chế chia sẻ doanh thu",
+                "principleTitle": "1. Nguyên tắc chung",
+                "principleP1": "Công ty TNHH Nền tảng Công nghệ Garage Việt (\"Công ty\") vận hành nền tảng ứng dụng Garage Việt, là bên trung gian cung cấp hạ tầng công nghệ, tiếp thị, thanh toán và hỗ trợ kết nối giữa Khách hàng (chủ xe) và Garage (đối tác cung cấp dịch vụ).",
+                "principleP2": "Để duy trì và phát triển hệ thống, Công ty thu phí nền tảng từ các Garage tham gia, được tính theo tỷ lệ 10% (mười phần trăm) trên giá trị báo giá ban đầu mà Garage gửi cho khách hàng thông qua nền tảng Garage Việt.",
+                "principleP3": "Khoản phí này được gọi là Phí nền tảng Garage Việt và là nghĩa vụ tài chính cố định của Garage đối với Công ty trên mỗi đơn hàng phát sinh qua ứng dụng.",
+                "scopeTitle": "2. Phạm vi tính phí",
+                "scopeP1": "Phí nền tảng được tính dựa trên giá trị báo giá ban đầu mà Garage gửi đến khách hàng tại thời điểm tham gia báo giá dịch vụ.",
+                "scopeP2": "Dù trong quá trình giao dịch, khách hàng có sử dụng mã giảm giá, voucher, hoặc chương trình khuyến mãi do Garage Việt phát hành, mức phí nền tảng vẫn được tính trên giá trị báo giá ban đầu, không bị ảnh hưởng bởi phần giảm giá.",
+                "paymentTitle": "3. Thời điểm và phương thức thanh toán phí",
+                "paymentP1": "Garage có trách nhiệm thanh toán phí nền tảng định kỳ cho Công ty, theo chu kỳ tháng, hoặc tùy vào hình thức hợp tác và thỏa thuận giữa hai bên.",
+                "paymentP2": "Vào đầu mỗi kỳ, Garage Việt sẽ tổng hợp doanh thu các đơn hàng hoàn tất trong kỳ tính phí và gửi báo cáo chi tiết cho Garage qua hệ thống CRM hoặc email đã đăng ký.",
+                "paymentP3": "Sau khi nhận báo cáo, Garage có trách nhiệm đối chiếu số liệu và thanh toán phí nền tảng cho Công ty trong vòng 03 (ba) ngày làm việc.",
+                "paymentMethodsLabel": "Hình thức thanh toán bao gồm:",
+                "paymentMethods": [
+                    "Chuyển khoản ngân hàng theo thông tin tài khoản của Công ty, hoặc",
+                    "Khấu trừ tự động từ tiền cọc dịch vụ của Garage (nếu có)."
+                ],
+                "paymentP4": "Trường hợp Garage chậm thanh toán quá 07 (bảy) ngày làm việc kể từ thời hạn quy định, Garage Việt có quyền:",
+                "penalties": [
+                    "Tạm ngưng hiển thị Garage trong danh sách đề xuất khách hàng;",
+                    "Tạm khóa tài khoản đối tác;",
+                    "Khấu trừ khoản nợ phí nền tảng từ các doanh thu tiếp theo của Garage."
+                ],
+                "cancelledTitle": "4. Đối với giao dịch bị hủy hoặc thay đổi",
+                "cancelledP1": "Nếu đơn hàng bị hủy trước khi Garage xác nhận hoặc bắt đầu thực hiện dịch vụ, Garage không phải thanh toán phí nền tảng cho đơn hàng đó.",
+                "cancelledP2": "Trong trường hợp tranh chấp, Công ty sẽ căn cứ trên dữ liệu giao dịch lưu trữ trên hệ thống để xác định trách nhiệm và mức phí phải thanh toán.",
+                "invoiceTitle": "5. Hóa đơn và chứng từ tài chính",
+                "invoiceP1": "Sau khi Garage hoàn tất nghĩa vụ thanh toán phí nền tảng, Công ty có trách nhiệm xuất hóa đơn giá trị gia tăng (VAT) tương ứng và gửi cho Garage qua:",
+                "invoiceMethods": [
+                    "Email đã đăng ký trên hệ thống, hoặc",
+                    "Tải trực tiếp trong phần quản lý doanh thu của CRM Garage Việt."
+                ],
+                "invoiceP2": "Mọi chứng từ, hóa đơn điện tử đều có giá trị pháp lý tương đương bản giấy và được lưu trữ trên hệ thống theo quy định của pháp luật về giao dịch điện tử.",
+                "incentivesTitle": "6. Chính sách ưu đãi và khuyến khích đối tác",
+                "incentivesP1": "Garage Việt có thể áp dụng chính sách giảm phí nền tảng tạm thời (ví dụ: còn 5%) cho các Garage mới trong 3 tháng đầu hợp tác, hoặc cho các Garage đạt thành tích doanh thu, đánh giá uy tín cao, và phản hồi tích cực từ khách hàng.",
+                "incentivesP2": "Các chương trình ưu đãi này được thông báo bằng văn bản hoặc thông qua hệ thống quản lý Garage Việt, và được áp dụng minh bạch, công bằng cho các đối tác đủ điều kiện.",
+                "complianceTitle": "7. Trách nhiệm tuân thủ",
+                "complianceP1": "Garage có trách nhiệm theo dõi, đối chiếu doanh thu và phí nền tảng phát sinh trên hệ thống; kịp thời phản hồi nếu có sai lệch.",
+                "complianceP2": "Mọi trường hợp cố tình che giấu giao dịch, thực hiện giao dịch ngoài hệ thống, hoặc trốn tránh nghĩa vụ phí nền tảng đều bị xử lý theo quy định của Quy chế hoạt động và có thể dẫn tới việc chấm dứt hợp tác vĩnh viễn."
+            },
+            "technical": {
+                "title": "VIII. Trách nhiệm trong trường hợp phát sinh lỗi kỹ thuật",
+                "p1": "Garage Việt cam kết duy trì hệ thống ổn định và an toàn. Trường hợp lỗi kỹ thuật xảy ra do phía ứng dụng, Công ty sẽ ngay lập tức xử lý, khắc phục và bảo đảm quyền lợi cho người dùng.",
+                "p2": "Thành viên khi gặp lỗi có thể liên hệ qua email support@garageviet.vn hoặc hotline (0848.294.369) để được hỗ trợ.",
+                "p3": "Garage Việt không chịu trách nhiệm đối với các sự cố xuất phát từ: thiết bị người dùng, lỗi mạng, hoặc yếu tố ngoài tầm kiểm soát (thiên tai, mất điện, tấn công mạng...)."
+            },
+            "contentManagement": {
+                "title": "VII. Quản lý thông tin xấu",
+                "postingTitle": "1. Quy định đăng tin",
+                "postingP1": "Thành viên của Ứng dụng Garage Việt (bao gồm Chủ xe và Garage) tự chịu trách nhiệm bảo mật và lưu giữ mọi hoạt động sử dụng dịch vụ dưới tên đăng ký và mật khẩu của mình. Thành viên phải thông báo kịp thời cho Công ty TNHH Nền tảng Công nghệ Garage Việt khi phát hiện hành vi sử dụng trái phép hoặc vi phạm bảo mật để có biện pháp xử lý.",
+                "postingP2": "Thành viên không được sử dụng dịch vụ của Garage Việt cho các mục đích bất hợp pháp, lừa đảo, gây rối, xâm phạm quyền lợi của người khác, hoặc phát tán mã độc, virus gây hại đến hệ thống. Trong trường hợp vi phạm, Thành viên phải chịu hoàn toàn trách nhiệm trước pháp luật.",
+                "postingP3": "Thành viên không được phép chỉnh sửa, sao chép, phân phối, hoặc cung cấp lại dịch vụ, dữ liệu, hay công cụ của Ứng dụng Garage Việt cho bên thứ ba nếu không có sự đồng ý bằng văn bản của Công ty.",
+                "postingP4": "Cấm mọi hành vi làm ảnh hưởng đến uy tín hoặc gây mất đoàn kết giữa các thành viên Garage Việt thông qua việc tung tin sai sự thật, giả mạo tài khoản, hoặc lan truyền thông tin gây hiểu lầm về nền tảng.",
+                "prohibitedTitle": "2. Danh mục hàng hóa, dịch vụ cấm hoặc có điều kiện",
+                "prohibitedItemsLabel": "Danh mục cấm giao dịch:",
+                "prohibitedItems": [
+                    "Ma túy, vũ khí, công cụ hỗ trợ, chất nổ, hóa chất độc hại.",
+                    "Động vật, thực vật hoang dã bị cấm khai thác hoặc kinh doanh.",
+                    "Sản phẩm, thiết bị có nội dung phản động, đồi trụy, mê tín dị đoan.",
+                    "Thông tin cá nhân (email, dữ liệu khách hàng, biển số xe...) được mua bán trái phép.",
+                    "Dịch vụ không liên quan đến lĩnh vực ô tô, sửa chữa, bảo dưỡng, nâng cấp, chăm sóc xe.",
+                    "Các sản phẩm vi phạm quyền sở hữu trí tuệ hoặc chưa được cấp phép sử dụng tại Việt Nam."
+                ],
+                "conditionalItemsLabel": "Danh mục giao dịch có điều kiện:",
+                "conditionalItems": [
+                    "Garage cung cấp sản phẩm, dịch vụ kỹ thuật đặc thù (như độ xe, thay đổi kết cấu, sơn đổi màu...) phải có giấy phép hoặc chứng nhận đủ điều kiện kinh doanh theo quy định của pháp luật.",
+                    "Việc bán phụ tùng, linh kiện, dầu nhớt, vật tư thay thế phải đảm bảo nguồn gốc rõ ràng, chính hãng hoặc được công bố xuất xứ cụ thể."
+                ],
+                "bannedBehaviorsTitle": "3. Hành vi cấm trong hoạt động đăng tải",
+                "bannedBehaviors": [
+                    "Quảng cáo sai sự thật, gây nhầm lẫn về chất lượng, giá cả hoặc xuất xứ sản phẩm/dịch vụ.",
+                    "Quảng cáo có nội dung thiếu thẩm mỹ, vi phạm thuần phong mỹ tục, xúc phạm cá nhân, tổ chức.",
+                    "Sử dụng hình ảnh, thương hiệu, dữ liệu của bên thứ ba mà không có sự đồng ý hợp pháp.",
+                    "Quảng cáo so sánh hoặc công kích trực tiếp đối thủ.",
+                    "Đăng tải nội dung vi phạm pháp luật về sở hữu trí tuệ, cạnh tranh hoặc bảo vệ người tiêu dùng."
+                ],
+                "moderationTitle": "4. Cơ chế rà soát và kiểm soát thông tin",
+                "moderationP1": "Tất cả các tin đăng của Garage trên ứng dụng Garage Việt đều được kiểm duyệt nội dung tự động và thủ công trước khi hiển thị.",
+                "moderationP2": "Công ty có quyền tạm ẩn, xóa, hoặc điều chỉnh tin đăng nếu vi phạm Quy chế hoặc có dấu hiệu gian lận.",
+                "moderationP3": "Các nội dung sai phạm nghiêm trọng có thể bị khóa tài khoản, thu hồi quyền truy cập mà không cần thông báo trước."
+            },
+            "adminRights": {
+                "title": "IX. Quyền và nghĩa vụ của Ban Quản lý Ứng dụng Garage Việt",
+                "rightsTitle": "1. Quyền hạn",
+                "rights": [
+                    "Cung cấp dịch vụ cho Thành viên sau khi hoàn tất thủ tục đăng ký hợp lệ.",
+                    "Từ chối, tạm ngừng, hoặc chấm dứt quyền sử dụng nếu Thành viên cung cấp thông tin sai lệch, vi phạm pháp luật, hay làm ảnh hưởng đến nền tảng.",
+                    "Thay đổi, nâng cấp, hoặc điều chỉnh biểu phí, chính sách dịch vụ (sẽ được thông báo trước ít nhất 30 ngày).",
+                    "Giữ quyền sở hữu toàn bộ nội dung, giao diện, logo, nhãn hiệu và dữ liệu hệ thống.",
+                    "Được phép cung cấp dữ liệu cho cơ quan nhà nước khi có yêu cầu hợp pháp."
+                ],
+                "dutiesTitle": "2. Nghĩa vụ",
+                "duties": [
+                    "Đảm bảo cơ chế kiểm tra, giám sát thông tin đăng tải; loại bỏ các nội dung sai phạm hoặc hàng hóa, dịch vụ bị cấm.",
+                    "Hỗ trợ các cơ quan chức năng trong việc điều tra, xử lý vi phạm.",
+                    "Tiếp nhận, hòa giải tranh chấp giữa Garage và Chủ xe khi phát sinh.",
+                    "Đảm bảo an toàn thông tin cá nhân và dữ liệu kinh doanh của Thành viên.",
+                    "Công bố công khai cơ chế giải quyết khiếu nại và biện pháp xử lý tranh chấp."
+                ]
+            },
+            "garageRights": {
+                "title": "X. Quyền và nghĩa vụ của Garage (người cung cấp dịch vụ)",
+                "rightsTitle": "Quyền",
+                "rights": [
+                    "Được đăng tin, quảng bá dịch vụ sửa chữa/nâng cấp xe trên ứng dụng.",
+                    "Được sử dụng các công cụ CRM, chat, và quản lý báo giá do Garage Việt cung cấp.",
+                    "Được đóng góp ý kiến, đề xuất cải tiến sản phẩm và chính sách dịch vụ."
+                ],
+                "dutiesTitle": "Nghĩa vụ",
+                "duties": [
+                    "Cung cấp thông tin chính xác, minh bạch về doanh nghiệp, giấy phép kinh doanh, địa chỉ, giá, thời gian, và bảo hành dịch vụ.",
+                    "Đảm bảo chất lượng dịch vụ đúng như cam kết với khách hàng.",
+                    "Không đăng nội dung sai sự thật, sử dụng hình ảnh vi phạm bản quyền, hoặc giả mạo.",
+                    "Bồi thường thiệt hại nếu gây tổn thất cho khách hàng hoặc làm ảnh hưởng uy tín nền tảng.",
+                    "Tuân thủ quy định pháp luật về thương mại điện tử, bảo vệ người tiêu dùng, thuế, và sở hữu trí tuệ."
+                ]
+            },
+            "customerRights": {
+                "title": "XI. Quyền và nghĩa vụ của Chủ xe (người sử dụng dịch vụ)",
+                "rightsTitle": "Quyền",
+                "rights": [
+                    "Được truy cập, tìm kiếm, so sánh, và lựa chọn Garage uy tín để đặt dịch vụ.",
+                    "Được phản hồi, đánh giá chất lượng dịch vụ sau khi hoàn thành.",
+                    "Được bảo mật thông tin cá nhân và lịch sử giao dịch."
+                ],
+                "dutiesTitle": "Nghĩa vụ",
+                "duties": [
+                    "Cung cấp thông tin chính xác khi đặt dịch vụ: loại xe, yêu cầu, địa chỉ, thời gian.",
+                    "Không lợi dụng hệ thống để đăng yêu cầu ảo, spam, hoặc gây thiệt hại cho Garage khác.",
+                    "Tuân thủ quy trình giao dịch, đánh giá công bằng và trung thực.",
+                    "Hợp tác với Garage Việt khi có yêu cầu xác minh, khiếu nại hoặc tranh chấp."
+                ]
+            },
+            "terms": {
+                "title": "XII. Điều khoản áp dụng",
+                "p1": "Quy chế hoạt động này có hiệu lực kể từ ngày ký và được công bố trên website và ứng dụng Garage Việt.",
+                "p2": "Công ty TNHH Nền tảng Công nghệ Garage Việt có quyền điều chỉnh Quy chế để phù hợp với thực tế hoạt động và quy định pháp luật.",
+                "p3": "Mọi thay đổi sẽ được thông báo công khai ít nhất 07 ngày trước khi áp dụng.",
+                "p4": "Việc Thành viên tiếp tục sử dụng ứng dụng sau khi Quy chế sửa đổi có hiệu lực đồng nghĩa với việc chấp thuận toàn bộ nội dung Quy chế mới."
+            },
+            "commitment": {
+                "title": "XIII. Điều khoản cam kết",
+                "intro": "Mọi Thành viên, bao gồm Khách hàng (chủ xe) và Garage (đối tác cung cấp dịch vụ), khi đăng ký tài khoản, truy cập, hoặc sử dụng ứng dụng Garage Việt để thực hiện giao dịch, đồng nghĩa với việc đã đọc, hiểu rõ, và chấp thuận toàn bộ nội dung của Quy chế hoạt động này.",
+                "memberCommitmentLabel": "Thành viên cam kết:",
+                "memberCommitments": [
+                    "Tuân thủ đầy đủ các quy định trong Quy chế hoạt động Sàn giao dịch thương mại điện tử GarageViet.vn và các chính sách khác do Công ty TNHH Nền tảng Công nghệ Garage Việt ban hành.",
+                    "Chịu trách nhiệm trước pháp luật và trước Công ty về mọi hành vi, thông tin, nội dung, giao dịch được thực hiện thông qua tài khoản của mình trên hệ thống Garage Việt.",
+                    "Không thực hiện bất kỳ hành vi nào vi phạm pháp luật, xâm phạm quyền, lợi ích hợp pháp của bên thứ ba hoặc gây ảnh hưởng đến uy tín, hoạt động của Sàn giao dịch."
+                ],
+                "companyCommitmentLabel": "Công ty TNHH Nền tảng Công nghệ Garage Việt cam kết:",
+                "companyCommitments": [
+                    "Vận hành hệ thống ổn định, minh bạch, bảo mật thông tin và đảm bảo quyền lợi chính đáng của tất cả Thành viên;",
+                    "Giải quyết kịp thời các khiếu nại, tranh chấp phát sinh trong quá trình giao dịch, theo đúng quy định của Quy chế này và pháp luật Việt Nam."
+                ]
+            },
+            "contact": {
+                "title": "Liên hệ",
+                "intro": "Mọi thắc mắc, khiếu nại hoặc yêu cầu hỗ trợ của Thành viên xin vui lòng liên hệ:",
+                "departmentLabel": "Phòng Dịch vụ Khách hàng",
+                "company": "CÔNG TY TNHH NỀN TẢNG CÔNG NGHỆ GARAGE VIỆT",
+                "addressLabel": "Địa chỉ:",
+                "address": "Ngã Ba Kỳ Đồng, Xã Kỳ Anh, Tỉnh Hà Tĩnh, Việt Nam",
+                "phoneLabel": "Điện thoại:",
+                "phone": "0586 028 881",
+                "emailLabel": "Email:",
+                "email": "support@garageviet.vn"
+            }
+        }
+    },
+    "footer": {
+        "copyright": "© {{year}} Garage Việt. Tất cả quyền được bảo lưu."
+    }
+}

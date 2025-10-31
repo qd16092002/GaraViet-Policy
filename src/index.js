@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import VN from "antd/locale/vi_VN";
 import { ConfigProvider } from "antd";
 import { BrowserRouter } from "react-router-dom";
+import "./i18n/config";
 import "./assets/css/index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

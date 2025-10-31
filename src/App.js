@@ -2,9 +2,12 @@ import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import OperationPolicy from "./pages/OperationPolicy";
 import { Tabs } from "antd";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./App.scss";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -32,9 +35,12 @@ const App = () => {
                     centered
                     className="policy-tabs"
                 >
-                    <Tabs.TabPane tab="Chính sách bảo mật" key="privacy" />
-                    <Tabs.TabPane tab="Quy chế hoạt động" key="operation" />
+                    <Tabs.TabPane tab={t("header.privacyPolicy")} key="privacy" />
+                    <Tabs.TabPane tab={t("header.operationPolicy")} key="operation" />
                 </Tabs>
+                <div className="language-switcher-container">
+                    <LanguageSwitcher />
+                </div>
             </div>
             <Routes>
                 <Route path="/garageviet-privacy-policy" element={<PrivacyPolicy />} />

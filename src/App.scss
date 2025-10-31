@@ -12,6 +12,7 @@
     border-bottom: 1px solid #f0f0f0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     height: 46px; // Base height for tabs
+    position: relative;
 
     .policy-tabs {
       max-width: 800px;
@@ -37,6 +38,13 @@
           background: #1677ff;
         }
       }
+    }
+
+    .language-switcher-container {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
