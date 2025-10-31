@@ -51,7 +51,7 @@ jobs:
           password: ${{ secrets.PASS_WORD }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd garageviet-policy
+            cd gara-viet
             echo "🔄 Force pulling latest policy website image..."
             docker pull quangdao9a2/garageviet-policy:latest --quiet
             echo "🛑 Stopping current policy website containers..."
