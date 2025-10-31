@@ -8,8 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies (including devDependencies for build)
-# Use npm install instead of npm ci to handle lock file issues
-RUN npm install
+# Use --legacy-peer-deps to resolve TypeScript version conflicts between react-scripts and i18next
+RUN npm install --legacy-peer-deps
 
 # Copy source code
 COPY . .
