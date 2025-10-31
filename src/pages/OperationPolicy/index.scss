@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.privacy-policy-layout {
+.operation-policy-layout {
   width: 100%;
   max-width: 100vw;
   height: 100%;
@@ -196,8 +196,6 @@ html {
       writing-mode: horizontal-tb !important;
       text-orientation: mixed !important;
       direction: ltr !important;
-      
- 
 
       * {
         writing-mode: horizontal-tb !important;
@@ -378,7 +376,7 @@ html {
 
 // Responsive
 @media (max-width: 1200px) {
-  .privacy-policy-layout {
+  .operation-policy-layout {
     .policy-header .header-content {
       padding: 0 32px;
     }
@@ -392,7 +390,7 @@ html {
 }
 
 @media (max-width: 992px) {
-  .privacy-policy-layout {
+  .operation-policy-layout {
     .policy-header {
       height: auto;
       min-height: 120px;
@@ -426,7 +424,7 @@ html {
       }
 
       .policy-content {
-        padding: 32px 0px 32px 24px;
+        padding: 32px 24px;
         width: 100%;
 
         @media (max-width: 992px) {
@@ -469,7 +467,7 @@ html {
 }
 
 @media (max-width: 576px) {
-  .privacy-policy-layout {
+  .operation-policy-layout {
     .policy-header {
       min-height: 150px;
       padding: 12px 0;
@@ -542,3 +540,4 @@ html {
     }
   }
 }
+
