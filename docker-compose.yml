@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  garageviet-policy:
+    image: quangdao9a2/garageviet-policy:latest
+    container_name: garageviet-policy
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    networks:
+      - garage-network
+
+networks:
+  garage-network:
+    driver: bridge
+
