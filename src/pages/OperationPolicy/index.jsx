@@ -7,14 +7,12 @@ import {
     ShopOutlined,
     ShoppingCartOutlined,
     DollarOutlined,
-    SafetyOutlined,
     UserOutlined,
     InfoCircleOutlined,
     MailOutlined,
     CloseCircleOutlined,
     CheckCircleOutlined,
     WarningOutlined,
-    GlobalOutlined,
 } from "@ant-design/icons";
 import "./index.scss";
 
@@ -23,7 +21,7 @@ const { Sider, Content } = Layout;
 const { Link } = Anchor;
 
 const OperationPolicy = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const [activeSection, setActiveSection] = useState("intro");
 
     const sections = [
@@ -125,7 +123,7 @@ const OperationPolicy = () => {
                     </div>
                     <div className="header-meta">
                         <Text type="secondary" className="last-updated-header">
-                            {t("updateTime", { date: new Date().toLocaleDateString(i18n.language === "vi" ? "vi-VN" : "en-US") })}
+                            {t("updateTime", { date: "1/11/2025" })}
                         </Text>
                     </div>
                 </div>

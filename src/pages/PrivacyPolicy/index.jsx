@@ -19,7 +19,7 @@ const { Sider, Content } = Layout;
 const { Link } = Anchor;
 
 const PrivacyPolicy = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState("intro");
 
   const sections = [
@@ -98,7 +98,7 @@ const PrivacyPolicy = () => {
           </div>
           <div className="header-meta">
             <Text type="secondary" className="last-updated-header">
-              {t("updateTime", { date: new Date().toLocaleDateString(i18n.language === "vi" ? "vi-VN" : "en-US") })}
+              {t("updateTime", { date: "1/11/2025" })}
             </Text>
           </div>
         </div>
