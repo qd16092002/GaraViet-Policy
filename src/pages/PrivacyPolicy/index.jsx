@@ -25,14 +25,24 @@ const PrivacyPolicy = () => {
   const sections = [
     { id: "intro", title: t("privacyPolicy.nav.intro"), icon: <FileTextOutlined /> },
     {
+      id: "scope-and-definitions",
+      title: t("privacyPolicy.nav.scopeAndDefinitions"),
+      icon: <InfoCircleOutlined />,
+    },
+    {
       id: "data-collection",
       title: t("privacyPolicy.nav.dataCollection"),
       icon: <UserOutlined />,
     },
     {
-      id: "data-scope",
-      title: t("privacyPolicy.nav.dataScope"),
+      id: "data-types",
+      title: t("privacyPolicy.nav.dataTypes"),
       icon: <GlobalOutlined />,
+    },
+    {
+      id: "purpose-and-legal",
+      title: t("privacyPolicy.nav.purposeAndLegal"),
+      icon: <FileTextOutlined />,
     },
     {
       id: "data-sharing",
@@ -45,11 +55,6 @@ const PrivacyPolicy = () => {
       icon: <LockOutlined />,
     },
     { id: "rights", title: t("privacyPolicy.nav.rights"), icon: <KeyOutlined /> },
-    {
-      id: "cookies",
-      title: t("privacyPolicy.nav.cookies"),
-      icon: <InfoCircleOutlined />,
-    },
     {
       id: "children",
       title: t("privacyPolicy.nav.children"),
@@ -98,7 +103,7 @@ const PrivacyPolicy = () => {
           </div>
           <div className="header-meta">
             <Text type="secondary" className="last-updated-header">
-              {t("updateTime", { date: "1/11/2025" })}
+              {t("updateTime", { date: "6/11/2025" })}
             </Text>
           </div>
         </div>
@@ -162,6 +167,22 @@ const PrivacyPolicy = () => {
               </Paragraph>
             </section>
 
+            {/* Phạm vi áp dụng và định nghĩa */}
+            <section id="scope-and-definitions" className="policy-section">
+              <div className="section-header">
+                <InfoCircleOutlined className="section-icon" />
+                <Title level={2} className="section-title">
+                  {t("privacyPolicy.content.scopeAndDefinitions.title")}
+                </Title>
+              </div>
+              <Paragraph>
+                <strong>{t("privacyPolicy.content.scopeAndDefinitions.scopeTitle")}</strong> {t("privacyPolicy.content.scopeAndDefinitions.scope")}
+              </Paragraph>
+              <Paragraph>
+                <strong>{t("privacyPolicy.content.scopeAndDefinitions.definitionTitle")}</strong> {t("privacyPolicy.content.scopeAndDefinitions.definition")}
+              </Paragraph>
+            </section>
+
             {/* Khi nào Garage Việt thu thập dữ liệu cá nhân */}
             <section id="data-collection" className="policy-section">
               <div className="section-header">
@@ -182,51 +203,75 @@ const PrivacyPolicy = () => {
               </Paragraph>
             </section>
 
-            {/* Phạm vi và mục đích thu thập thông tin */}
-            <section id="data-scope" className="policy-section">
+            {/* Loại thông tin chúng tôi thu thập */}
+            <section id="data-types" className="policy-section">
               <div className="section-header">
                 <GlobalOutlined className="section-icon" />
                 <Title level={2} className="section-title">
-                  {t("privacyPolicy.content.dataScope.title")}
+                  {t("privacyPolicy.content.dataTypes.title")}
                 </Title>
               </div>
 
-              <Title level={4}>{t("privacyPolicy.content.dataScope.scopeTitle")}</Title>
+              <Title level={4}>{t("privacyPolicy.content.dataTypes.forCustomerTitle")}</Title>
               <Paragraph>
-                <strong>{t("privacyPolicy.content.dataScope.forCustomer")}</strong>
+                {t("privacyPolicy.content.dataTypes.forCustomer")}
               </Paragraph>
               <Paragraph>
-                {t("privacyPolicy.content.dataScope.customerInfo")}
-              </Paragraph>
-
-              <Paragraph>
-                <strong>{t("privacyPolicy.content.dataScope.forGarage")}</strong>
+                {t("privacyPolicy.content.dataTypes.customerInfo")}
               </Paragraph>
               <Paragraph>
-                {t("privacyPolicy.content.dataScope.garageInfo")}
-              </Paragraph>
-
-              <Paragraph>
-                <strong>{t("privacyPolicy.content.dataScope.technicalInfo")}</strong>
+                {t("privacyPolicy.content.dataTypes.customerPayment")}
               </Paragraph>
               <Paragraph>
-                {t("privacyPolicy.content.dataScope.technicalDetails")}
+                {t("privacyPolicy.content.dataTypes.customerLocation")}
               </Paragraph>
 
-              <Title level={4}>{t("privacyPolicy.content.dataScope.purposeTitle")}</Title>
+              <Title level={4}>{t("privacyPolicy.content.dataTypes.forGarageTitle")}</Title>
               <Paragraph>
-                {t("privacyPolicy.content.dataScope.purposeIntro")}
+                {t("privacyPolicy.content.dataTypes.forGarage")}
+              </Paragraph>
+              <Paragraph>
+                {t("privacyPolicy.content.dataTypes.garageInfo")}
+              </Paragraph>
+              <Paragraph>
+                {t("privacyPolicy.content.dataTypes.garagePayment")}
+              </Paragraph>
+
+              <Title level={4}>{t("privacyPolicy.content.dataTypes.technicalTitle")}</Title>
+              <Paragraph>
+                {t("privacyPolicy.content.dataTypes.technicalInfo")}
+              </Paragraph>
+            </section>
+
+            {/* Mục đích và cơ sở pháp lý của việc xử lý dữ liệu */}
+            <section id="purpose-and-legal" className="policy-section">
+              <div className="section-header">
+                <FileTextOutlined className="section-icon" />
+                <Title level={2} className="section-title">
+                  {t("privacyPolicy.content.purposeAndLegal.title")}
+                </Title>
+              </div>
+              <Paragraph>
+                {t("privacyPolicy.content.purposeAndLegal.intro")}
               </Paragraph>
               <Paragraph>
                 <ul>
-                  {t("privacyPolicy.content.dataScope.purposeItems", { returnObjects: true }).map((item, index) => (
+                  {t("privacyPolicy.content.purposeAndLegal.purposeItems", { returnObjects: true }).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </Paragraph>
+              <Title level={4}>{t("privacyPolicy.content.purposeAndLegal.legalBasisTitle")}</Title>
+              <Paragraph>
+                <ul>
+                  {t("privacyPolicy.content.purposeAndLegal.legalBasisItems", { returnObjects: true }).map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
                 </ul>
               </Paragraph>
             </section>
 
-            {/* Đối tượng được tiếp cận thông tin */}
+            {/* Chia sẻ thông tin với bên thứ ba */}
             <section id="data-sharing" className="policy-section">
               <div className="section-header">
                 <SecurityScanOutlined className="section-icon" />
@@ -238,11 +283,40 @@ const PrivacyPolicy = () => {
                 {t("privacyPolicy.content.dataSharing.intro")}
               </Paragraph>
               <Paragraph>
+                {t("privacyPolicy.content.dataSharing.intro2")}
+              </Paragraph>
+              <Paragraph>
                 <ul>
-                  {t("privacyPolicy.content.dataSharing.items", { returnObjects: true }).map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
+                  {t("privacyPolicy.content.dataSharing.items", { returnObjects: true }).map((item, index, items) => {
+                    // Nếu item là "Với đối tác cung cấp dịch vụ như:", hiển thị với danh sách con
+                    if (item === "Với đối tác cung cấp dịch vụ như:") {
+                      return (
+                        <li key={index}>
+                          {item}
+                          <ul>
+                            {items.slice(index + 1, index + 4).map((subItem, subIndex) => (
+                              <li key={`${index}-${subIndex}`}>{subItem}</li>
+                            ))}
+                          </ul>
+                        </li>
+                      );
+                    }
+                    // Bỏ qua 3 items sau "Với đối tác cung cấp dịch vụ như:" vì đã hiển thị trong danh sách con
+                    if (index > 0 && items[index - 1] === "Với đối tác cung cấp dịch vụ như:") {
+                      return null;
+                    }
+                    if (index > 1 && items[index - 2] === "Với đối tác cung cấp dịch vụ như:") {
+                      return null;
+                    }
+                    if (index > 2 && items[index - 3] === "Với đối tác cung cấp dịch vụ như:") {
+                      return null;
+                    }
+                    return <li key={index}>{item}</li>;
+                  })}
                 </ul>
+              </Paragraph>
+              <Paragraph>
+                {t("privacyPolicy.content.dataSharing.p")}
               </Paragraph>
             </section>
 
@@ -284,28 +358,12 @@ const PrivacyPolicy = () => {
                   ))}
                 </ul>
               </Paragraph>
-            </section>
-
-            {/* Cookie và dữ liệu định vị */}
-            <section id="cookies" className="policy-section">
-              <div className="section-header">
-                <InfoCircleOutlined className="section-icon" />
-                <Title level={2} className="section-title">
-                  {t("privacyPolicy.content.cookies.title")}
-                </Title>
-              </div>
               <Paragraph>
-                {t("privacyPolicy.content.cookies.intro")}
-              </Paragraph>
-              <Paragraph>
+                {t("privacyPolicy.content.rights.howToTitle")}
                 <ul>
-                  {t("privacyPolicy.content.cookies.items", { returnObjects: true }).map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
+                  <li>{t("privacyPolicy.content.rights.howTo1")}</li>
+                  <li>{t("privacyPolicy.content.rights.howTo2")}</li>
                 </ul>
-              </Paragraph>
-              <Paragraph>
-                {t("privacyPolicy.content.cookies.p")}
               </Paragraph>
             </section>
 
@@ -339,8 +397,30 @@ const PrivacyPolicy = () => {
               <Paragraph>
                 {t("privacyPolicy.content.thirdParty.p2")}
               </Paragraph>
+              <Paragraph>
+                {t("privacyPolicy.content.thirdParty.p3")}
+              </Paragraph>
             </section>
 
+            {/* Chuyển dữ liệu ra nước ngoài (nếu có) */}
+            <section id="data-transfer" className="policy-section">
+              <div className="section-header">
+                <GlobalOutlined className="section-icon" />
+                <Title level={2} className="section-title">
+                  {t("privacyPolicy.content.dataTransfer.title")}
+                </Title>
+              </div>
+              <Paragraph>
+                {t("privacyPolicy.content.dataTransfer.intro")}
+              </Paragraph>
+              <Paragraph>
+                <ul>
+                  {t("privacyPolicy.content.dataTransfer.items", { returnObjects: true }).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </Paragraph>
+            </section>
             {/* Cập nhật Chính sách */}
             <section id="changes" className="policy-section">
               <div className="section-header">
@@ -354,6 +434,9 @@ const PrivacyPolicy = () => {
               </Paragraph>
               <Paragraph>
                 {t("privacyPolicy.content.changes.p2")}
+              </Paragraph>
+              <Paragraph>
+                {t("privacyPolicy.content.changes.p3")}
               </Paragraph>
             </section>
 

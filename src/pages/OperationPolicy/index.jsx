@@ -123,7 +123,7 @@ const OperationPolicy = () => {
                     </div>
                     <div className="header-meta">
                         <Text type="secondary" className="last-updated-header">
-                            {t("updateTime", { date: "1/11/2025" })}
+                            {t("updateTime", { date: "6/11/2025" })}
                         </Text>
                     </div>
                 </div>

@@ -16,50 +16,71 @@
         "subtitle": "Protecting user personal data",
         "sections": {
             "intro": "1. Introduction",
-            "dataCollection": "2. When Garage Vietnam Collects Personal Data",
-            "dataScope": "3. Scope and Purpose of Information Collection",
-            "dataSharing": "4. Who Can Access Information",
-            "security": "5. Security and Information Storage",
-            "rights": "6. User Rights",
-            "cookies": "7. Cookies and Location Data",
-            "children": "8. Protecting Children's Information",
-            "thirdParty": "9. Links to Third Parties",
-            "changes": "10. Policy Updates",
-            "contact": "11. Contact Information"
+            "scopeAndDefinitions": "2. Scope of Application and Definitions",
+            "dataCollection": "3. When We Collect Information",
+            "dataTypes": "4. Types of Information We Collect",
+            "purposeAndLegal": "5. Purpose and Legal Basis for Data Processing",
+            "dataSharing": "6. Sharing Information with Third Parties",
+            "security": "7. Data Security and Storage",
+            "rights": "8. User Rights",
+            "children": "9. Protecting Children's Information",
+            "thirdParty": "10. Links to Third Parties",
+            "dataTransfer": "11. Transferring Data Abroad",
+            "changes": "12. Policy Updates",
+            "contact": "13. Contact Information"
         },
         "nav": {
             "intro": "Introduction",
+            "scopeAndDefinitions": "Scope & Definitions",
             "dataCollection": "Data Collection",
-            "dataScope": "Collection Scope",
-            "dataSharing": "Data Access",
+            "dataTypes": "Information Types",
+            "purposeAndLegal": "Purpose & Legal Basis",
+            "dataSharing": "Data Sharing",
             "security": "Security & Storage",
             "rights": "User Rights",
-            "cookies": "Cookies & Location",
             "children": "Children Protection",
-            "thirdParty": "Third Party",
-            "changes": "Updates",
+            "thirdParty": "Links to Third Parties",
+            "dataTransfer": "Data Transfer",
+            "changes": "Policy Updates",
             "contact": "Contact"
         },
         "content": {
             "intro": {
                 "title": "1. Introduction",
-                "p1": "Welcome to Garage Viet – a platform connecting vehicle owners and auto repair/upgrade garages nationwide, operated by Garage Viet Technology Platform Company Limited.",
-                "p2": "Garage Viet understands that protecting personal data is a critical responsibility and commits to comply with regulations of Decree 13/2023/ND-CP and related legal documents on personal data protection.",
-                "p3": "This Privacy Policy (\"Policy\") is established to help you clearly understand how Garage Viet collects, uses, stores, shares and protects personal information when you use the Garage Viet application and website, as well as your rights related to this information.",
-                "p4": "By accessing, registering or using Garage Viet services, you confirm that you agree with the terms set forth in this Policy. If you do not agree, please stop using the platform or contact us to withdraw consent."
+                "p1": "Welcome to Garage Viet – a platform connecting vehicle owners and auto repair/upgrade garages nationwide, operated by Garage Viet Technology Platform Company Limited (\"we\", \"Garage Viet\").",
+                "p2": "Garage Viet understands that protecting personal data is a critical responsibility. We commit to comply with Decree 13/2023/ND-CP and related Vietnamese legal regulations, as well as international privacy standards.",
+                "p3": "This Policy helps you clearly understand how Garage Viet collects, uses, stores, shares and protects personal information when you use our application or website, along with your rights and choices.",
+                "p4": "By accessing or using Garage Viet services, you confirm that you have read, understood and agreed to the contents of this Policy."
+            },
+            "scopeAndDefinitions": {
+                "title": "2. Scope of Application and Definitions",
+                "scopeTitle": "Scope of Application:",
+                "scope": "This Policy applies to all users, customers, garage partners, technicians and third parties related to the Garage Viet platform.",
+                "definitionTitle": "Personal Information:",
+                "definition": "is information that reflects or can identify an individual's identity (e.g., name, phone number, email, address, license plate, device, etc.)."
             },
             "dataCollection": {
-                "title": "2. When Garage Vietnam Collects Personal Data",
-                "intro": "We may collect your personal data in the following cases:",
+                "title": "3. When We Collect Information",
+                "intro": "Garage Viet may collect personal data in the following cases:",
                 "items": [
-                    "When you register an account or use Garage Viet services;",
-                    "When you fill out forms or submit contact information, request support;",
-                    "When you perform transactions (post requests, quotes, payments, etc.);",
-                    "When you interact with our customer support department;",
-                    "When you connect your Garage Viet account with social networks (Facebook, Google,...);",
-                    "When you respond to surveys, submit reviews or complaints;",
-                    "When you access our application/website (through cookies or other technologies)."
+                    "When you register an account, use the application or website;",
+                    "When you schedule appointments, submit requests, quote, make payments or interact with partners;",
+                    "When you participate in surveys, promotional programs, or service reviews."
                 ]
+            },
+            "dataTypes": {
+                "title": "4. Types of Information We Collect",
+                "forCustomerTitle": "4.1 For Vehicle Owners (Customers):",
+                "forCustomer": "Full name, phone number, email, address;",
+                "customerInfo": "License plate, vehicle type, vehicle photos;",
+                "customerPayment": "Payment information, transaction history;",
+                "customerLocation": "Location data to suggest nearest garages.",
+                "forGarageTitle": "4.2 For Garage (Partners):",
+                "forGarage": "Garage owner name, phone number, email, business license;",
+                "garageInfo": "Facility address, photos, services provided;",
+                "garagePayment": "Bank account number and payment information (if any).",
+                "technicalTitle": "4.3 Technical Information:",
+                "technicalInfo": "Device type, operating system, browser, cookies, location data, browsing history, and usage behavior information."
             },
             "dataScope": {
                 "title": "3. Scope and Purpose of Information Collection",
@@ -82,32 +103,77 @@
                     "Comply with legal obligations and requests from competent state agencies."
                 ]
             },
-            "dataSharing": {
-                "title": "4. Who Can Access Information",
-                "intro": "Garage Viet commits not to share user personal data with third parties for commercial purposes without your consent, except in the following cases:",
-                "items": [
-                    "As required by law or competent state agencies;",
-                    "Authorized internal departments of Garage Viet (technical, customer care, operations,...);",
-                    "Technical support, payment, identity verification partners to serve service provision;",
-                    "When users agree to share information to conduct transactions or related services."
+            "purposeAndLegal": {
+                "title": "5. Purpose and Legal Basis for Data Processing",
+                "intro": "Garage Viet collects and processes personal data for the following legal purposes:",
+                "purposeItems": [
+                    "Provide and operate services – verify identity, process transactions, connect vehicle owners and garages, manage accounts.",
+                    "Improve user experience – analyze data to enhance service quality and technical support.",
+                    "Communication and customer care – send notifications, promotions, support, and respond to requests.",
+                    "Legal compliance – meet government agency requirements, tax obligations, accounting, and data security.",
+                    "Prevent fraud and protect the system."
+                ],
+                "legalBasisTitle": "Legal Basis:",
+                "legalBasisItems": [
+                    "User consent;",
+                    "Contract performance (when you use our services);",
+                    "Legal obligation compliance;",
+                    "Legitimate interests of Garage Viet in operating and improving the platform."
                 ]
             },
+            "dataSharing": {
+                "title": "6. Sharing Information with Third Parties",
+                "intro": "Garage Viet does not sell or rent personal data to any party.",
+                "intro2": "We only share information in the following cases:",
+                "items": [
+                    "With authorized internal departments (technical, customer care, operations);",
+                    "With service providers such as:",
+                    "Payment service providers (e.g., VNPay, MoMo);",
+                    "Cloud storage service providers (e.g., Amazon Web Services);",
+                    "Identity verification partners, or data analysis support;",
+                    "When you agree to share to conduct transactions;",
+                    "When there is a legal request from competent government agencies."
+                ],
+                "p": "All these third parties are required to strictly comply with personal data protection regulations equivalent to Garage Viet's standards."
+            },
             "security": {
-                "title": "5. Security and Information Storage",
-                "p1": "Your personal data is stored on Garage Viet's secure server system and reputable cloud computing service providers.",
-                "p2": "We apply technical measures, encryption, firewalls and strict internal access controls to protect information from loss, unauthorized access or abuse.",
+                "title": "7. Data Security and Storage",
+                "p1": "Personal data is stored on secure servers located in Vietnam or on cloud platforms meeting international security standards (ISO 27001, GDPR).",
+                "p2": "We apply encryption measures, firewalls, access control and strict internal monitoring.",
                 "storageTime": "Storage Duration:",
-                "p3": "Personal data is stored until the user requests deletion or Garage Viet terminates service provision.",
-                "p4": "In case the system is attacked resulting in data loss, Garage Viet will notify competent agencies and users within 72 hours from detection."
+                "p3": "until the user requests deletion, or Garage Viet terminates service provision.",
+                "p4": "When a data breach occurs, Garage Viet will notify users and competent agencies within 72 hours from detection."
             },
             "rights": {
-                "title": "6. User Rights",
-                "intro": "Users have the right to:",
+                "title": "8. User Rights",
+                "intro": "You have the following rights regarding your personal data:",
                 "items": [
-                    "Access, edit, update or delete their personal information;",
-                    "Withdraw consent for personal data processing;",
-                    "Submit requests or complaints about personal information disclosure via email: contact@garageviet.vn;",
-                    "Request Garage Viet to stop processing or sharing personal data in certain cases."
+                    "Access, edit, update or delete personal data;",
+                    "Withdraw consent for data processing;",
+                    "Request a copy of personal data;",
+                    "Complain about privacy violations."
+                ],
+                "howToTitle": "How to Exercise:",
+                "howTo1": "Send a request via email support@garageviet.vn, subject \"Request for Personal Data\".",
+                "howTo2": "Garage Viet will respond within 15 working days from receiving a valid request."
+            },
+            "children": {
+                "title": "9. Protecting Children's Information",
+                "p1": "Garage Viet is not intended for users under 18 years of age.",
+                "p2": "If personal data of a user under 18 is detected, we will delete the data and lock the account within 15 days from confirmation."
+            },
+            "thirdParty": {
+                "title": "10. Links to Third Parties",
+                "p1": "Garage Viet may contain links to third-party websites or services.",
+                "p2": "We are not responsible for the content, privacy policies or cookies of those platforms.",
+                "p3": "Users should carefully review the privacy policies of third parties before providing data."
+            },
+            "dataTransfer": {
+                "title": "11. Transferring Data Abroad (if applicable)",
+                "intro": "If Garage Viet needs to transfer personal data outside Vietnam's territory (e.g., stored on international servers), we will:",
+                "items": [
+                    "Ensure data is protected equivalent to Vietnamese legal regulations;",
+                    "Only transfer data when there is user consent or in accordance with valid legal requirements."
                 ]
             },
             "cookies": {
@@ -120,23 +186,14 @@
                 ],
                 "p": "Users can turn off cookies or share location in device settings. However, this may reduce the quality of service experience."
             },
-            "children": {
-                "title": "8. Protecting Children's Information",
-                "p1": "Garage Viet is not intended for users under 18 years of age.",
-                "p2": "If detected that a user under 18 provides personal data, we will lock the account and delete related data."
-            },
-            "thirdParty": {
-                "title": "9. Links to Third Parties",
-                "p1": "Garage Viet may contain links to third-party websites or services. We are not responsible for the content, privacy policies or data security assurances on those platforms.",
-                "p2": "Users should review third-party privacy policies before providing any information."
-            },
             "changes": {
-                "title": "10. Policy Updates",
+                "title": "12. Policy Updates",
                 "p1": "Garage Viet may update this Policy from time to time to comply with changes in law or platform operations.",
-                "p2": "Any changes will be notified on the Garage Viet website or application. Continued use of the service after changes means you accept the modified policy."
+                "p2": "Any changes will be notified on the Garage Viet application or website.",
+                "p3": "Continued use of the service after changes is understood as your agreement with the updated version."
             },
             "contact": {
-                "title": "11. Contact Information",
+                "title": "13. Contact Information",
                 "company": "Garage Viet Technology Platform Company Limited",
                 "taxCode": "Business Registration Number:",
                 "taxValue": "3002300759",

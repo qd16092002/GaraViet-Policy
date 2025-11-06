@@ -12,54 +12,75 @@
         "step": "Bước"
     },
     "privacyPolicy": {
-        "title": "Chính sách bảo mật",
+        "title": "Chính sách quyền riêng tư",
         "subtitle": "Bảo vệ dữ liệu cá nhân của người dùng",
         "sections": {
             "intro": "1. Giới thiệu",
-            "dataCollection": "2. Khi nào Garage Việt thu thập dữ liệu cá nhân",
-            "dataScope": "3. Phạm vi và mục đích thu thập thông tin",
-            "dataSharing": "4. Đối tượng được tiếp cận thông tin",
-            "security": "5. Bảo mật và lưu trữ thông tin",
-            "rights": "6. Quyền của người dùng",
-            "cookies": "7. Cookie và dữ liệu định vị",
-            "children": "8. Bảo vệ thông tin trẻ em",
-            "thirdParty": "9. Liên kết với bên thứ ba",
-            "changes": "10. Cập nhật Chính sách",
-            "contact": "11. Thông tin liên hệ"
+            "scopeAndDefinitions": "2. Phạm vi áp dụng và định nghĩa",
+            "dataCollection": "3. Khi nào chúng tôi thu thập thông tin",
+            "dataTypes": "4. Loại thông tin chúng tôi thu thập",
+            "purposeAndLegal": "5. Mục đích và cơ sở pháp lý của việc xử lý dữ liệu",
+            "dataSharing": "6. Chia sẻ thông tin với bên thứ ba",
+            "security": "7. Bảo mật và lưu trữ dữ liệu",
+            "rights": "8. Quyền của người dùng",
+            "children": "9. Bảo vệ thông tin trẻ em",
+            "thirdParty": "10. Liên kết đến bên thứ ba",
+            "dataTransfer": "11. Chuyển dữ liệu ra nước ngoài (nếu có)",
+            "changes": "12. Cập nhật chính sách",
+            "contact": "13. Thông tin liên hệ"
         },
         "nav": {
             "intro": "Giới thiệu",
-            "dataCollection": "Thu thập dữ liệu",
-            "dataScope": "Phạm vi thu thập",
-            "dataSharing": "Tiếp cận thông tin",
+            "scopeAndDefinitions": "Phạm vi & Định nghĩa",
+            "dataCollection": "Thu thập thông tin",
+            "dataTypes": "Loại thông tin",
+            "purposeAndLegal": "Mục đích & Cơ sở pháp lý",
+            "dataSharing": "Chia sẻ thông tin",
             "security": "Bảo mật & Lưu trữ",
             "rights": "Quyền người dùng",
-            "cookies": "Cookie & Định vị",
             "children": "Bảo vệ trẻ em",
-            "thirdParty": "Bên thứ ba",
-            "changes": "Cập nhật",
+            "thirdParty": " Liên kết đến bên thứ ba",
+            "dataTransfer": "Chuyển dữ liệu",
+            "changes": "Cập nhật chính sách",  
             "contact": "Liên hệ"
         },
         "content": {
             "intro": {
                 "title": "1. Giới thiệu",
-                "p1": "Chào mừng bạn đến với Garage Việt – nền tảng kết nối giữa chủ xe và garage sửa chữa/nâng cấp ô tô trên toàn quốc, được vận hành bởi Công ty TNHH Nền tảng Công nghệ Garage Việt.",
-                "p2": "Garage Việt hiểu rằng bảo vệ dữ liệu cá nhân là trách nhiệm quan trọng và cam kết tuân thủ quy định của Nghị định 13/2023/NĐ-CP và các văn bản pháp luật liên quan về bảo vệ dữ liệu cá nhân.",
-                "p3": "Chính sách bảo mật này (\"Chính sách\") được thiết lập để giúp bạn hiểu rõ cách Garage Việt thu thập, sử dụng, lưu trữ, chia sẻ và bảo vệ thông tin cá nhân khi bạn sử dụng ứng dụng và website Garage Việt, cũng như quyền của bạn liên quan đến các thông tin này.",
-                "p4": "Bằng việc truy cập, đăng ký hoặc sử dụng dịch vụ của Garage Việt, bạn xác nhận rằng bạn đồng ý với các điều khoản được quy định trong Chính sách này. Nếu bạn không đồng ý, vui lòng ngừng sử dụng nền tảng hoặc liên hệ với chúng tôi để rút lại sự đồng ý."
+                "p1": "Chào mừng bạn đến với Garage Việt – nền tảng kết nối giữa chủ xe và garage sửa chữa/nâng cấp ô tô trên toàn quốc, được vận hành bởi Công ty TNHH Nền tảng Công nghệ Garage Việt (“chúng tôi”, “Garage Việt”).",
+                "p2": "Garage Việt hiểu rằng bảo vệ dữ liệu cá nhân là trách nhiệm quan trọng. Chúng tôi cam kết tuân thủ Nghị định 13/2023/NĐ-CP và các quy định pháp luật Việt Nam có liên quan, cũng như các chuẩn mực quốc tế về quyền riêng tư.",
+                "p3": "Chính sách này giúp bạn hiểu rõ cách Garage Việt thu thập, sử dụng, lưu trữ, chia sẻ và bảo vệ thông tin cá nhân khi bạn sử dụng ứng dụng hoặc website của chúng tôi, cùng với quyền và lựa chọn của bạn.",
+                "p4": "Bằng việc truy cập hoặc sử dụng dịch vụ của Garage Việt, bạn xác nhận rằng bạn đã đọc, hiểu và đồng ý với các nội dung của Chính sách này."
+            },
+            "scopeAndDefinitions": {
+                "title": "2. Phạm vi áp dụng và định nghĩa",
+                "scopeTitle": "Phạm vi áp dụng:",
+                "scope": "Chính sách này áp dụng cho tất cả người dùng, khách hàng, đối tác garage, kỹ thuật viên và bên thứ ba có liên quan đến nền tảng Garage Việt.",
+                "definitionTitle": "Thông tin cá nhân:",
+                "definition": "là thông tin phản ánh danh tính hoặc có thể xác định được danh tính của cá nhân (ví dụ: họ tên, số điện thoại, email, địa chỉ, biển số xe, thiết bị, v.v.)."
             },
             "dataCollection": {
-                "title": "2. Khi nào Garage Việt thu thập dữ liệu cá nhân",
-                "intro": "Chúng tôi có thể thu thập dữ liệu cá nhân của bạn trong các trường hợp sau:",
+                "title": "3. Khi nào chúng tôi thu thập thông tin",
+                "intro": "Garage Việt có thể thu thập dữ liệu cá nhân trong các trường hợp:",
                 "items": [
-                    "Khi bạn đăng ký tài khoản hoặc sử dụng dịch vụ của Garage Việt;",
-                    "Khi bạn điền các biểu mẫu hoặc gửi thông tin liên hệ, yêu cầu hỗ trợ;",
-                    "Khi bạn thực hiện các giao dịch (đăng yêu cầu, báo giá, thanh toán, v.v.);",
-                    "Khi bạn tương tác với bộ phận hỗ trợ khách hàng của chúng tôi;",
-                    "Khi bạn kết nối tài khoản Garage Việt với mạng xã hội (Facebook, Google,…);",
-                    "Khi bạn phản hồi khảo sát, gửi đánh giá hoặc khiếu nại;",
-                    "Khi bạn truy cập ứng dụng/website của chúng tôi (thông qua cookies hoặc các công nghệ khác)."
+                    "Khi bạn đăng ký tài khoản, sử dụng ứng dụng hoặc website;",
+                    "Khi bạn đặt lịch, gửi yêu cầu, báo giá, thanh toán hoặc tương tác với đối tác;",
+                    "Khi bạn tham gia khảo sát, chương trình khuyến mãi, hoặc đánh giá dịch vụ."
                 ]
+            },
+            "dataTypes": {
+                "title": "4. Loại thông tin chúng tôi thu thập",
+                "forCustomerTitle": "4.1 Đối với Chủ xe (Khách hàng):",
+                "forCustomer": "Họ tên, số điện thoại, email, địa chỉ;",
+                "customerInfo": "Biển số xe, loại xe, hình ảnh xe;",
+                "customerPayment": "Thông tin thanh toán, lịch sử giao dịch;",
+                "customerLocation": "Dữ liệu vị trí để gợi ý garage gần nhất.",
+                "forGarageTitle": "4.2 Đối với Garage (Đối tác):",
+                "forGarage": "Tên chủ garage, số điện thoại, email, giấy phép kinh doanh;",
+                "garageInfo": "Địa chỉ cơ sở, hình ảnh, dịch vụ cung cấp;",
+                "garagePayment": "Số tài khoản ngân hàng và thông tin thanh toán (nếu có).",
+                "technicalTitle": "4.3 Thông tin kỹ thuật:",
+                "technicalInfo": "Loại thiết bị, hệ điều hành, trình duyệt, cookie, dữ liệu định vị, lịch sử truy cập, và thông tin hành vi sử dụng."
             },
             "dataScope": {
                 "title": "3. Phạm vi và mục đích thu thập thông tin",
@@ -82,32 +103,77 @@
                     "Tuân thủ nghĩa vụ pháp lý và các yêu cầu của cơ quan Nhà nước có thẩm quyền."
                 ]
             },
-            "dataSharing": {
-                "title": "4. Đối tượng được tiếp cận thông tin",
-                "intro": "Garage Việt cam kết không chia sẻ dữ liệu cá nhân của người dùng cho bên thứ ba vì mục đích thương mại mà không có sự đồng ý của bạn, ngoại trừ các trường hợp sau:",
-                "items": [
-                    "Theo yêu cầu của pháp luật hoặc cơ quan Nhà nước có thẩm quyền;",
-                    "Các bộ phận nội bộ của Garage Việt được ủy quyền (kỹ thuật, chăm sóc khách hàng, vận hành,…);",
-                    "Đối tác hỗ trợ kỹ thuật, thanh toán, xác thực danh tính nhằm phục vụ việc cung cấp dịch vụ;",
-                    "Khi người dùng đồng ý chia sẻ thông tin để thực hiện giao dịch hoặc dịch vụ liên quan."
+            "purposeAndLegal": {
+                "title": "5. Mục đích và cơ sở pháp lý của việc xử lý dữ liệu",
+                "intro": "Garage Việt thu thập và xử lý dữ liệu cá nhân nhằm các mục đích hợp pháp sau:",
+                "purposeItems": [
+                    "Cung cấp và vận hành dịch vụ – xác minh danh tính, xử lý giao dịch, kết nối chủ xe và garage, quản lý tài khoản.",
+                    "Cải thiện trải nghiệm người dùng – phân tích dữ liệu để nâng cao chất lượng dịch vụ và hỗ trợ kỹ thuật.",
+                    "Truyền thông và chăm sóc khách hàng – gửi thông báo, khuyến mãi, hỗ trợ, và phản hồi yêu cầu.",
+                    "Tuân thủ pháp luật – đáp ứng yêu cầu của cơ quan nhà nước, nghĩa vụ thuế, kế toán, và bảo mật dữ liệu.",
+                    "Ngăn ngừa gian lận và bảo vệ hệ thống."
+                ],
+                "legalBasisTitle": "Cơ sở pháp lý:",
+                "legalBasisItems": [
+                    "Sự đồng ý của người dùng;",
+                    "Thực hiện hợp đồng (khi bạn sử dụng dịch vụ của chúng tôi);",
+                    "Tuân thủ nghĩa vụ pháp lý;",
+                    "Lợi ích hợp pháp của Garage Việt trong việc vận hành và cải thiện nền tảng."
                 ]
             },
+            "dataSharing": {
+                "title": "6. Chia sẻ thông tin với bên thứ ba",
+                "intro": "Garage Việt không bán hoặc cho thuê dữ liệu cá nhân cho bất kỳ bên nào.",
+                "intro2": "Chúng tôi chỉ chia sẻ thông tin trong các trường hợp sau:",
+                "items": [
+                    "Với các bộ phận nội bộ được ủy quyền (kỹ thuật, chăm sóc khách hàng, vận hành);",
+                    "Với đối tác cung cấp dịch vụ như:",
+                    "Nhà cung cấp dịch vụ thanh toán (VD: VNPay, MoMo);",
+                    "Nhà cung cấp dịch vụ lưu trữ đám mây (VD: Amazon Web Services);",
+                    "Đối tác xác thực danh tính, hoặc hỗ trợ phân tích dữ liệu;",
+                    "Khi bạn đồng ý chia sẻ để thực hiện giao dịch;",
+                    "Khi có yêu cầu hợp pháp từ cơ quan nhà nước có thẩm quyền."
+                ],
+                "p": "Tất cả các bên thứ ba này được yêu cầu tuân thủ nghiêm ngặt quy định bảo vệ dữ liệu cá nhân tương đương với tiêu chuẩn của Garage Việt."
+            },
             "security": {
-                "title": "5. Bảo mật và lưu trữ thông tin",
-                "p1": "Dữ liệu cá nhân của bạn được lưu trữ trên hệ thống máy chủ bảo mật của Garage Việt và các nhà cung cấp dịch vụ điện toán đám mây uy tín.",
-                "p2": "Chúng tôi áp dụng biện pháp kỹ thuật, mã hóa, tường lửa và kiểm soát truy cập nội bộ nghiêm ngặt để bảo vệ thông tin khỏi mất mát, truy cập trái phép hoặc lạm dụng.",
+                "title": "7. Bảo mật và lưu trữ dữ liệu",
+                "p1": "Dữ liệu cá nhân được lưu trữ trên máy chủ bảo mật đặt tại Việt Nam hoặc trên nền tảng đám mây đạt chuẩn bảo mật quốc tế (ISO 27001, GDPR).",
+                "p2": "Chúng tôi áp dụng biện pháp mã hóa, tường lửa, kiểm soát truy cập và giám sát nội bộ nghiêm ngặt.",
                 "storageTime": "Thời gian lưu trữ:",
-                "p3": "Dữ liệu cá nhân được lưu trữ cho đến khi người dùng yêu cầu xóa hoặc Garage Việt chấm dứt cung cấp dịch vụ.",
-                "p4": "Trong trường hợp hệ thống bị tấn công dẫn đến mất dữ liệu, Garage Việt sẽ thông báo cho cơ quan chức năng và người dùng trong vòng 72 giờ kể từ khi phát hiện."
+                "p3": "đến khi người dùng yêu cầu xóa, hoặc Garage Việt chấm dứt cung cấp dịch vụ.",
+                "p4": "Khi xảy ra sự cố rò rỉ dữ liệu, Garage Việt sẽ thông báo cho người dùng và cơ quan chức năng trong vòng 72 giờ kể từ khi phát hiện."
             },
             "rights": {
-                "title": "6. Quyền của người dùng",
-                "intro": "Người dùng có quyền:",
+                "title": "8. Quyền của người dùng",
+                "intro": "Bạn có các quyền sau đối với dữ liệu cá nhân của mình:",
                 "items": [
-                    "Truy cập, chỉnh sửa, cập nhật hoặc xóa thông tin cá nhân của mình;",
-                    "Rút lại sự đồng ý cho việc xử lý dữ liệu cá nhân;",
-                    "Gửi yêu cầu hoặc khiếu nại về việc lộ thông tin cá nhân qua email: contact@garageviet.vn;",
-                    "Đề nghị Garage Việt ngừng xử lý hoặc chia sẻ dữ liệu cá nhân trong các trường hợp nhất định."
+                    "Truy cập, chỉnh sửa, cập nhật hoặc xóa dữ liệu cá nhân;",
+                    "Rút lại sự đồng ý cho việc xử lý dữ liệu;",
+                    "Yêu cầu cung cấp bản sao dữ liệu cá nhân;",
+                    "Khiếu nại về việc vi phạm quyền riêng tư."
+                ],
+                "howToTitle": "Cách thực hiện:",
+                "howTo1": "Gửi yêu cầu qua email support@garageviet.vn, tiêu đề \"Yêu cầu về dữ liệu cá nhân\".",
+                "howTo2": "Garage Việt sẽ phản hồi trong 15 ngày làm việc kể từ khi nhận được yêu cầu hợp lệ."
+            },
+            "children": {
+                "title": "9. Bảo vệ thông tin trẻ em",
+                "p1": "Garage Việt không hướng đến người dùng dưới 18 tuổi.",
+                "p2": "Nếu phát hiện dữ liệu cá nhân của người dưới 18 tuổi, chúng tôi sẽ xóa dữ liệu và khóa tài khoản trong vòng 15 ngày kể từ khi xác nhận."
+            },
+            "thirdParty": {
+                "title": "10. Liên kết đến bên thứ ba",
+                "p1": "Garage Việt có thể chứa liên kết đến các website hoặc dịch vụ của bên thứ ba.",
+                "p2": "Chúng tôi không chịu trách nhiệm về nội dung, chính sách bảo mật hoặc cookie của các nền tảng đó.",
+                "p3": "Người dùng nên xem kỹ chính sách quyền riêng tư của bên thứ ba trước khi cung cấp dữ liệu."
+            },
+            "dataTransfer": {
+                "title": "11. Chuyển dữ liệu ra nước ngoài (nếu có)",
+                "intro": "Nếu Garage Việt cần chuyển dữ liệu cá nhân ra ngoài lãnh thổ Việt Nam (ví dụ: lưu trữ trên máy chủ quốc tế), chúng tôi sẽ:",
+                "items": [
+                    "Đảm bảo dữ liệu được bảo vệ tương đương với quy định pháp luật Việt Nam;",
+                    "Chỉ chuyển dữ liệu khi có đồng ý của người dùng hoặc theo yêu cầu pháp lý hợp lệ."
                 ]
             },
             "cookies": {
@@ -120,23 +186,14 @@
                 ],
                 "p": "Người dùng có thể tắt cookie hoặc chia sẻ vị trí trong phần cài đặt của thiết bị. Tuy nhiên, việc này có thể làm giảm chất lượng trải nghiệm dịch vụ."
             },
-            "children": {
-                "title": "8. Bảo vệ thông tin trẻ em",
-                "p1": "Garage Việt không hướng đến người dùng dưới 18 tuổi.",
-                "p2": "Nếu phát hiện người dùng dưới 18 tuổi cung cấp dữ liệu cá nhân, chúng tôi sẽ khóa tài khoản và xóa dữ liệu liên quan."
-            },
-            "thirdParty": {
-                "title": "9. Liên kết với bên thứ ba",
-                "p1": "Garage Việt có thể chứa liên kết đến website hoặc dịch vụ bên thứ ba. Chúng tôi không chịu trách nhiệm về nội dung, chính sách bảo mật hoặc bảo đảm an toàn dữ liệu trên các nền tảng đó.",
-                "p2": "Người dùng nên xem xét chính sách riêng tư của bên thứ ba trước khi cung cấp bất kỳ thông tin nào."
-            },
             "changes": {
-                "title": "10. Cập nhật Chính sách",
+                "title": "12. Cập nhật chính sách",
                 "p1": "Garage Việt có thể cập nhật Chính sách này theo từng thời kỳ để phù hợp với thay đổi của pháp luật hoặc hoạt động của nền tảng.",
-                "p2": "Bất kỳ thay đổi nào sẽ được thông báo trên website hoặc ứng dụng Garage Việt. Việc tiếp tục sử dụng dịch vụ sau khi có thay đổi đồng nghĩa với việc bạn chấp nhận chính sách sửa đổi."
+                "p2": "Bất kỳ thay đổi nào sẽ được thông báo trên ứng dụng hoặc website của Garage Việt.",
+                "p3": "Việc tiếp tục sử dụng dịch vụ sau khi có thay đổi được hiểu là bạn đã đồng ý với phiên bản cập nhật."
             },
             "contact": {
-                "title": "11. Thông tin liên hệ",
+                "title": "13. Thông tin liên hệ",
                 "company": "Công ty TNHH Nền tảng Công nghệ Garage Việt",
                 "taxCode": "Mã số doanh nghiệp:",
                 "taxValue": "3002300759",
