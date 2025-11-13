@@ -18,7 +18,7 @@ const App = () => {
         } else if (key === "operation") {
             navigate("/garageviet-operation-policy");
         } else if (key === "accountDeletion") {
-            navigate("/garageviet-account-deletion");
+            navigate("/account-deletion");   
         }
     };
 
@@ -26,7 +26,7 @@ const App = () => {
         if (location.pathname === "/garageviet-operation-policy") {
             return "operation";
         }
-        if (location.pathname === "/garageviet-account-deletion") {
+        if (location.pathname === "/account-deletion") { 
             return "accountDeletion";
         }
         return "privacy";
