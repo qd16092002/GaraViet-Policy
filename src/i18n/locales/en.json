@@ -1,7 +1,8 @@
 {
     "header": {
         "privacyPolicy": "Privacy Policy",
-        "operationPolicy": "Operation Policy"
+        "operationPolicy": "Operation Policy",
+        "accountDeletion": "Account Deletion"
     },
     "updateTime": "Last updated: {{date}}",
     "common": {
@@ -203,6 +204,82 @@
                 "emailValue": "support@garageviet.vn",
                 "phone": "Phone:",
                 "phoneValue": "0586 028 881"
+            }
+        }
+    },
+    "accountDeletion": {
+        "title": "Delete Your Garage Viet Account",
+        "subtitle": "Respecting your privacy and control over your data",
+        "nav": {
+            "intro": "Overview",
+            "inApp": "Delete in the app",
+            "effects": "After deletion",
+            "email": "Request via email",
+            "timeline": "Processing time",
+            "faq": "FAQ"
+        },
+        "content": {
+            "intro": {
+                "title": "Introduction",
+                "p1": "Garage Viet respects your privacy and your right to control personal data.",
+                "p2": "You can request account deletion at any time by following the steps below."
+            },
+            "inApp": {
+                "title": "How to delete your account directly in the app",
+                "intro": "Follow these steps in the Garage Viet app:",
+                "steps": [
+                    "Open the Garage Viet app.",
+                    "Tap the Account icon.",
+                    "Select Settings.",
+                    "Choose \"Delete account\".",
+                    "Confirm the deletion request."
+                ],
+                "noteTitle": "Note:",
+                "note": "Once confirmed, the deletion request is processed immediately."
+            },
+            "effects": {
+                "title": "What happens when you delete your account",
+                "intro": "After your request is completed:",
+                "items": [
+                    "All personally identifiable information (full name, phone number, email, profile details, etc.) is removed from our systems.",
+                    "Orders, service requests, invoices, transaction history and messages may be retained in anonymized form for transaction tracing, accounting, reconciliation and legal compliance (if required).",
+                    "Once deleted, you cannot log back in or restore your personal data.",
+                    "Garage Viet does not use anonymized records to identify who you are."
+                ]
+            },
+            "email": {
+                "title": "Account deletion support via email",
+                "intro": "If you experience issues deleting in the app, you can send a request via email for support.",
+                "emailLabel": "Support email:",
+                "email": "support@garageviet.vn",
+                "subjectLabel": "Email subject:",
+                "subject": "Request to delete Garage Viet account",
+                "fieldsTitle": "Please include:",
+                "fields": [
+                    "The phone number used to register your account.",
+                    "Reason for deletion (optional)."
+                ]
+            },
+            "timeline": {
+                "title": "Processing time",
+                "items": [
+                    "In-app deletion requests: processed instantly.",
+                    "Email deletion requests: within 48 business hours."
+                ]
+            },
+            "faq": {
+                "title": "Frequently asked questions",
+                "items": [
+                    {
+                        "question": "Can I recover my account after deleting it?",
+                        "answer": "No. Deletion is permanent and cannot be undone."
+                    },
+                    {
+                        "question": "What data does Garage Viet keep after deletion?",
+                        "answer": "We do not retain your personally identifiable information. Some transaction data may remain anonymized for investigation, accounting, fraud prevention and legal compliance."
+                    }
+                ],
+                "contactNote": "Need more help? Contact us via the support email above. Thank you for using Garage Viet!"
             }
         }
     },

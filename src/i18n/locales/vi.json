@@ -1,7 +1,8 @@
 {
     "header": {
         "privacyPolicy": "Chính sách bảo mật",
-        "operationPolicy": "Quy chế hoạt động"
+        "operationPolicy": "Quy chế hoạt động",
+        "accountDeletion": "Xóa tài khoản"
     },
     "updateTime": "Cập nhật lần cuối: {{date}}",
     "common": {
@@ -203,6 +204,82 @@
                 "emailValue": "support@garageviet.vn",
                 "phone": "Điện thoại:",
                 "phoneValue": "0586 028 881"
+            }
+        }
+    },
+    "accountDeletion": {
+        "title": "Xóa tài khoản Garage Việt",
+        "subtitle": "Tôn trọng quyền riêng tư và quyền kiểm soát dữ liệu của bạn",
+        "nav": {
+            "intro": "Tổng quan",
+            "inApp": "Xóa trong ứng dụng",
+            "effects": "Khi xóa tài khoản",
+            "email": "Yêu cầu qua email",
+            "timeline": "Thời gian xử lý",
+            "faq": "Câu hỏi thường gặp"
+        },
+        "content": {
+            "intro": {
+                "title": "Giới thiệu",
+                "p1": "Garage Việt tôn trọng quyền riêng tư và quyền kiểm soát dữ liệu cá nhân của bạn.",
+                "p2": "Bạn có thể yêu cầu xóa tài khoản bất kỳ lúc nào theo hướng dẫn bên dưới."
+            },
+            "inApp": {
+                "title": "Cách xóa tài khoản trực tiếp trong ứng dụng",
+                "intro": "Thực hiện theo các bước sau trong ứng dụng Garage Việt:",
+                "steps": [
+                    "Mở ứng dụng Garage Việt.",
+                    "Chọn biểu tượng Tài khoản.",
+                    "Chọn mục Cài đặt.",
+                    "Nhấn \"Xóa tài khoản\".",
+                    "Xác nhận yêu cầu xóa."
+                ],
+                "noteTitle": "Lưu ý:",
+                "note": "Sau khi xác nhận, yêu cầu xóa sẽ được xử lý ngay lập tức."
+            },
+            "effects": {
+                "title": "Điều gì xảy ra khi bạn xóa tài khoản",
+                "intro": "Khi yêu cầu xóa được hoàn tất:",
+                "items": [
+                    "Tất cả thông tin cá nhân định danh của bạn (họ tên, số điện thoại, email, ảnh đại diện, thông tin hồ sơ…) sẽ bị xóa khỏi hệ thống.",
+                    "Các đơn hàng, yêu cầu dịch vụ, hóa đơn, lịch sử giao dịch và tin nhắn vẫn có thể được lưu ở dạng đã ẩn danh để phục vụ tra soát, kế toán, đối soát với gara và tuân thủ quy định pháp luật (nếu có).",
+                    "Sau khi tài khoản bị xóa, bạn sẽ không thể đăng nhập lại hoặc khôi phục dữ liệu cá nhân.",
+                    "Garage Việt không sử dụng các bản ghi đã ẩn danh để nhận diện bạn là ai."
+                ]
+            },
+            "email": {
+                "title": "Hỗ trợ xóa tài khoản qua email",
+                "intro": "Nếu bạn gặp sự cố khi thao tác trong ứng dụng, hãy gửi yêu cầu xóa tài khoản qua email để được hỗ trợ.",
+                "emailLabel": "Email hỗ trợ:",
+                "email": "support@garageviet.vn",
+                "subjectLabel": "Tiêu đề email:",
+                "subject": "Yêu cầu xóa tài khoản Garage Việt",
+                "fieldsTitle": "Vui lòng cung cấp:",
+                "fields": [
+                    "Số điện thoại dùng để đăng ký tài khoản.",
+                    "Lý do yêu cầu xóa (không bắt buộc)."
+                ]
+            },
+            "timeline": {
+                "title": "Thời gian xử lý",
+                "items": [
+                    "Yêu cầu xóa trong ứng dụng: xử lý ngay lập tức.",
+                    "Yêu cầu xóa qua email: trong vòng 48 giờ làm việc."
+                ]
+            },
+            "faq": {
+                "title": "Câu hỏi thường gặp",
+                "items": [
+                    {
+                        "question": "Tôi có thể khôi phục tài khoản sau khi xóa không?",
+                        "answer": "Không. Việc xóa là vĩnh viễn và không thể khôi phục."
+                    },
+                    {
+                        "question": "Sau khi xóa, Garage Việt còn giữ dữ liệu nào của tôi không?",
+                        "answer": "Chúng tôi không giữ lại dữ liệu cá nhân định danh của bạn. Một số dữ liệu giao dịch có thể được lưu ở dạng ẩn danh để phục vụ tra soát, kế toán, phòng chống gian lận và tuân thủ quy định pháp luật."
+                    }
+                ],
+                "contactNote": "Nếu bạn cần hỗ trợ thêm, vui lòng liên hệ qua email hỗ trợ ở trên. Cảm ơn bạn đã sử dụng Garage Việt!"
             }
         }
     },
