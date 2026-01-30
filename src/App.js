@@ -2,6 +2,7 @@ import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import OperationPolicy from "./pages/OperationPolicy";
 import AccountDeletionPage from "./pages/AccountDeletionPage";
+import LandingPage from "./pages/LandingPage";
 import { Tabs } from "antd";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./App.scss";
@@ -32,28 +33,32 @@ const App = () => {
         return "privacy";
     };
 
+    const isLandingPage = location.pathname === "/";
+
     return (
-        <div className="app">
-            <div className="policy-tabs-container">
-                <Tabs
-                    activeKey={getActiveTab()}
-                    onChange={handleTabChange}
-                    centered
-                    className="policy-tabs"
-                >
-                    <Tabs.TabPane tab={t("header.privacyPolicy")} key="privacy" />
-                    <Tabs.TabPane tab={t("header.operationPolicy")} key="operation" />
-                    <Tabs.TabPane tab={t("header.accountDeletion")} key="accountDeletion" />
-                </Tabs>
-                <div className="language-switcher-container">
-                    <LanguageSwitcher />
+        <div className={`app ${isLandingPage ? "landing-page-active" : ""}`}>
+            {!isLandingPage && (
+                <div className="policy-tabs-container">
+                    <Tabs
+                        activeKey={getActiveTab()}
+                        onChange={handleTabChange}
+                        centered
+                        className="policy-tabs"
+                    >
+                        <Tabs.TabPane tab={t("header.privacyPolicy")} key="privacy" />
+                        <Tabs.TabPane tab={t("header.operationPolicy")} key="operation" />
+                        <Tabs.TabPane tab={t("header.accountDeletion")} key="accountDeletion" />
+                    </Tabs>
+                    <div className="language-switcher-container">
+                        <LanguageSwitcher />
+                    </div>
                 </div>
-            </div>
+            )}
             <Routes>
                 <Route path="/garageviet-privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/garageviet-operation-policy" element={<OperationPolicy />} />
                 <Route path="/account-deletion" element={<AccountDeletionPage />} />
-                <Route path="/" element={<PrivacyPolicy />} />
+                <Route path="/" element={<LandingPage />} />
             </Routes>
         </div>
     );

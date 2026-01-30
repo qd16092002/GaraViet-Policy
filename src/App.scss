@@ -60,7 +60,14 @@
   // Routes container
   > div:last-child {
     flex: 1;
-    overflow: hidden;
+    overflow: auto;
+  }
+
+  // When landing page is shown, allow full height
+  &.landing-page-active {
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
   }
 }
 
