@@ -2,3 +2,5 @@
 User-agent: *
 Allow: /
 
+# Sitemap (đổi domain nếu khác)
+Sitemap: https://garageviet.vn/sitemap.xml

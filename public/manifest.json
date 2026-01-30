@@ -1,15 +1,26 @@
 {
-    "short_name": "Garaviet Policy",
-    "name": "Garaviet Privacy Policy",
+    "short_name": "Garage Việt",
+    "name": "Garage Việt - Ứng dụng tìm garage độ xe, nâng cấp xe",
+    "description": "Kết nối chủ xe với garage độ xe uy tín. Đăng yêu cầu, nhận báo giá, so sánh và chọn garage phù hợp.",
     "icons": [
         {
             "src": "favicon.ico",
             "sizes": "64x64 32x32 24x24 16x16",
             "type": "image/x-icon"
+        },
+        {
+            "src": "logo192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#000000",
+    "theme_color": "#FF8C00",
     "background_color": "#ffffff"
 }
