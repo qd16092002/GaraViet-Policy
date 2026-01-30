@@ -1,9 +1,9 @@
 import React from "react";
+import logoImg from "../../assets/images/logo_chinh.jpg";
 import {
     AppleOutlined,
     AndroidOutlined,
     CheckCircleOutlined,
-    SearchOutlined,
     MessageOutlined,
     RightOutlined,
     SafetyCertificateOutlined,
@@ -14,14 +14,16 @@ import {
     LikeOutlined,
     WalletOutlined,
     FormOutlined,
-FacebookOutlined,
-InstagramOutlined,
+    FacebookOutlined,
+    TikTokOutlined,
 } from "@ant-design/icons";
 import "./index.scss";
 
 const APP_LINKS = {
     ios: "https://apps.apple.com/vn/app/garage-việt/id6754981981?l=vi",
     android: "https://play.google.com/store/apps/details?id=com.garageviet.app",
+    facebook: "https://www.facebook.com/garageviet.vn",
+    tiktok: "https://www.tiktok.com/@garageviet.vn",
 };
 
 const LandingPage = () => {
@@ -61,16 +63,20 @@ const LandingPage = () => {
                         <div className="phone-frame">
                             <div className="phone-notch" />
                             <div className="phone-screen">
-                                <div className="phone-status">9:41</div>
-                                <div className="phone-header">
-                                    <div className="phone-avatar">G</div>
-                                    <div>
-                                        <div className="phone-app-name">Garage Việt</div>
-                                        <div className="phone-greeting">Xin chào, Minh!</div>
+                                <div className="phone-header-card">
+                                    <div className="phone-header-row">
+                                        <div className="phone-header-left">
+                                            <img src={logoImg} alt="Garage Việt" className="phone-avatar" />
+                                            <div className="phone-header-text">
+                                                <div className="phone-app-name">Garage Việt</div>
+                                                <div className="phone-greeting">Xin chào, Minh!</div>
+                                            </div>
+                                        </div>
+                                        <div className="phone-status">9:41</div>
                                     </div>
+                                    <span className="phone-input-label">Đăng yêu cầu mới</span>
                                 </div>
                                 <div className="phone-input-wrap">
-                                    <span className="phone-input-label">Đăng yêu cầu mới</span>
                                     <div className="phone-input">Độ đèn LED...</div>
                                 </div>
                                 <div className="phone-quotes-label">Báo giá mới nhất</div>
@@ -101,7 +107,7 @@ const LandingPage = () => {
             </section>
 
             {/* What is Garage Việt Section */}
-            <section className="content-section section-what">
+            <section className="content-section section-what" style={{ maxWidth: "100%" }}>
                 <div className="section-divider"></div>
                 <h2 className="section-title">Garage Việt là gì?</h2>
                 <p className="section-subtitle">
@@ -127,7 +133,7 @@ const LandingPage = () => {
             </section>
 
             {/* Problems Section */}
-            <section className="content-section">
+            <section className="content-section" style={{ maxWidth: "100%" }}>
                 <div className="section-divider"></div>
                 <h2 className="section-title">Vấn đề của chủ xe khi độ – nâng cấp xe</h2>
                 <div className="section-content">
@@ -140,7 +146,7 @@ const LandingPage = () => {
             </section>
 
             {/* Solution Section */}
-            <section className="content-section">
+            <section className="content-section" style={{ maxWidth: "100%" }}>
                 <div className="section-divider"></div>
                 <h2 className="section-title">Garage Việt giải quyết thế nào</h2>
                 <div className="section-content">
@@ -162,7 +168,7 @@ const LandingPage = () => {
             </section>
 
             {/* Benefits Section */}
-            <section className="content-section section-benefits">
+            <section className="content-section section-benefits" style={{ maxWidth: "100%" }}>
                 <div className="section-divider"></div>
                 <h2 className="section-title">Lợi ích khi dùng Garage Việt</h2>
                 <p className="section-subtitle">Trải nghiệm độ xe thông minh, tiết kiệm và an tâm</p>
@@ -191,7 +197,7 @@ const LandingPage = () => {
             </section>
 
             {/* How to Use Section - Cách hoạt động */}
-            <section className="content-section section-how">
+            <section className="content-section section-how" style={{ maxWidth: "100%" }}>
                 <div className="section-divider"></div>
                 <h2 className="section-title">Cách hoạt động</h2>
                 <p className="section-subtitle">Chỉ 3 bước đơn giản để tìm được garage độ xe hoàn hảo</p>
@@ -220,7 +226,7 @@ const LandingPage = () => {
             </section>
 
             {/* Final CTA Section - dark blue */}
-            <section className="cta-final-section">
+            <section className="cta-final-section" style={{ maxWidth: "100%" }}>
                 <div className="cta-final-inner">
                     <h2 className="cta-final-title">Tải Garage Việt</h2>
                     <p className="cta-final-tagline">Độ xe dễ hơn bao giờ hết</p>
@@ -247,16 +253,16 @@ const LandingPage = () => {
             </section>
 
             {/* Footer - dark grey */}
-            <footer className="footer">
+            <footer className="footer" style={{ maxWidth: "100%" }}>
                 <div className="footer-inner">
                     <div className="footer-brand">
-                        <span className="footer-logo">G</span>
+                        <img src={logoImg} alt="Garage Việt" className="footer-logo-img" />
                         <span className="footer-name">Garage Việt</span>
                     </div>
-                    <p className="footer-copy">© 2024 Garage Việt. Tất cả quyền được bảo lưu.</p>
+                    <p className="footer-copy">© 2025 Garage Việt. Tất cả quyền được bảo lưu.</p>
                     <div className="footer-social">
-                        <a href="https://facebook.com" className="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FacebookOutlined /></a>
-                        <a href="https://instagram.com" className="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><InstagramOutlined /></a>
+                        <a href={APP_LINKS.facebook} className="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FacebookOutlined /></a>
+                        <a href={APP_LINKS.tiktok} className="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><TikTokOutlined /></a>
                     </div>
                 </div>
             </footer>
