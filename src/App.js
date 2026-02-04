@@ -16,10 +16,10 @@ const App = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    // Cập nhật canonical URL theo từng trang → Google biết trang chính tắc, hết báo "duplicate"
+    // Canonical: Nginx đã thay __CANONICAL_URL__ trong HTML; JS cập nhật thêm khi client điều hướng (optional)
     useEffect(() => {
         const canonical = document.getElementById("canonical-link");
-        if (canonical) {
+        if (canonical && canonical.href.includes("__CANONICAL_URL__")) {
             const path = location.pathname === "/" ? "" : location.pathname;
             canonical.href = `${BASE_URL}${path}`;
         }
