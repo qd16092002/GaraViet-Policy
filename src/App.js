@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import OperationPolicy from "./pages/OperationPolicy";
@@ -8,10 +9,21 @@ import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./App.scss";
 import { useTranslation } from "react-i18next";
 
+const BASE_URL = "https://garageviet.vn";
+
 const App = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const location = useLocation();
+
+    // Cập nhật canonical URL theo từng trang → Google biết trang chính tắc, hết báo "duplicate"
+    useEffect(() => {
+        const canonical = document.getElementById("canonical-link");
+        if (canonical) {
+            const path = location.pathname === "/" ? "" : location.pathname;
+            canonical.href = `${BASE_URL}${path}`;
+        }
+    }, [location.pathname]);
 
     const handleTabChange = (key) => {
         if (key === "privacy") {
