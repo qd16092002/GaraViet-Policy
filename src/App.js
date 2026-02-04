@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { Routes, Route, useNavigate, useLocation, Link } from "react-router-dom";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import OperationPolicy from "./pages/OperationPolicy";
 import AccountDeletionPage from "./pages/AccountDeletionPage";
@@ -51,6 +51,9 @@ const App = () => {
         <div className={`app ${isLandingPage ? "landing-page-active" : ""}`}>
             {!isLandingPage && (
                 <div className="policy-tabs-container">
+                    <Link to="/" className="policy-back-home">
+                        ← Về trang chủ
+                    </Link>
                     <Tabs
                         activeKey={getActiveTab()}
                         onChange={handleTabChange}

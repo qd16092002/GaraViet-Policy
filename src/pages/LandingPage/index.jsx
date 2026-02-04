@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logoImg from "../../assets/images/logo_chinh.jpg";
 import {
     AppleOutlined,
@@ -29,6 +30,18 @@ const APP_LINKS = {
 const LandingPage = () => {
     return (
         <div className="landing-page">
+            {/* Header: link Chính sách ngay từ đầu trang */}
+            <header className="landing-header">
+                <Link to="/" className="landing-header-logo">
+                    <img src={logoImg} alt="Garage Việt" />
+                    <span>Garage Việt</span>
+                </Link>
+                <nav className="landing-header-links">
+                    <Link to="/garageviet-privacy-policy">Chính sách bảo mật</Link>
+                    <Link to="/garageviet-operation-policy">Quy chế hoạt động</Link>
+                    <Link to="/account-deletion">Xóa tài khoản</Link>
+                </nav>
+            </header>
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="hero-inner">
