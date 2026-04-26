@@ -4,24 +4,10 @@ import logoImg from "../../assets/images/logo_chinh.jpg";
 import {
     AppleOutlined,
     AndroidOutlined,
-    CheckCircleOutlined,
     CloseCircleOutlined,
-    MessageOutlined,
     ArrowRightOutlined,
-    SafetyCertificateOutlined,
-    ThunderboltOutlined,
-    StarFilled,
-    ClockCircleOutlined,
-    BarChartOutlined,
-    LikeOutlined,
-    WalletOutlined,
-    FormOutlined,
     FacebookOutlined,
     TikTokOutlined,
-    BellFilled,
-    TeamOutlined,
-    DollarOutlined,
-    RocketOutlined,
 } from "@ant-design/icons";
 import {
     CountUp,
@@ -29,6 +15,23 @@ import {
     HeroDecor,
     FeaturedCardDecor,
     CtaWavesDecor,
+    BrandMarquee,
+    AuroraMesh,
+    IShield,
+    IBolt,
+    IStar,
+    IStarFill,
+    IClock,
+    IChart,
+    IHeart,
+    IWallet,
+    IEdit,
+    IChat,
+    ICheck,
+    IRocket,
+    IBell,
+    IDollar,
+    ITeam,
 } from "./landing-helpers";
 import "./index.scss";
 
@@ -110,6 +113,8 @@ const LandingPage = () => {
             {/* Hero */}
             <section className="hero-section">
                 <div className="hero-bg" aria-hidden>
+                    <div className="hero-bg-image" />
+                    <div className="hero-bg-overlay" />
                     <span className="hero-bg-blob hero-bg-blob--orange" />
                     <span className="hero-bg-blob hero-bg-blob--blue" />
                     <span className="hero-bg-grid" />
@@ -120,10 +125,14 @@ const LandingPage = () => {
                     <div className="hero-content" data-reveal>
                         <span className="hero-tag">
                             <span className="hero-tag-dot" />
-                            Ứng dụng <strong>#1</strong> kết nối chủ xe & garage độ xe
+                            Ứng dụng <strong>#1</strong> kết nối chủ xe &amp; garage độ xe
                         </span>
                         <h1 className="hero-title">
-                            Tìm <span className="hero-title-accent">garage độ xe uy tín</span> chỉ trong vài phút
+                            <span className="hero-title-line">Tìm garage độ xe</span>
+                            <span className="hero-title-line">
+                                <span className="hero-title-accent">uy tín</span>
+                                <span className="hero-title-italic">chỉ trong vài phút</span>
+                            </span>
                         </h1>
                         <p className="hero-subtitle">
                             Đăng yêu cầu &middot; Nhận nhiều báo giá cạnh tranh &middot; Chọn garage phù hợp –
@@ -158,7 +167,7 @@ const LandingPage = () => {
                             </div>
                             <div className="hero-trust-text">
                                 <div className="hero-trust-stars">
-                                    <StarFilled /><StarFilled /><StarFilled /><StarFilled /><StarFilled />
+                                    <IStarFill /><IStarFill /><IStarFill /><IStarFill /><IStarFill />
                                     <span>4.8/5</span>
                                 </div>
                                 <div className="hero-trust-sub">10,000+ chủ xe đã tin dùng</div>
@@ -215,23 +224,23 @@ const LandingPage = () => {
                                     <div className="phone-quote-name">Garage Pro 1</div>
                                     <div className="phone-quote-desc">Độ đèn LED</div>
                                     <div className="phone-quote-price">2.5tr</div>
-                                    <span className="phone-quote-star"><StarFilled /> 4.8</span>
+                                    <span className="phone-quote-star"><IStarFill /> 4.8</span>
                                 </div>
                                 <div className="phone-quote">
                                     <div className="phone-quote-name">Garage Pro 2</div>
                                     <div className="phone-quote-desc">Độ đèn LED</div>
                                     <div className="phone-quote-price">2.8tr</div>
-                                    <span className="phone-quote-star"><StarFilled /> 4.7</span>
+                                    <span className="phone-quote-star"><IStarFill /> 4.7</span>
                                 </div>
                                 <div className="phone-completed">
-                                    <CheckCircleOutlined /> Đã hoàn thành · Garage đánh giá 5★
+                                    <ICheck /> Đã hoàn thành · Garage đánh giá 5★
                                 </div>
                             </div>
                         </div>
 
                         <div className="phone-notification phone-notification--top">
                             <span className="phone-notification-icon">
-                                <BellFilled />
+                                <IBell />
                             </span>
                             <div>
                                 <div className="phone-notification-title">Báo giá mới!</div>
@@ -241,7 +250,7 @@ const LandingPage = () => {
 
                         <div className="phone-notification phone-notification--bottom">
                             <span className="phone-notification-icon phone-notification-icon--green">
-                                <CheckCircleOutlined />
+                                <ICheck />
                             </span>
                             <div>
                                 <div className="phone-notification-title">Đã xác minh</div>
@@ -250,6 +259,12 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* Brand marquee – trust strip */}
+            <section className="brand-strip" data-reveal>
+                <p className="brand-strip-label">Hỗ trợ tất cả các hãng xe phổ biến tại Việt Nam</p>
+                <BrandMarquee />
             </section>
 
             {/* What is Garage Việt */}
@@ -269,7 +284,7 @@ const LandingPage = () => {
                 <div className="feature-cards">
                     <div className="feature-card" data-reveal>
                         <div className="feature-icon-wrap feature-icon-wrap--orange has-glow">
-                            <SafetyCertificateOutlined className="feature-icon" />
+                            <IShield className="feature-icon" />
                             <span className="icon-ring" aria-hidden />
                         </div>
                         <h3 className="feature-card-title">Uy tín & Tin cậy</h3>
@@ -279,7 +294,7 @@ const LandingPage = () => {
                     </div>
                     <div className="feature-card" data-reveal>
                         <div className="feature-icon-wrap feature-icon-wrap--blue has-glow">
-                            <ThunderboltOutlined className="feature-icon" />
+                            <IBolt className="feature-icon" />
                             <span className="icon-ring" aria-hidden />
                         </div>
                         <h3 className="feature-card-title">Nhanh chóng</h3>
@@ -289,7 +304,7 @@ const LandingPage = () => {
                     </div>
                     <div className="feature-card" data-reveal>
                         <div className="feature-icon-wrap feature-icon-wrap--red has-glow">
-                            <StarFilled className="feature-icon" />
+                            <IStar className="feature-icon" />
                             <span className="icon-ring" aria-hidden />
                         </div>
                         <h3 className="feature-card-title">Minh bạch</h3>
@@ -346,19 +361,19 @@ const LandingPage = () => {
                         </div>
                         <ul className="compare-list">
                             <li>
-                                <CheckCircleOutlined className="compare-icon compare-icon--good" />
+                                <ICheck className="compare-icon compare-icon--good" />
                                 <span>Đăng yêu cầu độ xe hoặc nâng cấp chỉ trong vài phút</span>
                             </li>
                             <li>
-                                <CheckCircleOutlined className="compare-icon compare-icon--good" />
+                                <ICheck className="compare-icon compare-icon--good" />
                                 <span>Nhiều garage gửi báo giá cạnh tranh để bạn so sánh</span>
                             </li>
                             <li>
-                                <CheckCircleOutlined className="compare-icon compare-icon--good" />
+                                <ICheck className="compare-icon compare-icon--good" />
                                 <span>Chọn garage dựa trên giá và đánh giá thực tế từ chủ xe khác</span>
                             </li>
                             <li>
-                                <CheckCircleOutlined className="compare-icon compare-icon--good" />
+                                <ICheck className="compare-icon compare-icon--good" />
                                 <span>Toàn bộ quy trình được minh bạch và lưu lại trên app</span>
                             </li>
                         </ul>
@@ -383,7 +398,7 @@ const LandingPage = () => {
                         <FeaturedCardDecor />
                         <div className="benefit-card-inner">
                             <div className="benefit-icon-wrap benefit-icon-wrap--orange has-glow">
-                                <WalletOutlined />
+                                <IWallet />
                                 <span className="icon-ring" aria-hidden />
                             </div>
                             <h3 className="benefit-card-title">
@@ -394,14 +409,14 @@ const LandingPage = () => {
                                 nơi một giá trên trời.
                             </p>
                             <div className="benefit-card-meta">
-                                <DollarOutlined /> Trung bình tiết kiệm 1.2 triệu / dịch vụ
+                                <IDollar /> Trung bình tiết kiệm 1.2 triệu / dịch vụ
                             </div>
                         </div>
                     </div>
 
                     <div className="benefit-card" data-reveal>
                         <div className="benefit-icon-wrap benefit-icon-wrap--yellow">
-                            <ClockCircleOutlined />
+                            <IClock />
                         </div>
                         <h3 className="benefit-card-title">Tiết kiệm thời gian</h3>
                         <p className="benefit-card-desc">
@@ -411,7 +426,7 @@ const LandingPage = () => {
 
                     <div className="benefit-card" data-reveal>
                         <div className="benefit-icon-wrap benefit-icon-wrap--blue">
-                            <BarChartOutlined />
+                            <IChart />
                         </div>
                         <h3 className="benefit-card-title">So sánh giá minh bạch</h3>
                         <p className="benefit-card-desc">
@@ -421,7 +436,7 @@ const LandingPage = () => {
 
                     <div className="benefit-card" data-reveal>
                         <div className="benefit-icon-wrap benefit-icon-wrap--red">
-                            <LikeOutlined />
+                            <IHeart />
                         </div>
                         <h3 className="benefit-card-title">Đánh giá thật từ cộng đồng</h3>
                         <p className="benefit-card-desc">
@@ -448,7 +463,7 @@ const LandingPage = () => {
                         <div className="step-card-top">
                             <div className="step-number">1<span className="step-ring" aria-hidden /></div>
                             <div className="step-card-icon-wrap">
-                                <FormOutlined />
+                                <IEdit />
                             </div>
                         </div>
                         <h3 className="step-card-title">Đăng yêu cầu độ / nâng cấp xe</h3>
@@ -460,7 +475,7 @@ const LandingPage = () => {
                         <div className="step-card-top">
                             <div className="step-number">2<span className="step-ring" aria-hidden /></div>
                             <div className="step-card-icon-wrap">
-                                <MessageOutlined />
+                                <IChat />
                             </div>
                         </div>
                         <h3 className="step-card-title">Nhận nhiều báo giá từ garage</h3>
@@ -472,7 +487,7 @@ const LandingPage = () => {
                         <div className="step-card-top">
                             <div className="step-number">3<span className="step-ring" aria-hidden /></div>
                             <div className="step-card-icon-wrap">
-                                <CheckCircleOutlined />
+                                <ICheck />
                             </div>
                         </div>
                         <h3 className="step-card-title">So sánh – chọn garage phù hợp</h3>
@@ -486,6 +501,7 @@ const LandingPage = () => {
             {/* Final CTA */}
             <section className="cta-final-section" data-reveal>
                 <div className="cta-final-bg" aria-hidden>
+                    <AuroraMesh />
                     <span className="cta-final-blob cta-final-blob--orange" />
                     <span className="cta-final-blob cta-final-blob--blue" />
                     <span className="cta-final-stars" />
@@ -493,7 +509,7 @@ const LandingPage = () => {
                 </div>
                 <div className="cta-final-inner">
                     <span className="cta-final-eyebrow">
-                        <RocketOutlined /> Sẵn sàng độ xe theo cách thông minh?
+                        <IRocket /> Sẵn sàng độ xe theo cách thông minh?
                     </span>
                     <h2 className="cta-final-title">
                         Tải <span className="cta-final-brand">Garage Việt</span>
@@ -533,11 +549,11 @@ const LandingPage = () => {
                     </div>
 
                     <div className="cta-final-trust">
-                        <span><TeamOutlined /> 10,000+ chủ xe</span>
+                        <span><ITeam /> 10,000+ chủ xe</span>
                         <span className="dot" />
-                        <span><StarFilled /> 4.8 / 5</span>
+                        <span><IStarFill /> 4.8 / 5</span>
                         <span className="dot" />
-                        <span><SafetyCertificateOutlined /> Garage được xác minh</span>
+                        <span><IShield /> Garage được xác minh</span>
                     </div>
                 </div>
             </section>
