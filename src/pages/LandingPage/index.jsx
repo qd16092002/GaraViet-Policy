@@ -19,10 +19,17 @@ import {
     FacebookOutlined,
     TikTokOutlined,
     BellFilled,
-    CarOutlined,
     TeamOutlined,
     DollarOutlined,
+    RocketOutlined,
 } from "@ant-design/icons";
+import {
+    CountUp,
+    SparkleIcon,
+    HeroDecor,
+    FeaturedCardDecor,
+    CtaWavesDecor,
+} from "./landing-helpers";
 import "./index.scss";
 
 const APP_LINKS = {
@@ -106,6 +113,7 @@ const LandingPage = () => {
                     <span className="hero-bg-blob hero-bg-blob--orange" />
                     <span className="hero-bg-blob hero-bg-blob--blue" />
                     <span className="hero-bg-grid" />
+                    <HeroDecor />
                 </div>
 
                 <div className="hero-inner">
@@ -125,7 +133,7 @@ const LandingPage = () => {
                         <div className="cta-buttons">
                             <a
                                 href={APP_LINKS.android}
-                                className="cta-button cta-android"
+                                className="cta-button cta-android has-shimmer"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -133,7 +141,7 @@ const LandingPage = () => {
                             </a>
                             <a
                                 href={APP_LINKS.ios}
-                                className="cta-button cta-ios"
+                                className="cta-button cta-ios has-shimmer"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -159,15 +167,21 @@ const LandingPage = () => {
 
                         <div className="hero-stats">
                             <div className="hero-stat">
-                                <span className="hero-stat-num">500<em>+</em></span>
+                                <span className="hero-stat-num">
+                                    <CountUp to={500} suffix="+" />
+                                </span>
                                 <span className="hero-stat-label">Garage đối tác</span>
                             </div>
                             <div className="hero-stat">
-                                <span className="hero-stat-num">10K<em>+</em></span>
+                                <span className="hero-stat-num">
+                                    <CountUp to={10000} suffix="+" />
+                                </span>
                                 <span className="hero-stat-label">Chủ xe tin dùng</span>
                             </div>
                             <div className="hero-stat">
-                                <span className="hero-stat-num">50K<em>+</em></span>
+                                <span className="hero-stat-num">
+                                    <CountUp to={50000} suffix="+" />
+                                </span>
                                 <span className="hero-stat-label">Báo giá đã gửi</span>
                             </div>
                         </div>
@@ -240,7 +254,10 @@ const LandingPage = () => {
 
             {/* What is Garage Việt */}
             <section className="content-section section-what" data-reveal>
-                <span className="section-eyebrow">Garage Việt là gì?</span>
+                <span className="section-eyebrow">
+                    <SparkleIcon className="section-eyebrow-icon" />
+                    Garage Việt là gì?
+                </span>
                 <h2 className="section-title">
                     Một ứng dụng – <span className="title-accent">mọi giải pháp</span> cho chủ xe
                 </h2>
@@ -251,8 +268,9 @@ const LandingPage = () => {
                 </p>
                 <div className="feature-cards">
                     <div className="feature-card" data-reveal>
-                        <div className="feature-icon-wrap feature-icon-wrap--orange">
+                        <div className="feature-icon-wrap feature-icon-wrap--orange has-glow">
                             <SafetyCertificateOutlined className="feature-icon" />
+                            <span className="icon-ring" aria-hidden />
                         </div>
                         <h3 className="feature-card-title">Uy tín & Tin cậy</h3>
                         <p className="feature-card-desc">
@@ -260,8 +278,9 @@ const LandingPage = () => {
                         </p>
                     </div>
                     <div className="feature-card" data-reveal>
-                        <div className="feature-icon-wrap feature-icon-wrap--blue">
+                        <div className="feature-icon-wrap feature-icon-wrap--blue has-glow">
                             <ThunderboltOutlined className="feature-icon" />
+                            <span className="icon-ring" aria-hidden />
                         </div>
                         <h3 className="feature-card-title">Nhanh chóng</h3>
                         <p className="feature-card-desc">
@@ -269,8 +288,9 @@ const LandingPage = () => {
                         </p>
                     </div>
                     <div className="feature-card" data-reveal>
-                        <div className="feature-icon-wrap feature-icon-wrap--red">
+                        <div className="feature-icon-wrap feature-icon-wrap--red has-glow">
                             <StarFilled className="feature-icon" />
+                            <span className="icon-ring" aria-hidden />
                         </div>
                         <h3 className="feature-card-title">Minh bạch</h3>
                         <p className="feature-card-desc">
@@ -282,7 +302,10 @@ const LandingPage = () => {
 
             {/* Problem vs Solution Compare */}
             <section className="content-section section-compare" data-reveal>
-                <span className="section-eyebrow">Trước &amp; Sau</span>
+                <span className="section-eyebrow">
+                    <SparkleIcon className="section-eyebrow-icon" />
+                    Trước &amp; Sau
+                </span>
                 <h2 className="section-title">
                     Khác biệt khi có <span className="title-accent">Garage Việt</span>
                 </h2>
@@ -345,7 +368,10 @@ const LandingPage = () => {
 
             {/* Benefits – bento layout */}
             <section className="content-section section-benefits" data-reveal>
-                <span className="section-eyebrow">Lợi ích</span>
+                <span className="section-eyebrow">
+                    <SparkleIcon className="section-eyebrow-icon" />
+                    Lợi ích
+                </span>
                 <h2 className="section-title">
                     Vì sao chủ xe <span className="title-accent">chọn Garage Việt</span>?
                 </h2>
@@ -353,16 +379,23 @@ const LandingPage = () => {
 
                 <div className="benefits-bento">
                     <div className="benefit-card benefit-card--featured" data-reveal>
-                        <div className="benefit-icon-wrap benefit-icon-wrap--orange">
-                            <WalletOutlined />
-                        </div>
-                        <h3 className="benefit-card-title">Tiết kiệm chi phí tới 30%</h3>
-                        <p className="benefit-card-desc">
-                            Garage cạnh tranh báo giá để có mức tốt nhất cho bạn. Không còn tình trạng mỗi nơi
-                            một giá trên trời.
-                        </p>
-                        <div className="benefit-card-meta">
-                            <DollarOutlined /> Trung bình tiết kiệm 1.2 triệu / dịch vụ
+                        <span className="benefit-card-conic" aria-hidden />
+                        <FeaturedCardDecor />
+                        <div className="benefit-card-inner">
+                            <div className="benefit-icon-wrap benefit-icon-wrap--orange has-glow">
+                                <WalletOutlined />
+                                <span className="icon-ring" aria-hidden />
+                            </div>
+                            <h3 className="benefit-card-title">
+                                Tiết kiệm chi phí <span className="text-shine">tới 30%</span>
+                            </h3>
+                            <p className="benefit-card-desc">
+                                Garage cạnh tranh báo giá để có mức tốt nhất cho bạn. Không còn tình trạng mỗi
+                                nơi một giá trên trời.
+                            </p>
+                            <div className="benefit-card-meta">
+                                <DollarOutlined /> Trung bình tiết kiệm 1.2 triệu / dịch vụ
+                            </div>
                         </div>
                     </div>
 
@@ -400,7 +433,10 @@ const LandingPage = () => {
 
             {/* How it works – timeline */}
             <section className="content-section section-how" data-reveal>
-                <span className="section-eyebrow">Cách hoạt động</span>
+                <span className="section-eyebrow">
+                    <SparkleIcon className="section-eyebrow-icon" />
+                    Cách hoạt động
+                </span>
                 <h2 className="section-title">
                     Chỉ <span className="title-accent">3 bước đơn giản</span>
                 </h2>
@@ -410,7 +446,7 @@ const LandingPage = () => {
                     <span className="steps-line" aria-hidden />
                     <div className="step-card" data-reveal>
                         <div className="step-card-top">
-                            <div className="step-number">1</div>
+                            <div className="step-number">1<span className="step-ring" aria-hidden /></div>
                             <div className="step-card-icon-wrap">
                                 <FormOutlined />
                             </div>
@@ -422,7 +458,7 @@ const LandingPage = () => {
                     </div>
                     <div className="step-card" data-reveal>
                         <div className="step-card-top">
-                            <div className="step-number">2</div>
+                            <div className="step-number">2<span className="step-ring" aria-hidden /></div>
                             <div className="step-card-icon-wrap">
                                 <MessageOutlined />
                             </div>
@@ -434,7 +470,7 @@ const LandingPage = () => {
                     </div>
                     <div className="step-card" data-reveal>
                         <div className="step-card-top">
-                            <div className="step-number">3</div>
+                            <div className="step-number">3<span className="step-ring" aria-hidden /></div>
                             <div className="step-card-icon-wrap">
                                 <CheckCircleOutlined />
                             </div>
@@ -452,10 +488,12 @@ const LandingPage = () => {
                 <div className="cta-final-bg" aria-hidden>
                     <span className="cta-final-blob cta-final-blob--orange" />
                     <span className="cta-final-blob cta-final-blob--blue" />
+                    <span className="cta-final-stars" />
+                    <CtaWavesDecor />
                 </div>
                 <div className="cta-final-inner">
                     <span className="cta-final-eyebrow">
-                        <CarOutlined /> Sẵn sàng độ xe theo cách thông minh?
+                        <RocketOutlined /> Sẵn sàng độ xe theo cách thông minh?
                     </span>
                     <h2 className="cta-final-title">
                         Tải <span className="cta-final-brand">Garage Việt</span>
@@ -468,7 +506,7 @@ const LandingPage = () => {
                     <div className="cta-store-buttons">
                         <a
                             href={APP_LINKS.android}
-                            className="cta-store-btn cta-store-android"
+                            className="cta-store-btn cta-store-android has-shimmer"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Tải app trên Google Play"
@@ -481,7 +519,7 @@ const LandingPage = () => {
                         </a>
                         <a
                             href={APP_LINKS.ios}
-                            className="cta-store-btn cta-store-ios"
+                            className="cta-store-btn cta-store-ios has-shimmer"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Tải app trên App Store"
