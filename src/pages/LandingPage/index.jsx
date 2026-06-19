@@ -2,36 +2,32 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import logoImg from "../../assets/images/logo_chinh.jpg";
 import {
-    AppleOutlined,
-    AndroidOutlined,
-    CloseCircleOutlined,
-    ArrowRightOutlined,
     FacebookOutlined,
     TikTokOutlined,
 } from "@ant-design/icons";
 import {
     CountUp,
     SparkleIcon,
-    HeroDecor,
-    FeaturedCardDecor,
-    CtaWavesDecor,
     BrandMarquee,
-    AuroraMesh,
     IShield,
     IBolt,
-    IStar,
     IStarFill,
-    IClock,
     IChart,
     IHeart,
-    IWallet,
     IEdit,
     IChat,
     ICheck,
     IRocket,
     IBell,
-    IDollar,
     ITeam,
+    ISearch,
+    ICalendar,
+    IPin,
+    IVerified,
+    IArrowDown,
+    IArrowRight,
+    AppleLogo,
+    GooglePlayLogo,
 } from "./landing-helpers";
 import "./index.scss";
 
@@ -41,6 +37,8 @@ const APP_LINKS = {
     facebook: "https://www.facebook.com/garageviet.vn",
     tiktok: "https://www.tiktok.com/@garageviet.vn",
 };
+
+const SHOT = (n) => `${process.env.PUBLIC_URL || ""}/screenshots/screen-${n}.jpg`;
 
 const useScrollReveal = () => {
     const rootRef = useRef(null);
@@ -69,7 +67,7 @@ const useScrollReveal = () => {
     return rootRef;
 };
 
-const useScrolled = (offset = 12) => {
+const useScrolled = (offset = 8) => {
     const [scrolled, setScrolled] = useState(false);
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > offset);
@@ -80,519 +78,408 @@ const useScrolled = (offset = 12) => {
     return scrolled;
 };
 
+/* ---------- Small building blocks ---------- */
+
+const SectionHeader = ({ eyebrow, title, desc, align = "center" }) => (
+    <div className={`section-head section-head--${align}`} data-reveal>
+        <span className="eyebrow">
+            <SparkleIcon className="eyebrow-icon" />
+            {eyebrow}
+        </span>
+        <h2 className="section-title">{title}</h2>
+        {desc && <p className="section-desc">{desc}</p>}
+    </div>
+);
+
+const Shot = ({ n, alt, className = "" }) => (
+    <div className={`shot ${className}`}>
+        <img src={SHOT(n)} alt={alt} loading="lazy" />
+    </div>
+);
+
+/* ---------- Data ---------- */
+
+const TRUST = [
+    { Icon: ISearch, title: "Garage uy tín gần bạn", desc: "Danh sách xưởng đã xác thực, có đánh giá thật từ cộng đồng." },
+    { Icon: IChart, title: "Báo giá cạnh tranh", desc: "Nhiều garage gửi báo giá để bạn dễ dàng so sánh." },
+    { Icon: ICalendar, title: "Đặt lịch nhanh chóng", desc: "Chốt báo giá tốt nhất và đặt lịch ngay trên ứng dụng." },
+    { Icon: IShield, title: "Minh bạch & tin cậy", desc: "Hồ sơ garage, tiêu chuẩn và đánh giá rõ ràng." },
+];
+
+const FEATURES = [
+    { Icon: IPin, title: "Tìm garage uy tín gần bạn", desc: "Duyệt danh sách gara, xưởng dịch vụ đã được xác thực và đánh giá chất lượng theo vị trí." },
+    { Icon: IChart, title: "Nhận báo giá cạnh tranh", desc: "Gửi yêu cầu nâng cấp – chăm sóc xe và nhận báo giá từ nhiều gara khác nhau để so sánh." },
+    { Icon: ICalendar, title: "Đặt lịch trực tiếp", desc: "Chọn báo giá phù hợp nhất rồi đặt lịch hẹn sửa chữa ngay trên ứng dụng, không cần gọi điện." },
+    { Icon: IHeart, title: "Đánh giá thật từ cộng đồng", desc: "Đọc review thực tế từ những chủ xe khác để đưa ra quyết định tốt nhất." },
+    { Icon: IChat, title: "Chat trực tiếp với garage", desc: "Trao đổi chi tiết dịch vụ và nhận tư vấn tức thì ngay trong app." },
+    { Icon: IBolt, title: "Quản lý lịch sử dịch vụ", desc: "Lưu trữ và theo dõi toàn bộ lịch sử nâng cấp, chăm sóc xe của bạn." },
+];
+
+const SHOWCASE = [
+    {
+        n: 3,
+        tag: "Đơn giản",
+        title: "Nhận nhiều báo giá – so sánh trong tích tắc",
+        desc: "Đăng một yêu cầu, nhận về nhiều báo giá từ các garage khác nhau. Xem giá, đánh giá và khoảng cách rồi nhắn tin hoặc đặt lịch chỉ với một chạm.",
+        points: ["So sánh giá song song nhiều garage", "Xem sao đánh giá & khoảng cách", "Nhắn tin hoặc đặt lịch ngay"],
+    },
+    {
+        n: 2,
+        tag: "Minh bạch",
+        title: "Hồ sơ garage rõ ràng, đã được xác thực",
+        desc: "Mỗi garage có hồ sơ đầy đủ: số đơn hoàn thành, tiêu chuẩn, mức xác thực và các dịch vụ nổi bật — để bạn an tâm trước khi chọn.",
+        points: ["Huy hiệu xác thực & cấp độ uy tín", "Dịch vụ nổi bật và mô tả chi tiết", "Số đơn hoàn thành minh bạch"],
+    },
+    {
+        n: 4,
+        tag: "Nhiều ưu đãi",
+        title: "Voucher giảm giá, đặt cọc & đặt lịch dễ dàng",
+        desc: "Áp dụng mã giảm giá ngay khi đặt lịch, đặt cọc an toàn và xem tổng thanh toán rõ ràng trước khi xác nhận.",
+        points: ["Nhiều mã ưu đãi áp dụng tự động", "Đặt cọc & tính tổng thanh toán minh bạch", "Chọn ngày giờ hẹn linh hoạt"],
+    },
+    {
+        n: 5,
+        tag: "Hiệu quả",
+        title: "Thông báo báo giá tức thì, đánh giá sau dịch vụ",
+        desc: "Nhận thông báo ngay khi có garage báo giá cho yêu cầu của bạn, và để lại đánh giá thật sau khi hoàn thành để giúp cộng đồng.",
+        points: ["Thông báo real-time mọi báo giá mới", "Đánh giá & review minh bạch", "Theo dõi tiến độ mọi yêu cầu"],
+    },
+];
+
+const STEPS = [
+    { Icon: IEdit, n: "01", title: "Đăng yêu cầu", desc: "Mô tả nhu cầu độ / nâng cấp / chăm sóc xe chỉ trong vài phút." },
+    { Icon: IChat, n: "02", title: "Nhận nhiều báo giá", desc: "Các garage uy tín gửi báo giá cạnh tranh để bạn so sánh." },
+    { Icon: ICheck, n: "03", title: "So sánh & đặt lịch", desc: "Chọn garage phù hợp theo giá và đánh giá, rồi đặt lịch ngay." },
+];
+
+const FAQS = [
+    { q: "Garage Việt là gì?", a: "Garage Việt là nền tảng kết nối chủ xe với mạng lưới garage ô tô uy tín trên toàn quốc. Bạn đăng yêu cầu, nhận nhiều báo giá, so sánh và đặt lịch — tất cả trên một ứng dụng." },
+    { q: "Sử dụng ứng dụng có mất phí không?", a: "Tải app và đăng yêu cầu nhận báo giá hoàn toàn miễn phí. Bạn chỉ thanh toán cho dịch vụ với garage mà bạn lựa chọn." },
+    { q: "Làm sao để biết garage có uy tín?", a: "Mỗi garage đều có hồ sơ với huy hiệu xác thực, cấp độ tiêu chuẩn, số đơn hoàn thành và đánh giá thật từ những chủ xe khác." },
+    { q: "Tôi nhận báo giá nhanh như thế nào?", a: "Sau khi đăng yêu cầu, các garage phù hợp có thể gửi báo giá chỉ trong vài phút. Bạn sẽ nhận thông báo tức thì cho mỗi báo giá mới." },
+    { q: "Có áp dụng được mã giảm giá không?", a: "Có. Khi đặt lịch, bạn có thể áp dụng các mã ưu đãi hiện có, đặt cọc an toàn và xem tổng thanh toán minh bạch trước khi xác nhận." },
+    { q: "Ứng dụng hỗ trợ những hãng xe nào?", a: "Garage Việt hỗ trợ hầu hết các hãng xe phổ biến tại Việt Nam như VinFast, Toyota, Honda, Mazda, Ford, Hyundai, Kia và nhiều hãng khác." },
+];
+
+const NAV = [
+    { label: "Tính năng", href: "#features" },
+    { label: "Trải nghiệm", href: "#showcase" },
+    { label: "Cách hoạt động", href: "#how" },
+    { label: "Câu hỏi", href: "#faq" },
+];
+
+const StoreButtons = ({ variant = "solid" }) => (
+    <div className={`store-buttons store-buttons--${variant}`}>
+        <a href={APP_LINKS.ios} className="store-btn store-btn--primary" target="_blank" rel="noopener noreferrer" aria-label="Tải trên App Store">
+            <AppleLogo className="store-btn-glyph" />
+            <span className="store-btn-text">
+                <span className="store-btn-label">Tải về trên</span>
+                <span className="store-btn-name">App Store</span>
+            </span>
+        </a>
+        <a href={APP_LINKS.android} className="store-btn store-btn--ghost" target="_blank" rel="noopener noreferrer" aria-label="Tải trên CH Play">
+            <GooglePlayLogo className="store-btn-glyph store-btn-glyph--play" />
+            <span className="store-btn-text">
+                <span className="store-btn-label">Tải về trên</span>
+                <span className="store-btn-name">CH Play</span>
+            </span>
+        </a>
+    </div>
+);
+
 const LandingPage = () => {
     const rootRef = useScrollReveal();
     const scrolled = useScrolled(8);
 
     return (
-        <div className={`landing-page${scrolled ? " is-scrolled" : ""}`} ref={rootRef}>
-            {/* Header */}
-            <header className="landing-header">
-                <div className="landing-header-inner">
-                    <Link to="/" className="landing-header-logo">
+        <div className={`gv-landing${scrolled ? " is-scrolled" : ""}`} ref={rootRef}>
+            {/* ---------------- Header ---------------- */}
+            <header className="lp-header">
+                <div className="lp-container lp-header-inner">
+                    <Link to="/" className="lp-logo">
                         <img src={logoImg} alt="Garage Việt" />
-                        <span>Garage Việt</span>
+                        <span className="lp-logo-text">
+                            <span className="lp-logo-strong">Garage</span> Việt
+                        </span>
                     </Link>
-                    <nav className="landing-header-links">
-                        <Link to="/garageviet-privacy-policy">Chính sách bảo mật</Link>
-                        <Link to="/garageviet-operation-policy">Quy chế hoạt động</Link>
-                        <Link to="/account-deletion">Xóa tài khoản</Link>
+                    <nav className="lp-nav">
+                        {NAV.map((item) => (
+                            <a key={item.href} href={item.href}>{item.label}</a>
+                        ))}
                     </nav>
-                    <a
-                        href={APP_LINKS.android}
-                        className="landing-header-cta"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Tải app
-                        <ArrowRightOutlined />
+                    <a href={APP_LINKS.ios} className="lp-header-cta" target="_blank" rel="noopener noreferrer">
+                        Tải app <IArrowRight />
                     </a>
                 </div>
             </header>
 
-            {/* Hero */}
-            <section className="hero-section">
-                <div className="hero-bg" aria-hidden>
-                    <div className="hero-bg-image" />
-                    <div className="hero-bg-overlay" />
-                    <span className="hero-bg-blob hero-bg-blob--orange" />
-                    <span className="hero-bg-blob hero-bg-blob--blue" />
-                    <span className="hero-bg-grid" />
-                    <HeroDecor />
-                </div>
-
-                <div className="hero-inner">
-                    <div className="hero-content" data-reveal>
-                        <span className="hero-tag">
-                            <span className="hero-tag-dot" />
-                            Ứng dụng <strong>#1</strong> kết nối chủ xe &amp; garage độ xe
-                        </span>
-                        <h1 className="hero-title">
-                            <span className="hero-title-line">Tìm garage độ xe</span>
-                            <span className="hero-title-line">
-                                <span className="hero-title-accent">uy tín</span>
-                                <span className="hero-title-italic">chỉ trong vài phút</span>
+            <main>
+                {/* ---------------- Hero ---------------- */}
+                <section className="hero">
+                    <div className="hero-glow" aria-hidden />
+                    <div className="hero-grid-bg" aria-hidden />
+                    <div className="lp-container hero-inner">
+                        <div className="hero-copy" data-reveal>
+                            <span className="eyebrow">
+                                <span className="eyebrow-dot" />
+                                Ứng dụng kết nối chủ xe &amp; garage độ xe
                             </span>
-                        </h1>
-                        <p className="hero-subtitle">
-                            Đăng yêu cầu &middot; Nhận nhiều báo giá cạnh tranh &middot; Chọn garage phù hợp –
-                            tất cả ngay trên một ứng dụng.
-                        </p>
-
-                        <div className="cta-buttons">
-                            <a
-                                href={APP_LINKS.android}
-                                className="cta-button cta-android has-shimmer"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <AndroidOutlined /> Tải app Android
-                            </a>
-                            <a
-                                href={APP_LINKS.ios}
-                                className="cta-button cta-ios has-shimmer"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <AppleOutlined /> Tải app iOS
-                            </a>
-                        </div>
-
-                        <div className="hero-trust">
-                            <div className="hero-trust-avatars" aria-hidden>
-                                <span className="ta ta-1">M</span>
-                                <span className="ta ta-2">H</span>
-                                <span className="ta ta-3">T</span>
-                                <span className="ta ta-4">+</span>
-                            </div>
-                            <div className="hero-trust-text">
-                                <div className="hero-trust-stars">
-                                    <IStarFill /><IStarFill /><IStarFill /><IStarFill /><IStarFill />
-                                    <span>4.8/5</span>
-                                </div>
-                                <div className="hero-trust-sub">10,000+ chủ xe đã tin dùng</div>
-                            </div>
-                        </div>
-
-                        <div className="hero-stats">
-                            <div className="hero-stat">
-                                <span className="hero-stat-num">
-                                    <CountUp to={500} suffix="+" />
+                            <h1 className="hero-title">
+                                Tìm garage độ xe uy tín,{" "}
+                                <span className="hero-accent">
+                                    nhận báo giá trong vài phút
+                                    <span className="hero-accent-underline" aria-hidden />
                                 </span>
-                                <span className="hero-stat-label">Garage đối tác</span>
-                            </div>
-                            <div className="hero-stat">
-                                <span className="hero-stat-num">
-                                    <CountUp to={10000} suffix="+" />
-                                </span>
-                                <span className="hero-stat-label">Chủ xe tin dùng</span>
-                            </div>
-                            <div className="hero-stat">
-                                <span className="hero-stat-num">
-                                    <CountUp to={50000} suffix="+" />
-                                </span>
-                                <span className="hero-stat-label">Báo giá đã gửi</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="hero-mockup" data-reveal>
-                        <div className="phone-frame">
-                            <div className="phone-notch" />
-                            <div className="phone-screen">
-                                <div className="phone-header-card">
-                                    <div className="phone-header-row">
-                                        <div className="phone-header-left">
-                                            <img src={logoImg} alt="Garage Việt" className="phone-avatar" />
-                                            <div className="phone-header-text">
-                                                <div className="phone-app-name">Garage Việt</div>
-                                                <div className="phone-greeting">Xin chào, Minh!</div>
-                                            </div>
-                                        </div>
-                                        <div className="phone-status">9:41</div>
-                                    </div>
-                                    <span className="phone-input-label">Đăng yêu cầu mới</span>
-                                </div>
-                                <div className="phone-input-wrap">
-                                    <div className="phone-input">Độ đèn LED...</div>
-                                </div>
-                                <div className="phone-quotes-label">
-                                    Báo giá mới nhất
-                                    <span className="phone-badge-new">NEW</span>
-                                </div>
-                                <div className="phone-quote">
-                                    <div className="phone-quote-name">Garage Pro 1</div>
-                                    <div className="phone-quote-desc">Độ đèn LED</div>
-                                    <div className="phone-quote-price">2.5tr</div>
-                                    <span className="phone-quote-star"><IStarFill /> 4.8</span>
-                                </div>
-                                <div className="phone-quote">
-                                    <div className="phone-quote-name">Garage Pro 2</div>
-                                    <div className="phone-quote-desc">Độ đèn LED</div>
-                                    <div className="phone-quote-price">2.8tr</div>
-                                    <span className="phone-quote-star"><IStarFill /> 4.7</span>
-                                </div>
-                                <div className="phone-completed">
-                                    <ICheck /> Đã hoàn thành · Garage đánh giá 5★
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="phone-notification phone-notification--top">
-                            <span className="phone-notification-icon">
-                                <IBell />
-                            </span>
-                            <div>
-                                <div className="phone-notification-title">Báo giá mới!</div>
-                                <div className="phone-notification-price">2.5 triệu VNĐ</div>
-                            </div>
-                        </div>
-
-                        <div className="phone-notification phone-notification--bottom">
-                            <span className="phone-notification-icon phone-notification-icon--green">
-                                <ICheck />
-                            </span>
-                            <div>
-                                <div className="phone-notification-title">Đã xác minh</div>
-                                <div className="phone-notification-price">Garage uy tín</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Brand marquee – trust strip */}
-            <section className="brand-strip" data-reveal>
-                <p className="brand-strip-label">Hỗ trợ tất cả các hãng xe phổ biến tại Việt Nam</p>
-                <BrandMarquee />
-            </section>
-
-            {/* What is Garage Việt */}
-            <section className="content-section section-what" data-reveal>
-                <span className="section-eyebrow">
-                    <SparkleIcon className="section-eyebrow-icon" />
-                    Garage Việt là gì?
-                </span>
-                <h2 className="section-title">
-                    Một ứng dụng – <span className="title-accent">mọi giải pháp</span> cho chủ xe
-                </h2>
-                <p className="section-subtitle">
-                    Garage Việt là ứng dụng giúp chủ xe dễ dàng tìm garage độ xe, nâng cấp xe phù hợp thông qua hệ thống{" "}
-                    <strong className="highlight-blue">báo giá</strong> và{" "}
-                    <strong className="highlight-blue">đánh giá minh bạch</strong>.
-                </p>
-                <div className="feature-cards">
-                    <div className="feature-card" data-reveal>
-                        <div className="feature-icon-wrap feature-icon-wrap--orange has-glow">
-                            <IShield className="feature-icon" />
-                            <span className="icon-ring" aria-hidden />
-                        </div>
-                        <h3 className="feature-card-title">Uy tín & Tin cậy</h3>
-                        <p className="feature-card-desc">
-                            Tất cả garage đều được xác minh và đánh giá bởi cộng đồng chủ xe trên cả nước
-                        </p>
-                    </div>
-                    <div className="feature-card" data-reveal>
-                        <div className="feature-icon-wrap feature-icon-wrap--blue has-glow">
-                            <IBolt className="feature-icon" />
-                            <span className="icon-ring" aria-hidden />
-                        </div>
-                        <h3 className="feature-card-title">Nhanh chóng</h3>
-                        <p className="feature-card-desc">
-                            Nhận báo giá từ nhiều garage chỉ trong vài phút sau khi đăng yêu cầu
-                        </p>
-                    </div>
-                    <div className="feature-card" data-reveal>
-                        <div className="feature-icon-wrap feature-icon-wrap--red has-glow">
-                            <IStar className="feature-icon" />
-                            <span className="icon-ring" aria-hidden />
-                        </div>
-                        <h3 className="feature-card-title">Minh bạch</h3>
-                        <p className="feature-card-desc">
-                            So sánh giá, xem đánh giá thực tế từ khách hàng trước khi quyết định
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Problem vs Solution Compare */}
-            <section className="content-section section-compare" data-reveal>
-                <span className="section-eyebrow">
-                    <SparkleIcon className="section-eyebrow-icon" />
-                    Trước &amp; Sau
-                </span>
-                <h2 className="section-title">
-                    Khác biệt khi có <span className="title-accent">Garage Việt</span>
-                </h2>
-                <p className="section-subtitle">
-                    Tạm biệt cảnh hỏi giá khắp nơi, chọn nhầm garage. Mọi thứ trở nên dễ dàng và minh bạch hơn.
-                </p>
-
-                <div className="compare-grid">
-                    <div className="compare-card compare-card--bad" data-reveal>
-                        <div className="compare-card-head">
-                            <span className="compare-badge compare-badge--bad">Trước đây</span>
-                            <h3>Khi tự đi tìm garage</h3>
-                        </div>
-                        <ul className="compare-list">
-                            <li>
-                                <CloseCircleOutlined className="compare-icon compare-icon--bad" />
-                                <span>Không biết chi phí độ xe bao nhiêu là hợp lý</span>
-                            </li>
-                            <li>
-                                <CloseCircleOutlined className="compare-icon compare-icon--bad" />
-                                <span>Phải hỏi nhiều garage, mỗi nơi báo giá một kiểu</span>
-                            </li>
-                            <li>
-                                <CloseCircleOutlined className="compare-icon compare-icon--bad" />
-                                <span>Khó đánh giá garage nào uy tín, làm đẹp – làm đúng</span>
-                            </li>
-                            <li>
-                                <CloseCircleOutlined className="compare-icon compare-icon--bad" />
-                                <span>Mất thời gian đi lại, gọi điện hỏi giá khắp nơi</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div className="compare-card compare-card--good" data-reveal>
-                        <div className="compare-card-head">
-                            <span className="compare-badge compare-badge--good">Với Garage Việt</span>
-                            <h3>Đăng yêu cầu – nhận báo giá</h3>
-                        </div>
-                        <ul className="compare-list">
-                            <li>
-                                <ICheck className="compare-icon compare-icon--good" />
-                                <span>Đăng yêu cầu độ xe hoặc nâng cấp chỉ trong vài phút</span>
-                            </li>
-                            <li>
-                                <ICheck className="compare-icon compare-icon--good" />
-                                <span>Nhiều garage gửi báo giá cạnh tranh để bạn so sánh</span>
-                            </li>
-                            <li>
-                                <ICheck className="compare-icon compare-icon--good" />
-                                <span>Chọn garage dựa trên giá và đánh giá thực tế từ chủ xe khác</span>
-                            </li>
-                            <li>
-                                <ICheck className="compare-icon compare-icon--good" />
-                                <span>Toàn bộ quy trình được minh bạch và lưu lại trên app</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            {/* Benefits – bento layout */}
-            <section className="content-section section-benefits" data-reveal>
-                <span className="section-eyebrow">
-                    <SparkleIcon className="section-eyebrow-icon" />
-                    Lợi ích
-                </span>
-                <h2 className="section-title">
-                    Vì sao chủ xe <span className="title-accent">chọn Garage Việt</span>?
-                </h2>
-                <p className="section-subtitle">Trải nghiệm độ xe thông minh, tiết kiệm và an tâm</p>
-
-                <div className="benefits-bento">
-                    <div className="benefit-card benefit-card--featured" data-reveal>
-                        <span className="benefit-card-conic" aria-hidden />
-                        <FeaturedCardDecor />
-                        <div className="benefit-card-inner">
-                            <div className="benefit-icon-wrap benefit-icon-wrap--orange has-glow">
-                                <IWallet />
-                                <span className="icon-ring" aria-hidden />
-                            </div>
-                            <h3 className="benefit-card-title">
-                                Tiết kiệm chi phí <span className="text-shine">tới 30%</span>
-                            </h3>
-                            <p className="benefit-card-desc">
-                                Garage cạnh tranh báo giá để có mức tốt nhất cho bạn. Không còn tình trạng mỗi
-                                nơi một giá trên trời.
+                            </h1>
+                            <p className="hero-sub">
+                                Đăng yêu cầu · nhận nhiều báo giá cạnh tranh · so sánh và chọn
+                                garage phù hợp — tất cả gói gọn trong một ứng dụng.
                             </p>
-                            <div className="benefit-card-meta">
-                                <IDollar /> Trung bình tiết kiệm 1.2 triệu / dịch vụ
+
+                            <StoreButtons variant="solid" />
+
+                            <div className="hero-trustrow">
+                                <span className="hero-stars">
+                                    <IStarFill /><IStarFill /><IStarFill /><IStarFill /><IStarFill />
+                                    <strong>4.8</strong>/5
+                                </span>
+                                <span className="hero-trust-sep" />
+                                <span className="hero-trust-item">
+                                    <ITeam /> 10.000+ chủ xe tin dùng
+                                </span>
+                                <span className="hero-trust-sep" />
+                                <span className="hero-trust-item">
+                                    <IVerified className="ic-verified" /> Garage được xác thực
+                                </span>
+                            </div>
+
+                            <div className="hero-stats">
+                                <div className="hero-stat">
+                                    <span className="hero-stat-num"><CountUp to={500} suffix="+" /></span>
+                                    <span className="hero-stat-label">Garage đối tác</span>
+                                </div>
+                                <div className="hero-stat">
+                                    <span className="hero-stat-num"><CountUp to={10000} suffix="+" /></span>
+                                    <span className="hero-stat-label">Chủ xe tin dùng</span>
+                                </div>
+                                <div className="hero-stat">
+                                    <span className="hero-stat-num"><CountUp to={50000} suffix="+" /></span>
+                                    <span className="hero-stat-label">Báo giá đã gửi</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="benefit-card" data-reveal>
-                        <div className="benefit-icon-wrap benefit-icon-wrap--yellow">
-                            <IClock />
-                        </div>
-                        <h3 className="benefit-card-title">Tiết kiệm thời gian</h3>
-                        <p className="benefit-card-desc">
-                            Không cần đi khắp nơi hỏi giá, mọi thứ có sẵn trên app
-                        </p>
-                    </div>
-
-                    <div className="benefit-card" data-reveal>
-                        <div className="benefit-icon-wrap benefit-icon-wrap--blue">
-                            <IChart />
-                        </div>
-                        <h3 className="benefit-card-title">So sánh giá minh bạch</h3>
-                        <p className="benefit-card-desc">
-                            Dễ dàng so sánh báo giá từ nhiều garage cùng lúc
-                        </p>
-                    </div>
-
-                    <div className="benefit-card" data-reveal>
-                        <div className="benefit-icon-wrap benefit-icon-wrap--red">
-                            <IHeart />
-                        </div>
-                        <h3 className="benefit-card-title">Đánh giá thật từ cộng đồng</h3>
-                        <p className="benefit-card-desc">
-                            Đọc review thực từ khách hàng để chọn đúng garage uy tín
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* How it works – timeline */}
-            <section className="content-section section-how" data-reveal>
-                <span className="section-eyebrow">
-                    <SparkleIcon className="section-eyebrow-icon" />
-                    Cách hoạt động
-                </span>
-                <h2 className="section-title">
-                    Chỉ <span className="title-accent">3 bước đơn giản</span>
-                </h2>
-                <p className="section-subtitle">Từ khi đăng yêu cầu đến khi tìm được garage hoàn hảo</p>
-
-                <div className="steps-flow">
-                    <span className="steps-line" aria-hidden />
-                    <div className="step-card" data-reveal>
-                        <div className="step-card-top">
-                            <div className="step-number">1<span className="step-ring" aria-hidden /></div>
-                            <div className="step-card-icon-wrap">
-                                <IEdit />
-                            </div>
-                        </div>
-                        <h3 className="step-card-title">Đăng yêu cầu độ / nâng cấp xe</h3>
-                        <p className="step-card-desc">
-                            Mô tả nhu cầu: loại xe, dịch vụ cần, ngân sách dự kiến… chỉ trong vài phút.
-                        </p>
-                    </div>
-                    <div className="step-card" data-reveal>
-                        <div className="step-card-top">
-                            <div className="step-number">2<span className="step-ring" aria-hidden /></div>
-                            <div className="step-card-icon-wrap">
-                                <IChat />
-                            </div>
-                        </div>
-                        <h3 className="step-card-title">Nhận nhiều báo giá từ garage</h3>
-                        <p className="step-card-desc">
-                            Garage uy tín gửi báo giá cạnh tranh kèm portfolio và đánh giá thực tế.
-                        </p>
-                    </div>
-                    <div className="step-card" data-reveal>
-                        <div className="step-card-top">
-                            <div className="step-number">3<span className="step-ring" aria-hidden /></div>
-                            <div className="step-card-icon-wrap">
-                                <ICheck />
-                            </div>
-                        </div>
-                        <h3 className="step-card-title">So sánh – chọn garage phù hợp</h3>
-                        <p className="step-card-desc">
-                            So sánh giá, đọc review và chọn garage phù hợp nhất với nhu cầu của bạn.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Final CTA */}
-            <section className="cta-final-section" data-reveal>
-                <div className="cta-final-bg" aria-hidden>
-                    <AuroraMesh />
-                    <span className="cta-final-blob cta-final-blob--orange" />
-                    <span className="cta-final-blob cta-final-blob--blue" />
-                    <span className="cta-final-stars" />
-                    <CtaWavesDecor />
-                </div>
-                <div className="cta-final-inner">
-                    <span className="cta-final-eyebrow">
-                        <IRocket /> Sẵn sàng độ xe theo cách thông minh?
-                    </span>
-                    <h2 className="cta-final-title">
-                        Tải <span className="cta-final-brand">Garage Việt</span>
-                    </h2>
-                    <p className="cta-final-tagline">Độ xe dễ hơn bao giờ hết</p>
-                    <p className="cta-final-desc">
-                        Hàng nghìn chủ xe đã tin dùng. Tải app ngay để trải nghiệm cách tìm garage thông minh,
-                        nhanh và minh bạch.
-                    </p>
-                    <div className="cta-store-buttons">
-                        <a
-                            href={APP_LINKS.android}
-                            className="cta-store-btn cta-store-android has-shimmer"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Tải app trên Google Play"
-                        >
-                            <AndroidOutlined className="cta-store-icon" aria-hidden />
-                            <span className="cta-store-text">
-                                <span className="cta-store-label">Tải về trên</span>
-                                <span className="cta-store-name">Google Play</span>
+                        <div className="hero-visual" data-reveal>
+                            <span className="float-chip float-chip--top">
+                                <span className="float-chip-icon"><IBell /></span>
+                                <span>
+                                    <span className="float-chip-title">Báo giá mới!</span>
+                                    <span className="float-chip-sub">2.5 triệu VNĐ</span>
+                                </span>
                             </span>
-                        </a>
-                        <a
-                            href={APP_LINKS.ios}
-                            className="cta-store-btn cta-store-ios has-shimmer"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Tải app trên App Store"
-                        >
-                            <AppleOutlined className="cta-store-icon" aria-hidden />
-                            <span className="cta-store-text">
-                                <span className="cta-store-label">Tải về trên</span>
-                                <span className="cta-store-name">App Store</span>
+                            <span className="float-chip float-chip--bottom">
+                                <span className="float-chip-icon float-chip-icon--green"><ICheck /></span>
+                                <span>
+                                    <span className="float-chip-title">Đã xác thực</span>
+                                    <span className="float-chip-sub">Garage uy tín</span>
+                                </span>
                             </span>
-                        </a>
+                            <Shot n={1} alt="Màn hình chính ứng dụng Garage Việt" className="shot--hero" />
+                        </div>
+                    </div>
+                </section>
+
+                {/* ---------------- Trust strip ---------------- */}
+                <section className="trust">
+                    <div className="lp-container trust-grid">
+                        {TRUST.map(({ Icon, title, desc }) => (
+                            <div className="trust-item" key={title} data-reveal>
+                                <span className="trust-icon"><Icon /></span>
+                                <div>
+                                    <p className="trust-title">{title}</p>
+                                    <p className="trust-desc">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="lp-container">
+                        <p className="brand-strip-label">Hỗ trợ hầu hết các hãng xe phổ biến tại Việt Nam</p>
+                        <BrandMarquee />
+                    </div>
+                </section>
+
+                {/* ---------------- Features ---------------- */}
+                <section id="features" className="features lp-section">
+                    <div className="lp-container">
+                        <SectionHeader
+                            eyebrow="Tính năng"
+                            title="Mọi thứ chủ xe cần, trong một ứng dụng"
+                            desc="Từ tìm garage, nhận báo giá đến đặt lịch và đánh giá — tinh gọn, minh bạch và nhanh chóng."
+                        />
+                        <div className="feature-grid">
+                            {FEATURES.map(({ Icon, title, desc }) => (
+                                <article className="feature-card" key={title} data-reveal>
+                                    <span className="feature-icon"><Icon /></span>
+                                    <h3>{title}</h3>
+                                    <p>{desc}</p>
+                                </article>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* ---------------- Showcase (real screenshots) ---------------- */}
+                <section id="showcase" className="showcase lp-section">
+                    <div className="lp-container">
+                        <SectionHeader
+                            eyebrow="Trải nghiệm"
+                            title="Nhìn tận mắt cách Garage Việt hoạt động"
+                            desc="Giao diện thật từ ứng dụng — nhanh chóng, đơn giản, minh bạch và nhiều ưu đãi."
+                        />
+                        <div className="showcase-rows">
+                            {SHOWCASE.map((row, i) => (
+                                <div className={`showcase-row${i % 2 ? " is-reversed" : ""}`} key={row.n} data-reveal>
+                                    <div className="showcase-media">
+                                        <Shot n={row.n} alt={`${row.tag} – Garage Việt`} className="shot--showcase" />
+                                    </div>
+                                    <div className="showcase-text">
+                                        <span className="showcase-tag">{row.tag}</span>
+                                        <h3>{row.title}</h3>
+                                        <p>{row.desc}</p>
+                                        <ul className="showcase-points">
+                                            {row.points.map((pt) => (
+                                                <li key={pt}><ICheck className="ic-check" /> {pt}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* ---------------- How it works ---------------- */}
+                <section id="how" className="how lp-section">
+                    <div className="lp-container">
+                        <SectionHeader
+                            eyebrow="Cách hoạt động"
+                            title="Chỉ 3 bước đơn giản"
+                            desc="Từ khi đăng yêu cầu đến khi tìm được garage hoàn hảo — chưa đến vài phút."
+                        />
+                        <div className="how-grid">
+                            {STEPS.map(({ Icon, n, title, desc }, i) => (
+                                <div className="how-step" key={n} data-reveal>
+                                    {i < STEPS.length - 1 && <span className="how-connector" aria-hidden />}
+                                    <article className="how-card">
+                                        <div className="how-card-top">
+                                            <span className="how-icon"><Icon /></span>
+                                            <span className="how-num">{n}</span>
+                                        </div>
+                                        <h3>{title}</h3>
+                                        <p>{desc}</p>
+                                    </article>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* ---------------- FAQ ---------------- */}
+                <section id="faq" className="faq lp-section">
+                    <div className="lp-container lp-container--narrow">
+                        <SectionHeader
+                            eyebrow="Câu hỏi thường gặp"
+                            title="Giải đáp nhanh mọi thắc mắc"
+                            desc="Vẫn cần hỗ trợ? Tải app và nhắn cho đội ngũ chăm sóc khách hàng."
+                        />
+                        <div className="faq-list" data-reveal>
+                            {FAQS.map((item, i) => (
+                                <details className="faq-item" key={i}>
+                                    <summary>
+                                        <span>{item.q}</span>
+                                        <span className="faq-chevron"><IArrowDown /></span>
+                                    </summary>
+                                    <div className="faq-answer">{item.a}</div>
+                                </details>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* ---------------- Final CTA ---------------- */}
+                <section className="cta lp-section">
+                    <div className="lp-container">
+                        <div className="cta-card" data-reveal>
+                            <div className="cta-card-glow cta-card-glow--blue" aria-hidden />
+                            <div className="cta-card-glow cta-card-glow--yellow" aria-hidden />
+                            <div className="cta-card-grid" aria-hidden />
+                            <div className="cta-card-inner">
+                                <span className="cta-eyebrow">
+                                    <IRocket /> Sẵn sàng độ xe theo cách thông minh?
+                                </span>
+                                <h2 className="cta-title">
+                                    Tải <span className="cta-brand">Garage Việt</span> ngay hôm nay
+                                </h2>
+                                <p className="cta-desc">
+                                    Hàng nghìn chủ xe đã tin dùng. Tải app để trải nghiệm cách tìm garage
+                                    thông minh, nhanh và minh bạch.
+                                </p>
+                                <StoreButtons variant="onDark" />
+                                <div className="cta-trust">
+                                    <span><ITeam /> 10.000+ chủ xe</span>
+                                    <span className="dot" />
+                                    <span><IStarFill /> 4.8 / 5</span>
+                                    <span className="dot" />
+                                    <span><IShield /> Garage được xác thực</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            {/* ---------------- Footer ---------------- */}
+            <footer className="lp-footer">
+                <div className="lp-container lp-footer-inner">
+                    <div className="lp-footer-brand">
+                        <Link to="/" className="lp-logo">
+                            <img src={logoImg} alt="Garage Việt" />
+                            <span className="lp-logo-text">
+                                <span className="lp-logo-strong">Garage</span> Việt
+                            </span>
+                        </Link>
+                        <p className="lp-footer-tagline">
+                            Nền tảng kết nối chủ xe với mạng lưới garage ô tô uy tín trên toàn quốc.
+                        </p>
+                        <div className="lp-footer-social">
+                            <a href={APP_LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FacebookOutlined /></a>
+                            <a href={APP_LINKS.tiktok} target="_blank" rel="noopener noreferrer" aria-label="TikTok"><TikTokOutlined /></a>
+                        </div>
                     </div>
 
-                    <div className="cta-final-trust">
-                        <span><ITeam /> 10,000+ chủ xe</span>
-                        <span className="dot" />
-                        <span><IStarFill /> 4.8 / 5</span>
-                        <span className="dot" />
-                        <span><IShield /> Garage được xác minh</span>
+                    <div className="lp-footer-col">
+                        <h4>Khám phá</h4>
+                        <a href="#features">Tính năng</a>
+                        <a href="#showcase">Trải nghiệm</a>
+                        <a href="#how">Cách hoạt động</a>
+                        <a href="#faq">Câu hỏi</a>
                     </div>
-                </div>
-            </section>
 
-            {/* Footer */}
-            <footer className="footer">
-                <div className="footer-inner">
-                    <div className="footer-brand">
-                        <img src={logoImg} alt="Garage Việt" className="footer-logo-img" />
-                        <span className="footer-name">Garage Việt</span>
-                    </div>
-                    <nav className="footer-policy-links" aria-label="Chính sách">
+                    <div className="lp-footer-col">
+                        <h4>Pháp lý</h4>
                         <Link to="/garageviet-privacy-policy">Chính sách bảo mật</Link>
-                        <span className="footer-policy-sep">·</span>
                         <Link to="/garageviet-operation-policy">Quy chế hoạt động</Link>
-                        <span className="footer-policy-sep">·</span>
                         <Link to="/account-deletion">Xóa tài khoản</Link>
-                    </nav>
-                    <p className="footer-copy">© 2025 Garage Việt. Tất cả quyền được bảo lưu.</p>
-                    <div className="footer-social">
-                        <a
-                            href={APP_LINKS.facebook}
-                            className="footer-social-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Facebook"
-                        >
-                            <FacebookOutlined />
-                        </a>
-                        <a
-                            href={APP_LINKS.tiktok}
-                            className="footer-social-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="TikTok"
-                        >
-                            <TikTokOutlined />
-                        </a>
                     </div>
+
+                    <div className="lp-footer-col">
+                        <h4>Tải ứng dụng</h4>
+                        <a href={APP_LINKS.ios} target="_blank" rel="noopener noreferrer"><AppleLogo className="footer-store-glyph" /> App Store</a>
+                        <a href={APP_LINKS.android} target="_blank" rel="noopener noreferrer"><GooglePlayLogo className="footer-store-glyph" /> CH Play</a>
+                    </div>
+                </div>
+                <div className="lp-container lp-footer-bottom">
+                    <p>© {new Date().getFullYear()} Garage Việt. Tất cả quyền được bảo lưu.</p>
                 </div>
             </footer>
         </div>
