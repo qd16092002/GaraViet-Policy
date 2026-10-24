@@ -585,5 +585,27 @@
     },
     "footer": {
         "copyright": "© {{year}} Garage Viet. All rights reserved."
+    },
+    "site": {
+        "nav": {
+            "label": "Main navigation",
+            "menu": "Open menu",
+            "buy": "Buy & install",
+            "quote": "Get quotes",
+            "garage": "For garages",
+            "faq": "FAQ"
+        },
+        "download": "Get the app",
+        "hotline": "Hotline",
+        "legalEyebrow": "Legal & privacy",
+        "footer": {
+            "product": "Product",
+            "policy": "Policies",
+            "support": "Support",
+            "film": "3M window film",
+            "zalo": "Garage Zalo",
+            "taxCode": "Tax code",
+            "tagline": "The technology platform for Vietnam’s automotive industry. Genuine accessories at listed prices, installed at a trusted garage near you."
+        }
     }
 }

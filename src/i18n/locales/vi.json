@@ -42,7 +42,7 @@
             "children": "Bảo vệ trẻ em",
             "thirdParty": " Liên kết đến bên thứ ba",
             "dataTransfer": "Chuyển dữ liệu",
-            "changes": "Cập nhật chính sách",  
+            "changes": "Cập nhật chính sách",
             "contact": "Liên hệ"
         },
         "content": {
@@ -586,5 +586,27 @@
     },
     "footer": {
         "copyright": "© {{year}} Garage Việt. Tất cả quyền được bảo lưu."
+    },
+    "site": {
+        "nav": {
+            "label": "Điều hướng chính",
+            "menu": "Mở menu",
+            "buy": "Mua & lắp",
+            "quote": "Nhận báo giá",
+            "garage": "Dành cho garage",
+            "faq": "Câu hỏi"
+        },
+        "download": "Tải app",
+        "hotline": "Hotline",
+        "legalEyebrow": "Pháp lý & quyền riêng tư",
+        "footer": {
+            "product": "Sản phẩm",
+            "policy": "Chính sách",
+            "support": "Hỗ trợ",
+            "film": "Phim cách nhiệt 3M",
+            "zalo": "Zalo garage",
+            "taxCode": "MST",
+            "tagline": "Nền tảng công nghệ cho ngành ô tô Việt Nam. Mua phụ kiện chính hãng giá niêm yết, lắp tận garage uy tín gần bạn."
+        }
     }
 }

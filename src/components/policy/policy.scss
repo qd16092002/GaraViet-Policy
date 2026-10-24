@@ -1,0 +1,339 @@
+@use "../../styles/tokens" as *;
+
+// Khung chung cho các trang chính sách: dải tiêu đề tối, tab pill, mục lục dính, nội dung đọc dễ.
+.policy-hero {
+  background: $dark;
+  padding: 56px 0 48px;
+
+  &__inner {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  h1 {
+    margin: 0;
+    font: 800 48px/1.12 $font;
+    letter-spacing: -1.4px;
+    color: #fff;
+  }
+  p {
+    margin: 0;
+    max-width: 680px;
+    font: 500 17px/1.6 $font;
+    color: $g400;
+  }
+  &__meta {
+    font: 600 13px $font;
+    color: $g500;
+  }
+
+  @include below($bp-md) {
+    padding: 36px 0 30px;
+    h1 {
+      font-size: 32px;
+      letter-spacing: -0.8px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+.policy-tabs {
+  background: #fff;
+  border-bottom: 1px solid $g200;
+
+  &__inner {
+    @include container;
+    display: flex;
+    gap: 8px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.policy-tab {
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 100px;
+  border: 1px solid $g200;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  font: 700 14px $font;
+  color: $g700;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+
+  &:hover {
+    border-color: $ink;
+    color: $ink;
+  }
+  &.is-active {
+    background: $ink;
+    border-color: $ink;
+    color: #fff;
+  }
+}
+
+.policy-page {
+  font-family: $font;
+  color: $ink;
+}
+
+.policy-body {
+  @include container;
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+
+.policy-sidebar {
+  position: sticky;
+  top: 96px;
+  width: 270px;
+  flex: none;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+
+  &__toggle {
+    display: none;
+  }
+
+  .sidebar-title {
+    display: block;
+    padding: 0 12px 10px;
+    font: 800 12px $font;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: $g500;
+  }
+
+  .sidebar-anchor {
+    padding: 0;
+    .ant-anchor {
+      padding: 0;
+      &::before {
+        display: none;
+      }
+    }
+    .ant-anchor-ink {
+      display: none;
+    }
+    .ant-anchor-link {
+      padding: 0;
+      margin: 0 0 2px;
+    }
+    .ant-anchor-link-title {
+      margin: 0;
+      padding: 0;
+      white-space: normal;
+    }
+  }
+
+  .nav-item {
+    min-height: 38px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 600 14px/1.35 $font;
+    color: $g600;
+    transition: background-color 0.15s, color 0.15s;
+
+    &:hover {
+      background: $g100;
+      color: $ink;
+    }
+    &.active {
+      background: $red-tint;
+      color: $red;
+      font-weight: 700;
+      .nav-icon {
+        color: $red;
+      }
+    }
+  }
+  .nav-icon {
+    display: flex;
+    font-size: 16px;
+    color: $g400;
+  }
+}
+
+.policy-content {
+  flex: 1;
+  min-width: 0;
+
+  .content-wrapper {
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+}
+
+.policy-section {
+  scroll-margin-top: 110px;
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .section-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: $red-tint;
+    color: $red;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex: none;
+  }
+  h2.section-title.ant-typography {
+    margin: 0;
+    font: 800 26px/1.3 $font;
+    letter-spacing: -0.5px;
+    color: $ink;
+  }
+  h3.ant-typography,
+  h4.ant-typography {
+    margin: 24px 0 10px;
+    font: 800 19px/1.4 $font;
+    color: $ink;
+  }
+  .ant-typography,
+  p {
+    font: 500 17px/1.75 $font;
+    color: $g700;
+    margin-bottom: 14px;
+  }
+  strong,
+  .ant-typography strong {
+    font-weight: 700;
+    color: $ink;
+  }
+  ul,
+  ol,
+  .ant-typography ul,
+  .ant-typography ol {
+    margin: 12px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  li,
+  .ant-typography li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 18px;
+    list-style: none;
+    font: 500 17px/1.7 $font;
+    color: $g700;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 100px;
+      background: $red;
+    }
+  }
+  code {
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 0;
+    background: $g100;
+    font: 700 15px $font;
+    color: $ink;
+  }
+  a {
+    color: $red;
+    font-weight: 700;
+  }
+}
+
+@include below($bp-md) {
+  .policy-body {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 64px;
+  }
+  .policy-sidebar {
+    position: static;
+    width: auto;
+    max-height: none;
+    margin-bottom: 32px;
+    border: 1px solid $g200;
+    border-radius: 14px;
+    overflow: hidden;
+
+    &__toggle {
+      width: 100%;
+      height: 48px;
+      padding: 0 16px;
+      border: 0;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font: 700 14px $font;
+      color: $ink;
+      cursor: pointer;
+      svg {
+        transition: transform 0.2s;
+      }
+    }
+    .sidebar-title,
+    .sidebar-anchor {
+      display: none;
+    }
+    &.is-open {
+      .policy-sidebar__toggle svg {
+        transform: rotate(180deg);
+      }
+      .sidebar-anchor {
+        display: block;
+        padding: 0 8px 8px;
+      }
+    }
+  }
+  .policy-content .content-wrapper {
+    gap: 32px;
+  }
+  .policy-section {
+    scroll-margin-top: 76px;
+    h2.section-title.ant-typography {
+      font-size: 21px;
+    }
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      font-size: 18px;
+    }
+    .ant-typography,
+    p,
+    li {
+      font-size: 15px;
+    }
+  }
+}
