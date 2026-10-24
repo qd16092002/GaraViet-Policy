@@ -29,9 +29,8 @@ const SiteFooter = ({ lockVietnamese = false }) => {
             title: t("site.footer.support"),
             wide: true,
             links: [
-                { label: `${t("site.hotline")} ${COMPANY.phone}`, href: COMPANY.phoneHref },
+                { label: `${t("site.hotline")} · Zalo ${COMPANY.phone}`, href: COMPANY.phoneHref },
                 { label: COMPANY.email, href: `mailto:${COMPANY.email}` },
-                { label: `${t("site.footer.zalo")} ${COMPANY.zalo}`, href: COMPANY.zaloHref },
             ],
         },
     ];

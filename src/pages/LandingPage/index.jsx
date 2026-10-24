@@ -8,8 +8,6 @@ import { BRANDS, FAQ, GARAGES, PRODUCTS, SITE_IMG, STATS } from "./data";
 import qrPath from "./qr";
 import "./index.scss";
 
-const money = (v) => `${v.toLocaleString("vi-VN")}đ`;
-
 // Hiện dần từng khối khi cuộn tới (tắt khi người dùng giảm chuyển động).
 const useReveal = () => {
     const ref = useRef(null);
@@ -69,7 +67,7 @@ const Hero = () => (
                     <em>lắp tận garage</em> gần bạn
                 </h1>
                 <p>
-                    Giá niêm yết đã gồm công lắp, cọc 10% giữ lịch. Hoặc đăng yêu cầu để nhận báo giá từ nhiều garage uy tín, chọn
+                    Giá niêm yết đã gồm công lắp, đặt lịch lắp ngay trên app. Hoặc đăng yêu cầu để nhận báo giá từ nhiều garage uy tín, chọn
                     nơi hợp ý.
                 </p>
                 <StoreButtons />
@@ -154,7 +152,7 @@ const TwoWays = () => (
                     tag="MUA & LẮP"
                     tagIcon="cart"
                     title="Giá niêm yết, đã gồm công lắp"
-                    desc="Chọn phụ kiện chính hãng, chọn garage đối tác và giờ lắp. Cọc 10% để giữ lịch, phần còn lại thanh toán tại xưởng."
+                    desc="Chọn phụ kiện chính hãng, chọn garage đối tác và giờ lắp ngay trên app. Không gọi điện hỏi giá, không chờ báo giá."
                     points={["Không phát sinh chi phí ngoài giá niêm yết", "Bảo hành chính hãng, có hoá đơn", "Đổi lịch linh hoạt trước 24 giờ"]}
                     shot={SITE_IMG.appProduct}
                     shotAlt="Trang sản phẩm có giá niêm yết"
@@ -210,10 +208,6 @@ const HotProducts = () => (
                                 </span>
                             </span>
                             <span className="lp-products__name">{p.name}</span>
-                            <span className="lp-products__price">
-                                <small>từ</small>
-                                {money(p.price)}
-                            </span>
                         </a>
                     </li>
                 ))}
@@ -225,8 +219,8 @@ const HotProducts = () => (
 const STEPS = [
     { icon: "cart", title: "Chọn phụ kiện", text: "Xem giá niêm yết, thông số và đánh giá. Phim cách nhiệt tự chọn theo từng ô kính." },
     { icon: "shop", title: "Chọn garage & giờ lắp", text: "Garage đối tác gần bạn, đã xác thực tay nghề và có đánh giá thật." },
-    { icon: "wallet", title: "Cọc 10% giữ lịch", text: "Thanh toán QR an toàn. Voucher được trừ ngay khi đặt." },
-    { icon: "tick-circle", title: "Lắp & thanh toán phần còn lại", text: "Garage lắp đúng hẹn, bạn kiểm tra rồi mới thanh toán 90% tại xưởng." },
+    { icon: "calendar", title: "Đặt lịch", text: "Lên lịch để garage sắp xếp slot cho bạn." },
+    { icon: "tick-circle", title: "Lắp đặt và thanh toán", text: "Garage lắp đặt và kích hoạt bảo hành online trên app." },
 ];
 
 const Steps = () => (
@@ -272,8 +266,8 @@ const Film = () => (
             </div>
             <div className="lp-split__copy" data-reveal>
                 <Eyebrow>Mới · Phim cách nhiệt 3M tự chọn</Eyebrow>
-                <h2>Tự chọn gói phim cho từng ô kính, thấy giá ngay</h2>
-                <p>Chọn dòng phim cho kính lái, sườn, kính lưng và kính nóc. Giá cập nhật theo lựa chọn, đang giảm 20% cho mọi gói.</p>
+                <h2>Tự chọn gói phim cho từng ô kính</h2>
+                <p>Chọn dòng phim cho kính lái, sườn, kính lưng và kính nóc.</p>
                 <ul className="lp-chips">
                     {FILM_POS.map(([label, on]) => (
                         <li key={label} className={on ? "is-on" : ""}>
@@ -281,16 +275,6 @@ const Film = () => (
                         </li>
                     ))}
                 </ul>
-                <div className="lp-price">
-                    <span>
-                        <small>Gói Cao cấp IR Series · SUV</small>
-                        <span>
-                            <strong>11.440.000đ</strong>
-                            <s>14.300.000đ</s>
-                        </span>
-                    </span>
-                    <em>-20%</em>
-                </div>
                 <a className="btn btn--primary" href="#tai-app">
                     Chọn gói phim trong app
                     <Icon name="arrow-right" size={18} stroke={2} />
@@ -331,7 +315,6 @@ const Garages = () => (
                                 {g.rating}
                             </span>
                             <span>{g.workers} kỹ thuật viên</span>
-                            <span>BH {g.warranty} tháng</span>
                         </span>
                     </li>
                 ))}
@@ -341,10 +324,9 @@ const Garages = () => (
 );
 
 const FOR_GARAGE = [
-    "Nhận đơn Mua & lắp đã cọc, khách đến đúng hẹn",
+    "Nhận đơn Mua & lắp đã đặt lịch, khách đến đúng hẹn",
     "Gửi báo giá cho yêu cầu quanh xưởng",
     "Nhập hàng giá đại lý: giáp gầm VF PRO, Smartkey…",
-    "Phí nền tảng 10%, trừ thẳng tiền cọc khách đã trả",
 ];
 
 const ForGarage = () => (

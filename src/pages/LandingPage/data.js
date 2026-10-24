@@ -19,7 +19,6 @@ import anycare from "../../assets/images/garages/anycare.webp";
 import quangFan from "../../assets/images/garages/quang-fan.webp";
 import autoNguyen from "../../assets/images/garages/auto-nguyen.webp";
 import icar from "../../assets/images/brands/icar.webp";
-import mcd91 from "../../assets/images/brands/mcd91.webp";
 import techwrap from "../../assets/images/brands/techwrap.webp";
 import aozoom from "../../assets/images/brands/aozoom.webp";
 import vietmap from "../../assets/images/brands/vietmap.webp";
@@ -30,14 +29,13 @@ import bFactory from "../../assets/images/brands/b-factory.webp";
 export const SITE_IMG = { hero, garage, accessories, film, cta, appHome, appProduct, appQuotes, appFilm, appGarage };
 
 export const STATS = [
-    { value: "160+", label: "Garage đối tác" },
+    { value: "500+", label: "Garage đối tác" },
     { value: "3.300+", label: "Chủ xe tin dùng" },
     { value: "16.000+", label: "Báo giá đã gửi" },
 ];
 
 export const BRANDS = [
     { name: "ICAR", logo: icar },
-    { name: "MCD91", logo: mcd91 },
     { name: "TechWrap", logo: techwrap },
     { name: "AOZOOM", logo: aozoom },
     { name: "Vietmap", logo: vietmap },
@@ -45,31 +43,26 @@ export const BRANDS = [
     { name: "B-Factory", logo: bFactory },
 ];
 
-// Giá "từ" = giá niêm yết thấp nhất trên app (api.garageviet.vn, 15/10/2026).
 export const PRODUCTS = [
-    { name: "Ốp Pin VinFast BF", price: 3200000, img: opbf },
-    { name: "Giáp gầm VF PRO", price: 1390000, img: giapgam },
-    { name: "Camera hành trình 70mai T400", price: 3590000, img: cam70 },
-    { name: "Phim cách nhiệt 3M", price: 5500000, img: film3m },
-    { name: "HUD Vietmap H50", price: 3200000, img: h50 },
-    { name: "Đèn AOZOOM EX3", price: 5000000, img: ex3 },
+    { name: "Ốp Pin VinFast BF", img: opbf },
+    { name: "Giáp gầm VF PRO", img: giapgam },
+    { name: "Camera hành trình 70mai T400", img: cam70 },
+    { name: "Phim cách nhiệt 3M", img: film3m },
+    { name: "HUD Vietmap H50", img: h50 },
+    { name: "Đèn AOZOOM EX3", img: ex3 },
 ];
 
 export const GARAGES = [
-    { name: "Bắc Á Auto", img: bacA, city: "Hà Nội", since: 2018, rating: "5,0", workers: 10, warranty: 18 },
-    { name: "Anycare Workshop", img: anycare, city: "Hà Nội", since: 2025, rating: "5,0", workers: 15, warranty: 18 },
-    { name: "Quang Fan Vít", img: quangFan, city: "Hà Nội", since: 2023, rating: "5,0", workers: 10, warranty: 18 },
-    { name: "Auto Nguyễn", img: autoNguyen, city: "TP.HCM", since: 2021, rating: "5,0", workers: 10, warranty: 18 },
+    { name: "Bắc Á Auto", img: bacA, city: "Hà Nội", since: 2018, rating: "5,0", workers: 10 },
+    { name: "Anycare Workshop", img: anycare, city: "Hà Nội", since: 2025, rating: "5,0", workers: 15 },
+    { name: "Quang Fan Vít", img: quangFan, city: "Hà Nội", since: 2023, rating: "5,0", workers: 10 },
+    { name: "Auto Nguyễn", img: autoNguyen, city: "TP.HCM", since: 2021, rating: "5,0", workers: 10 },
 ];
 
 export const FAQ = [
     {
         q: "Giá niêm yết đã gồm công lắp chưa?",
         a: "Đã gồm. Với sản phẩm Mua & lắp, giá bạn thấy là giá trọn gói gồm sản phẩm chính hãng và công lắp tại garage đối tác.",
-    },
-    {
-        q: "Vì sao phải cọc 10%?",
-        a: "Khoản cọc giữ lịch và đặt hàng cho garage. Phần còn lại 90% bạn thanh toán tại xưởng sau khi lắp xong và kiểm tra.",
     },
     {
         q: "Đăng yêu cầu báo giá có mất phí không?",
@@ -81,6 +74,6 @@ export const FAQ = [
     },
     {
         q: "Tôi muốn đổi lịch hoặc huỷ đơn?",
-        a: "Bạn đổi lịch trong app trước 24 giờ. Chính sách huỷ và hoàn cọc ghi rõ trong Quy chế hoạt động.",
+        a: "Bạn đổi lịch trong app trước 24 giờ. Chính sách huỷ đơn ghi rõ trong Quy chế hoạt động.",
     },
 ];

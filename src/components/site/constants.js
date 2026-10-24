@@ -8,8 +8,8 @@ export const COMPANY = {
     taxCode: "3002300759",
     address: "Ngã Ba Kỳ Đồng, Xã Kỳ Anh, Tỉnh Hà Tĩnh, Việt Nam",
     email: "support@garageviet.vn",
-    phone: "0586 028 881",
-    phoneHref: "tel:0586028881",
+    phone: "0848 294 369",
+    phoneHref: "tel:0848294369",
     zalo: "0848 294 369",
     zaloHref: "https://zalo.me/0848294369",
 };
