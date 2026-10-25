@@ -203,7 +203,7 @@
                 "email": "Email:",
                 "emailValue": "support@garageviet.vn",
                 "phone": "Phone:",
-                "phoneValue": "0586 028 881"
+                "phoneValue": "0848 294 369"
             }
         }
     },
@@ -388,7 +388,7 @@
                 "cancelP2": "If canceling after garage has prepared or purchased parts, cancellation fee is 50-100% depending on case.",
                 "cancelP3": "Garage Viet supports negotiation between parties to reach a reasonable agreement.",
                 "complaintTitle": "4. Complaint Resolution",
-                "complaintP1": "Complaints are sent via email support@garageviet.vn or hotline 0586.028.881 within 03 days from incident.",
+                "complaintP1": "Complaints are sent via email support@garageviet.vn or hotline 0848.294.369 within 03 days from incident.",
                 "complaintP2": "Support department confirms and processes within 03 working days.",
                 "complaintP3": "Garage Viet may freeze account, hold deposit in case of unresolved disputes.",
                 "complaintP4": "If parties cannot agree, the Company will mediate or refer to competent authorities."
@@ -577,7 +577,7 @@
                 "addressLabel": "Address:",
                 "address": "Ky Dong Intersection, Ky Anh Ward, Ha Tinh Province, Vietnam",
                 "phoneLabel": "Phone:",
-                "phone": "0586 028 881",
+                "phone": "0848 294 369",
                 "emailLabel": "Email:",
                 "email": "support@garageviet.vn"
             }
@@ -585,5 +585,26 @@
     },
     "footer": {
         "copyright": "© {{year}} Garage Viet. All rights reserved."
+    },
+    "site": {
+        "nav": {
+            "label": "Main navigation",
+            "menu": "Open menu",
+            "buy": "Buy & install",
+            "quote": "Get quotes",
+            "garage": "For garages",
+            "faq": "FAQ"
+        },
+        "download": "Get the app",
+        "hotline": "Hotline",
+        "legalEyebrow": "Legal & privacy",
+        "footer": {
+            "product": "Product",
+            "policy": "Policies",
+            "support": "Support",
+            "film": "3M window film",
+            "taxCode": "Tax code",
+            "tagline": "The technology platform for Vietnam’s automotive industry. Genuine accessories at listed prices, installed at a trusted garage near you."
+        }
     }
 }

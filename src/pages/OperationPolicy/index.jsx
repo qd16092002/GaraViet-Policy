@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Typography, Layout, Anchor } from "antd";
+import React from "react";
+import { Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import {
     FileTextOutlined,
@@ -14,15 +14,13 @@ import {
     CheckCircleOutlined,
     WarningOutlined,
 } from "@ant-design/icons";
-import "./index.scss";
+import PolicyHero from "../../components/policy/PolicyHero";
+import PolicyToc from "../../components/policy/PolicyToc";
 
-const { Title, Paragraph, Text } = Typography;
-const { Sider, Content } = Layout;
-const { Link } = Anchor;
+const { Title, Paragraph } = Typography;
 
 const OperationPolicy = () => {
     const { t } = useTranslation();
-    const [activeSection, setActiveSection] = useState("intro");
 
     const sections = [
         { id: "intro", title: t("operationPolicy.nav.intro"), icon: <FileTextOutlined /> },
@@ -89,81 +87,19 @@ const OperationPolicy = () => {
         { id: "contact", title: t("operationPolicy.nav.contact"), icon: <MailOutlined /> },
     ];
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY + 200;
-
-            for (let i = sections.length - 1; i >= 0; i--) {
-                const element = document.getElementById(sections[i].id);
-                if (element && element.offsetTop <= scrollPosition) {
-                    setActiveSection(sections[i].id);
-                    break;
-                }
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, [sections]);
 
     return (
-        <Layout className="operation-policy-layout">
-            <div className="policy-header">
-                <div className="header-content">
-                    <div className="header-left">
-                        <FileTextOutlined className="header-icon" />
-                        <div>
-                            <Title level={1} className="header-title">
-                                {t("operationPolicy.title")}
-                            </Title>
-                            <Text className="header-subtitle">
-                                {t("operationPolicy.subtitle")}
-                            </Text>
-                        </div>
-                    </div>
-                    <div className="header-meta">
-                        <Text type="secondary" className="last-updated-header">
-                            {t("updateTime", { date: "13/11/2025" })}
-                        </Text>
-                    </div>
-                </div>
-            </div>
+        <div className="policy-page">
+            <PolicyHero
+              title={t("operationPolicy.title")}
+              subtitle={t("operationPolicy.subtitle")}
+              meta={t("updateTime", { date: "13/11/2025" })}
+            />
 
-            <Layout className="policy-body">
-                <Sider width={280} className="policy-sidebar">
-                    <div className="sidebar-content">
-                        <Text strong className="sidebar-title">
-                            {t("common.tableOfContents")}
-                        </Text>
-                        <Anchor
-                            getContainer={() =>
-                                document.getElementById("policy-main-content") || window
-                            }
-                            showInkInFixed
-                            className="sidebar-anchor"
-                            offsetTop={100}
-                            targetOffset={100}
-                        >
-                            {sections.map((section) => (
-                                <Link
-                                    key={section.id}
-                                    href={`#${section.id}`}
-                                    title={
-                                        <div
-                                            className={`nav-item ${activeSection === section.id ? "active" : ""
-                                                }`}
-                                        >
-                                            <span className="nav-icon">{section.icon}</span>
-                                            <span>{section.title}</span>
-                                        </div>
-                                    }
-                                />
-                            ))}
-                        </Anchor>
-                    </div>
-                </Sider>
+            <div className="policy-body">
+                <PolicyToc sections={sections} />
 
-                <Content id="policy-main-content" className="policy-content">
+                <main id="policy-main-content" className="policy-content">
                     <div className="content-wrapper">
                         {/* I. Nguyên tắc chung */}
                         <section id="intro" className="policy-section">
@@ -761,15 +697,10 @@ const OperationPolicy = () => {
                             </Paragraph>
                         </section>
 
-                        <div className="policy-footer-section">
-                            <Text type="secondary" className="footer-text">
-                                {t("footer.copyright", { year: new Date().getFullYear() })}
-                            </Text>
-                        </div>
                     </div>
-                </Content>
-            </Layout>
-        </Layout>
+                </main>
+            </div>
+        </div>
     );
 };
 

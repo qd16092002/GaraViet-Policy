@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Layout, Anchor, Typography } from "antd";
+import React from "react";
+import { Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import {
   UserDeleteOutlined,
@@ -9,15 +9,13 @@ import {
   ClockCircleOutlined,
   QuestionCircleOutlined,
 } from "@ant-design/icons";
-import "./index.scss";
+import PolicyHero from "../../components/policy/PolicyHero";
+import PolicyToc from "../../components/policy/PolicyToc";
 
 const { Title, Paragraph, Text } = Typography;
-const { Sider, Content } = Layout;
-const { Link } = Anchor;
 
 const AccountDeletionPage = () => {
   const { t } = useTranslation();
-  const [activeSection, setActiveSection] = useState("intro");
 
   const sections = [
     { id: "intro", title: t("accountDeletion.nav.intro"), icon: <UserDeleteOutlined /> },
@@ -28,22 +26,6 @@ const AccountDeletionPage = () => {
     { id: "faq", title: t("accountDeletion.nav.faq"), icon: <QuestionCircleOutlined /> },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 200;
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const element = document.getElementById(sections[i].id);
-        if (element && element.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i].id);
-          break;
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [sections]);
 
   const steps = t("accountDeletion.content.inApp.steps", { returnObjects: true });
   const effectItems = t("accountDeletion.content.effects.items", { returnObjects: true });
@@ -52,57 +34,17 @@ const AccountDeletionPage = () => {
   const faqItems = t("accountDeletion.content.faq.items", { returnObjects: true });
 
   return (
-    <Layout className="privacy-policy-layout account-deletion-layout">
-      <div className="policy-header">
-        <div className="header-content">
-          <div className="header-left">
-            <UserDeleteOutlined className="header-icon" />
-            <div>
-              <Title level={1} className="header-title">
-                {t("accountDeletion.title")}
-              </Title>
-              <Text className="header-subtitle">
-                {t("accountDeletion.subtitle")}
-              </Text>
-            </div>
-          </div>
-          <div className="header-meta">
-            <Text type="secondary" className="last-updated-header">
-              {t("updateTime", { date: "13/11/2025" })}
-            </Text>
-          </div>
-        </div>
-      </div>
-      <Layout className="policy-body">
-        <Sider width={280} className="policy-sidebar">
-          <div className="sidebar-content">
-            <Text strong className="sidebar-title">
-              {t("common.tableOfContents")}
-            </Text>
-            <Anchor
-              getContainer={() => document.getElementById("policy-main-content") || window}
-              showInkInFixed
-              className="sidebar-anchor"
-              offsetTop={100}
-              targetOffset={100}
-            >
-              {sections.map((section) => (
-                <Link
-                  key={section.id}
-                  href={`#${section.id}`}
-                  title={
-                    <div className={`nav-item ${activeSection === section.id ? "active" : ""}`}>
-                      <span className="nav-icon">{section.icon}</span>
-                      <span>{section.title}</span>
-                    </div>
-                  }
-                />
-              ))}
-            </Anchor>
-          </div>
-        </Sider>
+    <div className="policy-page">
+      <PolicyHero
+        title={t("accountDeletion.title")}
+        subtitle={t("accountDeletion.subtitle")}
+        meta={t("updateTime", { date: "13/11/2025" })}
+      />
 
-        <Content id="policy-main-content" className="policy-content">
+      <div className="policy-body">
+        <PolicyToc sections={sections} />
+
+        <main id="policy-main-content" className="policy-content">
           <div className="content-wrapper">
             <section id="intro" className="policy-section">
               <div className="section-header">
@@ -216,16 +158,10 @@ const AccountDeletionPage = () => {
               ))}
               <Paragraph>{t("accountDeletion.content.faq.contactNote")}</Paragraph>
             </section>
-
-            <div className="policy-footer-section">
-              <Text type="secondary" className="footer-text">
-                {t("footer.copyright", { year: new Date().getFullYear() })}
-              </Text>
-            </div>
           </div>
-        </Content>
-      </Layout>
-    </Layout>
+        </main>
+      </div>
+    </div>
   );
 };
 

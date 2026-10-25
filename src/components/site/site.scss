@@ -1,0 +1,349 @@
+@use "../../styles/tokens" as *;
+
+// ---------- buttons ----------
+.btn {
+  height: 52px;
+  padding: 0 22px;
+  border-radius: 100px;
+  border: 1.5px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font: 800 16px/1 $font;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.15s;
+  flex: none;
+
+  &:active {
+    transform: translateY(1px);
+  }
+  &:focus-visible {
+    outline: 3px solid rgba($yellow, 0.7);
+    outline-offset: 2px;
+  }
+  &--sm {
+    height: 42px;
+    padding: 0 18px;
+    font-size: 15px;
+  }
+  &--primary {
+    background: $red;
+    color: #fff;
+    &:hover {
+      background: $red-dark;
+      color: #fff;
+    }
+  }
+  &--yellow {
+    background: $yellow;
+    color: $ink;
+    &:hover {
+      background: #f0b800;
+      color: $ink;
+    }
+  }
+  &--ghost {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+  &--outline {
+    background: #fff;
+    border-color: $g300;
+    color: $ink;
+    &:hover {
+      border-color: $ink;
+      color: $ink;
+    }
+  }
+}
+
+.store-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.store-btn {
+  height: 52px;
+  padding: 0 18px 0 14px;
+  border-radius: 12px;
+  background: #fff;
+  color: $ink;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+
+  &:hover {
+    color: $ink;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  svg {
+    flex: none;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  &__small {
+    font: 500 11px $font;
+    opacity: 0.8;
+  }
+  &__big {
+    font: 800 17px $font;
+  }
+  &--small {
+    height: 46px;
+  }
+}
+
+.eyebrow {
+  align-self: flex-start;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 100px;
+  background: $red-tint;
+  color: $red;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: 800 13px $font;
+  letter-spacing: 0.2px;
+
+  &--yellow {
+    background: rgba($yellow, 0.12);
+    color: $yellow;
+  }
+}
+
+// ---------- header ----------
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid $g200;
+  backdrop-filter: blur(12px);
+  font-family: $font;
+  color: $ink;
+
+  &__bar {
+    @include container;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__logo {
+    display: flex;
+    flex: none;
+    img {
+      height: 26px;
+      width: auto;
+      display: block;
+    }
+  }
+  &__nav {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    a {
+      font-weight: 600;
+      font-size: 15px;
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: $red;
+    }
+  }
+  &__lang {
+    display: flex;
+  }
+  &__burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: none;
+    color: inherit;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+  }
+  &__sheet {
+    display: none;
+  }
+
+  // Header trong suốt trên hero tối của trang chủ.
+  &--dark {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: transparent;
+    border-bottom-color: transparent;
+    backdrop-filter: none;
+    color: #fff;
+    transition: background-color 0.2s, border-color 0.2s;
+
+    &.is-scrolled,
+    &.is-open {
+      background: rgba($dark, 0.92);
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+    }
+    .site-header__nav a:hover,
+    .site-header__phone:hover {
+      color: $yellow;
+    }
+  }
+
+  @include below($bp-md) {
+    &__bar {
+      height: 60px;
+      gap: 12px;
+      justify-content: space-between;
+    }
+    &__logo img {
+      height: 22px;
+    }
+    &__nav,
+    &__phone {
+      display: none;
+    }
+    &__actions {
+      gap: 8px;
+    }
+    &__burger {
+      display: flex;
+    }
+    &__sheet {
+      display: flex;
+      flex-direction: column;
+      padding: 4px 20px 16px;
+      a {
+        min-height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font: 700 16px $font;
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid $g200;
+      }
+    }
+    &--dark &__sheet a {
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+// ---------- footer ----------
+.site-footer {
+  background: $dark;
+  font-family: $font;
+
+  &__inner {
+    @include container;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 64px 0 40px;
+  }
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 380px;
+    img {
+      height: 30px;
+      width: auto;
+      align-self: flex-start;
+    }
+    p {
+      margin: 0;
+      font: 500 14px/1.6 $font;
+      color: $g400;
+    }
+  }
+  &__cols {
+    display: flex;
+    gap: 56px;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 150px;
+    a {
+      font: 500 14px $font;
+      color: $g400;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &__col-title {
+    font: 800 14px $font;
+    color: #fff;
+  }
+  &__legal {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px 24px;
+    padding: 20px 0 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font: 500 13px/1.6 $font;
+    color: $g500;
+  }
+
+  @include below($bp-md) {
+    &__top {
+      flex-direction: column;
+      gap: 32px;
+      padding: 44px 0 32px;
+    }
+    &__cols {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+    &__col--wide {
+      grid-column: 1 / -1;
+    }
+    &__legal {
+      flex-direction: column;
+    }
+  }
+}

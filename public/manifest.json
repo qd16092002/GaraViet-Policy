@@ -1,12 +1,17 @@
 {
     "short_name": "Garage Việt",
-    "name": "Garage Việt - Ứng dụng tìm garage độ xe, nâng cấp xe",
-    "description": "Kết nối chủ xe với garage độ xe uy tín. Đăng yêu cầu, nhận báo giá, so sánh và chọn garage phù hợp.",
+    "name": "Garage Việt · Phụ kiện chính hãng, lắp tận garage",
+    "description": "Mua phụ kiện ô tô chính hãng giá niêm yết đã gồm công lắp, hoặc nhận báo giá từ garage uy tín gần bạn.",
     "icons": [
         {
             "src": "favicon.ico",
-            "sizes": "64x64 32x32 24x24 16x16",
+            "sizes": "64x64 48x48 32x32 16x16",
             "type": "image/x-icon"
+        },
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
         },
         {
             "src": "logo192.png",
@@ -21,6 +26,6 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#FF8C00",
+    "theme_color": "#0E0E0E",
     "background_color": "#ffffff"
 }

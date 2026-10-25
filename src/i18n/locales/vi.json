@@ -42,7 +42,7 @@
             "children": "Bảo vệ trẻ em",
             "thirdParty": " Liên kết đến bên thứ ba",
             "dataTransfer": "Chuyển dữ liệu",
-            "changes": "Cập nhật chính sách",  
+            "changes": "Cập nhật chính sách",
             "contact": "Liên hệ"
         },
         "content": {
@@ -203,7 +203,7 @@
                 "email": "Email:",
                 "emailValue": "support@garageviet.vn",
                 "phone": "Điện thoại:",
-                "phoneValue": "0586 028 881"
+                "phoneValue": "0848 294 369"
             }
         }
     },
@@ -389,7 +389,7 @@
                 "cancelP2": "Nếu hủy sau khi garage đã chuẩn bị hoặc mua linh kiện, phí huỷ là 50-100% tùy trường hợp.",
                 "cancelP3": "Garage Việt hỗ trợ thương lượng giữa hai bên để đạt thỏa thuận hợp lý.",
                 "complaintTitle": "4. Giải quyết khiếu nại",
-                "complaintP1": "Khiếu nại được gửi qua email support@garageviet.vn hoặc hotline 0586.028.881 trong vòng 03 ngày kể từ khi phát sinh sự việc.",
+                "complaintP1": "Khiếu nại được gửi qua email support@garageviet.vn hoặc hotline 0848.294.369 trong vòng 03 ngày kể từ khi phát sinh sự việc.",
                 "complaintP2": "Bộ phận hỗ trợ xác nhận và xử lý trong 03 ngày làm việc.",
                 "complaintP3": "Garage Việt có thể đóng băng tài khoản, giữ tiền cọc trong trường hợp có tranh chấp chưa giải quyết xong.",
                 "complaintP4": "Nếu hai bên không thỏa thuận được, Công ty sẽ chủ trì hòa giải hoặc chuyển cho cơ quan có thẩm quyền."
@@ -578,7 +578,7 @@
                 "addressLabel": "Địa chỉ:",
                 "address": "Ngã Ba Kỳ Đồng, Xã Kỳ Anh, Tỉnh Hà Tĩnh, Việt Nam",
                 "phoneLabel": "Điện thoại:",
-                "phone": "0586 028 881",
+                "phone": "0848 294 369",
                 "emailLabel": "Email:",
                 "email": "support@garageviet.vn"
             }
@@ -586,5 +586,26 @@
     },
     "footer": {
         "copyright": "© {{year}} Garage Việt. Tất cả quyền được bảo lưu."
+    },
+    "site": {
+        "nav": {
+            "label": "Điều hướng chính",
+            "menu": "Mở menu",
+            "buy": "Mua & lắp",
+            "quote": "Nhận báo giá",
+            "garage": "Dành cho garage",
+            "faq": "Câu hỏi"
+        },
+        "download": "Tải app",
+        "hotline": "Hotline",
+        "legalEyebrow": "Pháp lý & quyền riêng tư",
+        "footer": {
+            "product": "Sản phẩm",
+            "policy": "Chính sách",
+            "support": "Hỗ trợ",
+            "film": "Phim cách nhiệt 3M",
+            "taxCode": "MST",
+            "tagline": "Nền tảng công nghệ cho ngành ô tô Việt Nam. Mua phụ kiện chính hãng giá niêm yết, lắp tận garage uy tín gần bạn."
+        }
     }
 }
