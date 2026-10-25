@@ -3,11 +3,11 @@ import garage from "../../assets/images/site/garage.webp";
 import accessories from "../../assets/images/site/accessories.webp";
 import film from "../../assets/images/site/film.webp";
 import cta from "../../assets/images/site/cta.webp";
-import appHome from "../../assets/images/site/app-main.webp";
-import appProduct from "../../assets/images/site/app-n02.webp";
-import appQuotes from "../../assets/images/site/app-c06.webp";
-import appFilm from "../../assets/images/site/app-n13.webp";
-import appGarage from "../../assets/images/site/app-g01.webp";
+import appHome from "../../assets/images/site/framed/home-guest.webp";
+import appProduct from "../../assets/images/site/framed/product.webp";
+import appQuotes from "../../assets/images/site/framed/quotes.webp";
+import appFilm from "../../assets/images/site/framed/film.webp";
+import appGarage from "../../assets/images/site/framed/garage-home.webp";
 import opbf from "../../assets/images/products/opbf.webp";
 import giapgam from "../../assets/images/products/giapgam.webp";
 import cam70 from "../../assets/images/products/cam70.webp";
@@ -25,7 +25,7 @@ import vietmap from "../../assets/images/brands/vietmap.webp";
 import m3 from "../../assets/images/brands/3m.webp";
 import bFactory from "../../assets/images/brands/b-factory.webp";
 
-// Ảnh nền gen bằng Codex; ảnh màn app chụp từ design canvas Garage Việt 2.0.
+// Ảnh nền gen bằng Codex; ảnh màn app chụp từ app thật trên iOS Simulator (9:41), ghép bezel iPhone 16 của Apple (skill iphone-mockup).
 export const SITE_IMG = { hero, garage, accessories, film, cta, appHome, appProduct, appQuotes, appFilm, appGarage };
 
 export const STATS = [

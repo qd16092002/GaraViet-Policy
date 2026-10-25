@@ -1,5 +1,4 @@
 @use "../../styles/tokens" as *;
-@use "./iphone-frame";
 
 .landing {
   font-family: $font;
@@ -157,9 +156,15 @@
   }
 }
 
-// iPhone mockup: khung giống máy thật (_iphone-frame.scss, skill iphone-mockup); --w = bề rộng màn hình
+// Ảnh app trong bezel Apple; --w = bề rộng màn hình hiển thị (bezel rộng hơn màn 1359/1179 lần)
 .phone {
   --w: 280px;
+  display: block;
+  flex: none;
+  width: calc(var(--w) * 1359 / 1179);
+  height: auto;
+  // ảnh nền trong suốt: bóng theo dáng máy, không theo khung chữ nhật
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.28)) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.16));
 }
 
 // ---------- hero ----------
@@ -441,7 +446,6 @@
     justify-content: center;
     .phone {
       --w: 260px;
-      box-shadow: none;
     }
   }
 
@@ -453,7 +457,7 @@
       color: $g400;
     }
     .lp-way__shot .phone {
-      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.08);
+      filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.45));
     }
   }
 
