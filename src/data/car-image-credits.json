@@ -1,0 +1,515 @@
+[
+  {
+    "make": "VinFast",
+    "model": "VF 3",
+    "file": "vinfast-vf-3.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2025_VinFast_VF_3,_front_left.jpg",
+    "author": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF 5",
+    "file": "vinfast-vf-5.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2024_VinFast_VF5,_front_left,_06-14-2024.jpg",
+    "author": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF 5 Plus",
+    "file": "vinfast-vf-5-plus.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2025_VinFast_VF_5_in_Vinfast_Blue,_front_left.jpg",
+    "author": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF 6",
+    "file": "vinfast-vf-6.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:VinFast_VF_6_DSC_8577.jpg",
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF 7",
+    "file": "vinfast-vf-7.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:VinFast_VF_7_Eco_Crimson_Red.jpg",
+    "author": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF 8",
+    "file": "vinfast-vf-8.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vinfast_VF8_at_Hillsdale_2.jpg",
+    "author": "Mliu92",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF 9",
+    "file": "vinfast-vf-9.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:VinFast_VF_9_in_Crimson_Red_exterior.jpg",
+    "author": "Baoothersks",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF e34",
+    "file": "vinfast-vf-e34.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:VF_e34_Future_Blue_(2)_(cropped).jpg",
+    "author": "Baoothersks",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "LimoGreen",
+    "file": "vinfast-limogreen.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:VinFast_Limo_Green_Limo_Black_01.jpg",
+    "author": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF MPV 7",
+    "file": "vinfast-vf-mpv-7.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:VinFast_VF_MPV_7_Silver_01.jpg",
+    "author": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "EC Van",
+    "file": "vinfast-ec-van.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Newone_-_VinFast_EC_Van_Xanh_SM_GSM_001.jpg",
+    "author": "Newone",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "Lux A2.0",
+    "file": "vinfast-lux-a2-0.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vinfast_Lux_A_2.0,_Paris_Motor_Show_2018,_IMG_0674.jpg",
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "Lux SA2.0",
+    "file": "vinfast-lux-sa2-0.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:VinFast_LUX_SA2.0_-_Mondial_de_l%27Automobile_de_Paris_2018_-_003.jpg",
+    "author": "Thesupermat",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "Fadil",
+    "file": "vinfast-fadil.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2020_VinFast_Fadil_front_view_(Vietnam).png",
+    "author": "Autovietnam",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  {
+    "make": "VinFast",
+    "model": "President",
+    "file": "vinfast-president.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:VinFast_President_at_%22VinFast_-_For_a_Green_Future%22_exhibition.jpg",
+    "author": "Baoothersks",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "file": "toyota-camry.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:0_Toyota_Camry_70_0.jpg",
+    "author": "Benespit",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Vios",
+    "file": "toyota-vios.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2018_Toyota_Vios_(XP150)_1.5_E_CVT_Sedan_(2018-04-13)_front_view.jpg",
+    "author": "7715Mateenz",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla Cross",
+    "file": "toyota-corolla-cross.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2020_Toyota_Corolla_Cross_-_Front.jpg",
+    "author": "Areaseven",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Innova",
+    "file": "toyota-innova.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Toyota_Innova_2.8_E_2019_(2022_Front_Fascia)_(1).jpg",
+    "author": "Captainmorlypogi1959",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Veloz",
+    "file": "toyota-veloz.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Veloz_(W100)_1.5_(front),_Ngawi-Kertosono_Toll_Road_Rest_Area,_Madiun.jpg",
+    "author": "Alex Neman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Raize",
+    "file": "toyota-raize.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2022_Toyota_Raize_1.0T_G_(front),_West_Surabaya.jpg",
+    "author": "Alex Neman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Yaris Cross",
+    "file": "toyota-yaris-cross.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Yaris_Cross_1.5_S_HV_with_GR_Parts_(2023-12-18).png",
+    "author": "Nathanferdinand",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Fortuner",
+    "file": "toyota-fortuner.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Fortuner_4.0_SRV_4x4_(Colombia)_front_view.png",
+    "author": "Autosdeprimera",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  {
+    "make": "Toyota",
+    "model": "Avanza",
+    "file": "toyota-avanza.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Avanza_1.3_E,_Central_Surabaya.jpg",
+    "author": "Alex Neman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Honda",
+    "model": "City",
+    "file": "honda-city.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Honda_City_1.5_EXL_2022_(53634940620).jpg",
+    "author": "RL GNZLZ from Chile",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "file": "honda-civic.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2022_Honda_Civic_EX,_Front_Right,_06-20-2021.jpg",
+    "author": "SsmIntrigue",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Honda",
+    "model": "CR-V",
+    "file": "honda-cr-v.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2023_Honda_CR-V_EX-L_4WD_in_Radiant_Red_Metallic,_front_left.jpg",
+    "author": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "make": "Honda",
+    "model": "HR-V",
+    "file": "honda-hr-v.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Honda_HR-V_Hybrid_1X7A0315.jpg",
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "file": "honda-accord.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Honda_Accord_(CV3)_EX_eHEV,_2021,_front.jpg",
+    "author": "Kazyakuruma",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Accent",
+    "file": "hyundai-accent.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hyundai_Accent_1.4_Value_2021_(54543580885).jpg",
+    "author": "RL GNZLZ from Chile",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Creta",
+    "file": "hyundai-creta.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2022_Hyundai_Creta_Prime_(Indonesia)_front_view.jpg",
+    "author": "Andra Febrian",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Tucson",
+    "file": "hyundai-tucson.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hyundai_Tucson_(NX4)_IMG_3786.jpg",
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Santa Fe",
+    "file": "hyundai-santa-fe.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2024_Hyundai_Santa_Fe_Hybrid_Preferred_in_White_Cream,_front_left,_2024-06-30.jpg",
+    "author": "Elise240SX",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Grand i10",
+    "file": "hyundai-grand-i10.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hyundai_Grand_i10_1.2_Plus_2022.jpg",
+    "author": "RL GNZLZ",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Stargazer",
+    "file": "hyundai-stargazer.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2023_Hyundai_Stargazer_Prime,_South_Surabaya.jpg",
+    "author": "Alex Neman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Kia",
+    "model": "Morning",
+    "file": "kia-morning.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2020_Kia_Picanto_1_1.0_Front.jpg",
+    "author": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Kia",
+    "model": "Soluto",
+    "file": "kia-soluto.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kia_Soluto_1.4_LX_2023_(54057321031).jpg",
+    "author": "RL GNZLZ from Chile",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+    "make": "Kia",
+    "model": "Seltos",
+    "file": "kia-seltos.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2021_Kia_Seltos_Base_grey_front_view_in_Brunei.jpg",
+    "author": "AIMHO'S REBELLION 8490s",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Kia",
+    "model": "Sonet",
+    "file": "kia-sonet.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2021_Kia_Sonet_1.5_Premiere_(Indonesia)_front_view_03.jpg",
+    "author": "Andra Febrian",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Kia",
+    "model": "Carnival",
+    "file": "kia-carnival.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:0_Kia_Carnival_(KA4)_1.jpg",
+    "author": "Benespit",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Kia",
+    "model": "K3",
+    "file": "kia-k3.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:00_KIA_K3_FL_1.jpg",
+    "author": "Benespit",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Mazda",
+    "model": "Mazda2",
+    "file": "mazda-mazda2.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2014_Mazda2_(DJ)_Neo_hatchback_(2015-06-18)_01.jpg",
+    "author": "OSX",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  {
+    "make": "Mazda",
+    "model": "Mazda3",
+    "file": "mazda-mazda3.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2019_Mazda3,_Front_Right,_10-07-2020.jpg",
+    "author": "SsmIntrigue",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Mazda",
+    "model": "CX-3",
+    "file": "mazda-cx-3.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2018_Mazda_CX-3_(DK)_Maxx_Sport_2WD_wagon_(2018-10-19)_01.jpg",
+    "author": "EurovisionNim",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Mazda",
+    "model": "CX-5",
+    "file": "mazda-cx-5.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mazda_CX-5_Newground_1X7A6786.jpg",
+    "author": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Mazda",
+    "model": "CX-8",
+    "file": "mazda-cx-8.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mazda_CX-8_Sport,_2021_front.jpg",
+    "author": "EurovisionNim",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Xpander",
+    "file": "mitsubishi-xpander.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2022_Mitsubishi_Xpander_Ultimate_1.5_NC2W_(20220221).jpg",
+    "author": "オーバードライブ83",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Attrage",
+    "file": "mitsubishi-attrage.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Attrage_(54415081893).jpg",
+    "author": "Jason Lawrence from New York",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "file": "mitsubishi-outlander.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2017_Mitsubishi_Outlander_(ZK_MY17)_LS_2WD_wagon_(2018-08-27)_01.jpg",
+    "author": "EurovisionNim",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Ford",
+    "model": "Ranger",
+    "file": "ford-ranger.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ford_Ranger_(T6,_P703)_Wildtrak_IMG_7320.jpg",
+    "author": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Ford",
+    "model": "Everest",
+    "file": "ford-everest.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ford_Everest_2.0_Trend_4x2_2022_(1).jpg",
+    "author": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Ford",
+    "model": "Territory",
+    "file": "ford-territory.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ford_Territory_1.5_Titanium_2023_(9).jpg",
+    "author": "Captainmorlypogi1959",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Ford",
+    "model": "Ecosport",
+    "file": "ford-ecosport.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2018_Ford_EcoSport_front_2.24.18.jpg",
+    "author": "Kevauto",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Spark",
+    "file": "chevrolet-spark.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2013_Chevrolet_Spark_1LT,_Front_Left,_07-30-2020.jpg",
+    "author": "SsmIntrigue",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "Suzuki",
+    "model": "XL7",
+    "file": "suzuki-xl7.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2020_Suzuki_XL7_Zeta_1.5_NC22S_(20210307)_01.jpg",
+    "author": "オーバードライブ83",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "BYD",
+    "model": "Atto 3",
+    "file": "byd-atto-3.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2023_BYD_Atto_3_7.jpg",
+    "author": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "make": "MG",
+    "model": "ZS",
+    "file": "mg-zs.webp",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2018_MG_ZS_(AZS1)_Excite_wagon_(2018-08-27)_01.jpg",
+    "author": "EurovisionNim",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  }
+]

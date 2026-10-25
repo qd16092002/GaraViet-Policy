@@ -7,6 +7,7 @@ const TABS = [
     { key: "privacyPolicy", to: "/garageviet-privacy-policy" },
     { key: "operationPolicy", to: "/garageviet-operation-policy" },
     { key: "accountDeletion", to: "/account-deletion" },
+    { key: "imageCredits", to: "/nguon-anh" },
 ];
 
 // Dải tiêu đề tối + tab dạng pill, dùng chung cho các trang chính sách.

@@ -23,6 +23,7 @@ const SiteFooter = ({ lockVietnamese = false }) => {
                 { label: t("header.privacyPolicy"), to: "/garageviet-privacy-policy" },
                 { label: t("header.operationPolicy"), to: "/garageviet-operation-policy" },
                 { label: t("header.accountDeletion"), to: "/account-deletion" },
+                { label: t("header.imageCredits"), to: "/nguon-anh" },
             ],
         },
         {

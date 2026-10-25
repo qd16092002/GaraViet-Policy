@@ -4,6 +4,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import OperationPolicy from "./pages/OperationPolicy";
 import AccountDeletionPage from "./pages/AccountDeletionPage";
 import LandingPage from "./pages/LandingPage";
+import ImageCredits from "./pages/ImageCredits";
 import SiteHeader from "./components/site/SiteHeader";
 import SiteFooter from "./components/site/SiteFooter";
 import "./components/site/site.scss";
@@ -37,6 +38,7 @@ const App = () => {
                 <Route path="/garageviet-privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/garageviet-operation-policy" element={<OperationPolicy />} />
                 <Route path="/account-deletion" element={<AccountDeletionPage />} />
+        <Route path="/nguon-anh" element={<ImageCredits />} />
                 <Route path="/" element={<LandingPage />} />
             </Routes>
             {!isLandingPage && <SiteFooter />}

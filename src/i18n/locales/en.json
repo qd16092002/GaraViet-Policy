@@ -1,610 +1,617 @@
 {
-    "header": {
-        "privacyPolicy": "Privacy Policy",
-        "operationPolicy": "Operation Policy",
-        "accountDeletion": "Account Deletion"
+  "header": {
+    "privacyPolicy": "Privacy Policy",
+    "operationPolicy": "Operation Policy",
+    "accountDeletion": "Account Deletion",
+    "imageCredits": "Image credits"
+  },
+  "updateTime": "Last updated: {{date}}",
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "vietnamese": "Vietnamese",
+    "tableOfContents": "Table of Contents",
+    "step": "Step"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Protecting user personal data",
+    "sections": {
+      "intro": "1. Introduction",
+      "scopeAndDefinitions": "2. Scope of Application and Definitions",
+      "dataCollection": "3. When We Collect Information",
+      "dataTypes": "4. Types of Information We Collect",
+      "purposeAndLegal": "5. Purpose and Legal Basis for Data Processing",
+      "dataSharing": "6. Sharing Information with Third Parties",
+      "security": "7. Data Security and Storage",
+      "rights": "8. User Rights",
+      "children": "9. Protecting Children's Information",
+      "thirdParty": "10. Links to Third Parties",
+      "dataTransfer": "11. Transferring Data Abroad",
+      "changes": "12. Policy Updates",
+      "contact": "13. Contact Information"
     },
-    "updateTime": "Last updated: {{date}}",
-    "common": {
-        "language": "Language",
-        "english": "English",
-        "vietnamese": "Vietnamese",
-        "tableOfContents": "Table of Contents",
-        "step": "Step"
+    "nav": {
+      "intro": "Introduction",
+      "scopeAndDefinitions": "Scope & Definitions",
+      "dataCollection": "Data Collection",
+      "dataTypes": "Information Types",
+      "purposeAndLegal": "Purpose & Legal Basis",
+      "dataSharing": "Data Sharing",
+      "security": "Security & Storage",
+      "rights": "User Rights",
+      "children": "Children Protection",
+      "thirdParty": "Links to Third Parties",
+      "dataTransfer": "Data Transfer",
+      "changes": "Policy Updates",
+      "contact": "Contact"
     },
-    "privacyPolicy": {
-        "title": "Privacy Policy",
-        "subtitle": "Protecting user personal data",
-        "sections": {
-            "intro": "1. Introduction",
-            "scopeAndDefinitions": "2. Scope of Application and Definitions",
-            "dataCollection": "3. When We Collect Information",
-            "dataTypes": "4. Types of Information We Collect",
-            "purposeAndLegal": "5. Purpose and Legal Basis for Data Processing",
-            "dataSharing": "6. Sharing Information with Third Parties",
-            "security": "7. Data Security and Storage",
-            "rights": "8. User Rights",
-            "children": "9. Protecting Children's Information",
-            "thirdParty": "10. Links to Third Parties",
-            "dataTransfer": "11. Transferring Data Abroad",
-            "changes": "12. Policy Updates",
-            "contact": "13. Contact Information"
-        },
-        "nav": {
-            "intro": "Introduction",
-            "scopeAndDefinitions": "Scope & Definitions",
-            "dataCollection": "Data Collection",
-            "dataTypes": "Information Types",
-            "purposeAndLegal": "Purpose & Legal Basis",
-            "dataSharing": "Data Sharing",
-            "security": "Security & Storage",
-            "rights": "User Rights",
-            "children": "Children Protection",
-            "thirdParty": "Links to Third Parties",
-            "dataTransfer": "Data Transfer",
-            "changes": "Policy Updates",
-            "contact": "Contact"
-        },
-        "content": {
-            "intro": {
-                "title": "1. Introduction",
-                "p1": "Welcome to Garage Viet – a platform connecting vehicle owners and auto repair/upgrade garages nationwide, operated by Garage Viet Technology Platform Company Limited (\"we\", \"Garage Viet\").",
-                "p2": "Garage Viet understands that protecting personal data is a critical responsibility. We commit to comply with Decree 13/2023/ND-CP and related Vietnamese legal regulations, as well as international privacy standards.",
-                "p3": "This Policy helps you clearly understand how Garage Viet collects, uses, stores, shares and protects personal information when you use our application or website, along with your rights and choices.",
-                "p4": "By accessing or using Garage Viet services, you confirm that you have read, understood and agreed to the contents of this Policy."
-            },
-            "scopeAndDefinitions": {
-                "title": "2. Scope of Application and Definitions",
-                "scopeTitle": "Scope of Application:",
-                "scope": "This Policy applies to all users, customers, garage partners, technicians and third parties related to the Garage Viet platform.",
-                "definitionTitle": "Personal Information:",
-                "definition": "is information that reflects or can identify an individual's identity (e.g., name, phone number, email, address, license plate, device, etc.)."
-            },
-            "dataCollection": {
-                "title": "3. When We Collect Information",
-                "intro": "Garage Viet may collect personal data in the following cases:",
-                "items": [
-                    "When you register an account, use the application or website;",
-                    "When you schedule appointments, submit requests, quote, make payments or interact with partners;",
-                    "When you participate in surveys, promotional programs, or service reviews."
-                ]
-            },
-            "dataTypes": {
-                "title": "4. Types of Information We Collect",
-                "forCustomerTitle": "4.1 For Vehicle Owners (Customers):",
-                "forCustomer": "Full name, phone number, email, address;",
-                "customerInfo": "License plate, vehicle type, vehicle photos;",
-                "customerPayment": "Payment information, transaction history;",
-                "customerLocation": "Location data to suggest nearest garages.",
-                "forGarageTitle": "4.2 For Garage (Partners):",
-                "forGarage": "Garage owner name, phone number, email, business license;",
-                "garageInfo": "Facility address, photos, services provided;",
-                "garagePayment": "Bank account number and payment information (if any).",
-                "technicalTitle": "4.3 Technical Information:",
-                "technicalInfo": "Device type, operating system, browser, cookies, location data, browsing history, and usage behavior information."
-            },
-            "dataScope": {
-                "title": "3. Scope and Purpose of Information Collection",
-                "scopeTitle": "3.1. Collection Scope",
-                "forCustomer": "For Vehicle Owners (Customers):",
-                "customerInfo": "Full name, phone number, email, address, license plate, vehicle type, vehicle photos, payment information, transaction history, and other necessary information to provide services.",
-                "forGarage": "For Garage (Partners):",
-                "garageInfo": "Garage owner name, phone number, email, business license (if any), bank account number, facility address, photos, services provided, technician information and transaction history.",
-                "technicalInfo": "Technical Information:",
-                "technicalDetails": "IP address, device used, operating system, browsing history, geographic location (GPS), cookies, and data related to application usage activities.",
-                "purposeTitle": "3.2. Purpose of Information Use",
-                "purposeIntro": "Garage Viet collects and uses personal data for the following purposes:",
-                "purposeItems": [
-                    "Verify user identity, ensure transaction security;",
-                    "Connect and support communication between Vehicle Owners and Garages;",
-                    "Process quote requests, scheduling, payments and service reviews;",
-                    "Send notifications, promotions, updates or policy changes;",
-                    "Technical support, resolve complaints, respond to users;",
-                    "Enhance user experience and improve services;",
-                    "Comply with legal obligations and requests from competent state agencies."
-                ]
-            },
-            "purposeAndLegal": {
-                "title": "5. Purpose and Legal Basis for Data Processing",
-                "intro": "Garage Viet collects and processes personal data for the following legal purposes:",
-                "purposeItems": [
-                    "Provide and operate services – verify identity, process transactions, connect vehicle owners and garages, manage accounts.",
-                    "Improve user experience – analyze data to enhance service quality and technical support.",
-                    "Communication and customer care – send notifications, promotions, support, and respond to requests.",
-                    "Legal compliance – meet government agency requirements, tax obligations, accounting, and data security.",
-                    "Prevent fraud and protect the system."
-                ],
-                "legalBasisTitle": "Legal Basis:",
-                "legalBasisItems": [
-                    "User consent;",
-                    "Contract performance (when you use our services);",
-                    "Legal obligation compliance;",
-                    "Legitimate interests of Garage Viet in operating and improving the platform."
-                ]
-            },
-            "dataSharing": {
-                "title": "6. Sharing Information with Third Parties",
-                "intro": "Garage Viet does not sell or rent personal data to any party.",
-                "intro2": "We only share information in the following cases:",
-                "items": [
-                    "With authorized internal departments (technical, customer care, operations);",
-                    "With service providers such as:",
-                    "Payment service providers (e.g., VNPay, MoMo);",
-                    "Cloud storage service providers (e.g., Amazon Web Services);",
-                    "Identity verification partners, or data analysis support;",
-                    "When you agree to share to conduct transactions;",
-                    "When there is a legal request from competent government agencies."
-                ],
-                "p": "All these third parties are required to strictly comply with personal data protection regulations equivalent to Garage Viet's standards."
-            },
-            "security": {
-                "title": "7. Data Security and Storage",
-                "p1": "Personal data is stored on secure servers located in Vietnam or on cloud platforms meeting international security standards (ISO 27001, GDPR).",
-                "p2": "We apply encryption measures, firewalls, access control and strict internal monitoring.",
-                "storageTime": "Storage Duration:",
-                "p3": "until the user requests deletion, or Garage Viet terminates service provision.",
-                "p4": "When a data breach occurs, Garage Viet will notify users and competent agencies within 72 hours from detection."
-            },
-            "rights": {
-                "title": "8. User Rights",
-                "intro": "You have the following rights regarding your personal data:",
-                "items": [
-                    "Access, edit, update or delete personal data;",
-                    "Withdraw consent for data processing;",
-                    "Request a copy of personal data;",
-                    "Complain about privacy violations."
-                ],
-                "howToTitle": "How to Exercise:",
-                "howTo1": "Send a request via email support@garageviet.vn, subject \"Request for Personal Data\".",
-                "howTo2": "Garage Viet will respond within 15 working days from receiving a valid request."
-            },
-            "children": {
-                "title": "9. Protecting Children's Information",
-                "p1": "Garage Viet is not intended for users under 18 years of age.",
-                "p2": "If personal data of a user under 18 is detected, we will delete the data and lock the account within 15 days from confirmation."
-            },
-            "thirdParty": {
-                "title": "10. Links to Third Parties",
-                "p1": "Garage Viet may contain links to third-party websites or services.",
-                "p2": "We are not responsible for the content, privacy policies or cookies of those platforms.",
-                "p3": "Users should carefully review the privacy policies of third parties before providing data."
-            },
-            "dataTransfer": {
-                "title": "11. Transferring Data Abroad (if applicable)",
-                "intro": "If Garage Viet needs to transfer personal data outside Vietnam's territory (e.g., stored on international servers), we will:",
-                "items": [
-                    "Ensure data is protected equivalent to Vietnamese legal regulations;",
-                    "Only transfer data when there is user consent or in accordance with valid legal requirements."
-                ]
-            },
-            "cookies": {
-                "title": "7. Cookies and Location Data",
-                "intro": "Garage Viet may use cookies, device identifiers, or GPS data to:",
-                "items": [
-                    "Remember user preferences and optimize experience;",
-                    "Suggest nearest garages or recommend suitable services;",
-                    "Analyze user behavior to improve the system."
-                ],
-                "p": "Users can turn off cookies or share location in device settings. However, this may reduce the quality of service experience."
-            },
-            "changes": {
-                "title": "12. Policy Updates",
-                "p1": "Garage Viet may update this Policy from time to time to comply with changes in law or platform operations.",
-                "p2": "Any changes will be notified on the Garage Viet application or website.",
-                "p3": "Continued use of the service after changes is understood as your agreement with the updated version."
-            },
-            "contact": {
-                "title": "13. Contact Information",
-                "company": "Garage Viet Technology Platform Company Limited",
-                "taxCode": "Business Registration Number:",
-                "taxValue": "3002300759",
-                "address": "Address:",
-                "addressValue": "Nga Ba Ky Dong, Ky Anh Commune, Ha Tinh Province, Vietnam",
-                "email": "Email:",
-                "emailValue": "support@garageviet.vn",
-                "phone": "Phone:",
-                "phoneValue": "0848 294 369"
-            }
-        }
-    },
-    "accountDeletion": {
-        "title": "Delete Your Garage Viet Account",
-        "subtitle": "Respecting your privacy and control over your data",
-        "nav": {
-            "intro": "Overview",
-            "inApp": "Delete in the app",
-            "effects": "After deletion",
-            "email": "Request via email",
-            "timeline": "Processing time",
-            "faq": "FAQ"
-        },
-        "content": {
-            "intro": {
-                "title": "Introduction",
-                "p1": "Garage Viet respects your privacy and your right to control personal data.",
-                "p2": "You can request account deletion at any time by following the steps below."
-            },
-            "inApp": {
-                "title": "How to delete your account directly in the app",
-                "intro": "Follow these steps in the Garage Viet app:",
-                "steps": [
-                    "Open the Garage Viet app.",
-                    "Tap the Account icon.",
-                    "Select Settings.",
-                    "Choose \"Delete account\".",
-                    "Confirm the deletion request."
-                ],
-                "noteTitle": "Note:",
-                "note": "Once confirmed, the deletion request is processed immediately."
-            },
-            "effects": {
-                "title": "What happens when you delete your account",
-                "intro": "After your request is completed:",
-                "items": [
-                    "All personally identifiable information (full name, phone number, email, profile details, etc.) is removed from our systems.",
-                    "Orders, service requests, invoices, transaction history and messages may be retained in anonymized form for transaction tracing, accounting, reconciliation and legal compliance (if required).",
-                    "Once deleted, you cannot log back in or restore your personal data.",
-                    "Garage Viet does not use anonymized records to identify who you are."
-                ]
-            },
-            "email": {
-                "title": "Account deletion support via email",
-                "intro": "If you experience issues deleting in the app, you can send a request via email for support.",
-                "emailLabel": "Support email:",
-                "email": "support@garageviet.vn",
-                "subjectLabel": "Email subject:",
-                "subject": "Request to delete Garage Viet account",
-                "fieldsTitle": "Please include:",
-                "fields": [
-                    "The phone number used to register your account.",
-                    "Reason for deletion (optional)."
-                ]
-            },
-            "timeline": {
-                "title": "Processing time",
-                "items": [
-                    "In-app deletion requests: processed instantly.",
-                    "Email deletion requests: within 48 business hours."
-                ]
-            },
-            "faq": {
-                "title": "Frequently asked questions",
-                "items": [
-                    {
-                        "question": "Can I recover my account after deleting it?",
-                        "answer": "No. Deletion is permanent and cannot be undone."
-                    },
-                    {
-                        "question": "What data does Garage Viet keep after deletion?",
-                        "answer": "We do not retain your personally identifiable information. Some transaction data may remain anonymized for investigation, accounting, fraud prevention and legal compliance."
-                    }
-                ],
-                "contactNote": "Need more help? Contact us via the support email above. Thank you for using Garage Viet!"
-            }
-        }
-    },
-    "operationPolicy": {
-        "title": "Operating Regulations",
-        "subtitle": "Garage Vietnam E-commerce Marketplace",
-        "sections": {
-            "intro": "I. General Principles",
-            "definitions": "II. General Regulations",
-            "usage": "Usage Guidelines",
-            "brand": "Branding",
-            "transaction": "III. Transaction Process",
-            "security": "IV. Transaction Security",
-            "privacy": "V. Personal Information Protection",
-            "revenue": "VI. Revenue Sharing Mechanism",
-            "contentManagement": "VII. Content Management",
-            "technical": "VIII. Technical Error Responsibilities",
-            "adminRights": "IX. Rights and Obligations of Garage Vietnam Management Board",
-            "garageRights": "X. Rights and Obligations of Garage (Service Providers)",
-            "customerRights": "XI. Rights and Obligations of Vehicle Owners (Service Users)",
-            "terms": "XII. Applicable Terms",
-            "commitment": "XIII. Commitment Terms"
-        },
-        "nav": {
-            "intro": "General Principles",
-            "definitions": "Definitions",
-            "usage": "Usage Guidelines",
-            "brand": "Branding",
-            "transaction": "Transaction Process",
-            "security": "Transaction Security",
-            "privacy": "Information Protection",
-            "revenue": "Revenue Sharing",
-            "contentManagement": "Content Management",
-            "technical": "Technical Errors",
-            "adminRights": "Management Rights",
-            "garageRights": "Garage Rights",
-            "customerRights": "Customer Rights",
-            "terms": "Terms",
-            "commitment": "Commitment",
-            "contact": "Contact"
-        },
-        "content": {
-            "intro": {
-                "title": "I. General Principles",
-                "p1": "Garage Viet E-commerce Marketplace (hereinafter referred to as \"Marketplace\") is built and operated by Garage Viet Technology Platform Company Limited (hereinafter referred to as \"Company\").",
-                "p2": "Members on the Marketplace are garages, merchants, organizations, and individuals with legal commercial activities recognized and allowed to use services by the Garage Viet Marketplace Management Board (\"Management Board\").",
-                "p3": "This principle applies to Members who register to use and participate in activities of posting information, quoting, ordering repair or vehicle upgrade services on the Garage Viet platform.",
-                "p4": "Parties participating in transactions on the Marketplace are free to negotiate based on respecting each other's legitimate rights and interests, without violating regulations of Vietnamese law.",
-                "p5": "Information about participating Members must be transparent and accurate.",
-                "p6": "Services, products, parts, and accessories provided through the Marketplace must be legal, clearly sourced, and not in categories prohibited from business or advertising.",
-                "p7": "All contents in this Regulation comply with Vietnamese law. Members are responsible for learning and fully complying with current legal regulations."
-            },
-            "definitions": {
-                "title": "II. General Regulations",
-                "defTitle": "1. Definitions",
-                "platformLabel": "Platform:",
-                "platform": "is the Garage Viet application developed by Garage Viet Technology Platform Company Limited.",
-                "garageLabel": "Garage/Partner (Seller):",
-                "garage": "are merchants, organizations, and individuals with legal activities in the field of car maintenance, repair, and upgrades who need to introduce services, quote, and receive customers through the Marketplace.",
-                "customerLabel": "Vehicle Owner/Customer (Buyer):",
-                "customer": "are individuals or organizations who own or use cars and need to search, compare prices, and order repair/upgrade services.",
-                "memberLabel": "Member:",
-                "member": "includes both Garages and Vehicle Owners who have registered accounts and been approved by the Management Board.",
-                "productLabel": "Products/Services:",
-                "product": "includes maintenance, repair, replacement, car modification, cleaning, car care, interior and exterior upgrades, car parts and accessories posted and traded on the Garage Viet platform.",
-                "crmLabel": "Garage CRM:",
-                "crm": "customer, order, appointment, and quotation management system exclusively for member garages.",
-                "quoteLabel": "Quotation:",
-                "quote": "is the mechanism for multiple garages to submit bid prices (maximum 5 garages) for a customer's repair request.",
-                "revenueLabel": "Revenue Sharing:",
-                "revenue": "The Company charges 10% transaction/revenue fee on each completed order through the Marketplace."
-            },
-            "usage": {
-                "title": "2. General Usage Guidelines",
-                "p1": "Each Member must register a valid account, provide accurate information, and update promptly when changes occur.",
-                "p2": "Members are fully responsible for account security and all activities that occur.",
-                "p3": "Members may not authorize or transfer accounts to others without written consent from the Company.",
-                "p4": "Use of the Marketplace must be for legal purposes only, and may not be used for fraud, dissemination of false information, illegal advertising, system disruption, or infringement of third-party rights.",
-                "p5": "Members agree to receive marketing information, activity notifications, or promotions from Garage Viet. If they wish to stop receiving, they may send a request to support@garageviet.vn.",
-                "p6": "The Company reserves the right to temporarily lock or terminate accounts if violations of regulations, fraud, or actions affecting the Marketplace's reputation are detected."
-            },
-            "brand": {
-                "title": "3. Branding and Copyright",
-                "p1": "All content, design, software, images, data, source code, logos, and trademarks \"Garage Viet\" are intellectual property of Garage Viet Technology Platform Company Limited and are protected under Vietnamese Intellectual Property Law.",
-                "p2": "Any unauthorized copying, distribution, modification, or exploitation will be handled according to law."
-            },
-            "transaction": {
-                "title": "III. Transaction Process",
-                "customerTitle": "1. For Customers (Vehicle Owners)",
-                "customerStep1": "Log into the Garage Viet application, select \"Create Request\".",
-                "customerStep2": "Enter vehicle information, describe the problem or need, may include images/videos.",
-                "customerStep3": "The system sends requests to suitable garages by area and service type.",
-                "customerStep4": "Garages submit bid quotes (including price, completion time, commitments).",
-                "customerStep5": "Customer selects desired garage, may choose to place a deposit via app (3% of order value) to receive some benefits. Or no deposit.",
-                "customerStep6": "Garage confirms and completes service.",
-                "customerStep7": "Customer pays the remaining amount directly, then evaluates service quality.",
-                "garageTitle": "2. For Garages (Partners)",
-                "garageStep1": "Register Garage account on app, provide business license or ID card. Sign electronic contract",
-                "garageStep2": "Update garage profile: address, workshop images, service categories, basic price list.",
-                "garageStep3": "Receive new request notifications from customers, participate in quoting.",
-                "garageStep4": "After being selected, confirm appointment and perform service.",
-                "garageStep5": "Complete service and update results on system.",
-                "garageStep6": "Pay platform fees periodically",
-                "cancelTitle": "3. Cancellation or Service Changes",
-                "cancelP1": "Customers can cancel requests if garage has not started work, and will be refunded deposit within maximum 7 working days.",
-                "cancelP2": "If canceling after garage has prepared or purchased parts, cancellation fee is 50-100% depending on case.",
-                "cancelP3": "Garage Viet supports negotiation between parties to reach a reasonable agreement.",
-                "complaintTitle": "4. Complaint Resolution",
-                "complaintP1": "Complaints are sent via email support@garageviet.vn or hotline 0848.294.369 within 03 days from incident.",
-                "complaintP2": "Support department confirms and processes within 03 working days.",
-                "complaintP3": "Garage Viet may freeze account, hold deposit in case of unresolved disputes.",
-                "complaintP4": "If parties cannot agree, the Company will mediate or refer to competent authorities."
-            },
-            "security": {
-                "title": "IV. Transaction Security",
-                "p1": "All transactions, payments, data are encrypted and securely stored on the Company's system.",
-                "p2": "The Company is not responsible for transactions conducted outside the Garage Viet platform.",
-                "p3": "All system interference, API abuse, data destruction, or rating fraud are strictly prohibited."
-            },
-            "privacy": {
-                "title": "V. Personal Information Protection",
-                "intro": "Personal information is collected only for the following purposes:",
-                "items": [
-                    "Verification and account maintenance;",
-                    "Supporting transactions and payments;",
-                    "Improving service quality;",
-                    "Dispute resolution",
-                    "Providing information to government agencies when required."
-                ],
-                "p1": "Personal information includes: name, phone number, email, address, vehicle information.",
-                "p2": "Data is stored on the Company's servers, not disclosed to third parties without the data subject's consent.",
-                "p3": "In case of data breach, the Company is responsible for notifying and coordinating with competent authorities for handling."
-            },
-            "revenue": {
-                "title": "VI. Revenue Sharing Mechanism",
-                "principleTitle": "1. General Principles",
-                "principleP1": "Garage Viet Technology Platform Company Limited (\"Company\") operates the Garage Viet application platform, as an intermediary providing technology infrastructure, marketing, payment, and connection support between Customers (vehicle owners) and Garages (service provider partners).",
-                "principleP2": "To maintain and develop the system, the Company collects platform fees from participating Garages, calculated at a rate of 10% (ten percent) on the initial quote value that the Garage sends to customers through the Garage Viet platform.",
-                "principleP3": "This fee is called the Garage Viet Platform Fee and is a fixed financial obligation of the Garage to the Company on each order generated through the application.",
-                "scopeTitle": "2. Fee Calculation Scope",
-                "scopeP1": "Platform fees are calculated based on the initial quote value that the Garage sends to customers at the time of participating in service quotation.",
-                "scopeP2": "Even if during the transaction, customers use discount codes, vouchers, or promotional programs issued by Garage Viet, the platform fee is still calculated on the initial quote value, not affected by the discount portion.",
-                "paymentTitle": "3. Payment Timing and Methods",
-                "paymentP1": "Garages are responsible for paying platform fees to the Company periodically, monthly cycle, or depending on the cooperation form and agreement between the two parties.",
-                "paymentP2": "At the beginning of each period, Garage Viet will aggregate revenue from orders completed during the fee period and send detailed reports to Garages via the CRM system or registered email.",
-                "paymentP3": "After receiving the report, Garages are responsible for reconciling data and paying platform fees to the Company within 03 (three) working days.",
-                "paymentMethodsLabel": "Payment methods include:",
-                "paymentMethods": [
-                    "Bank transfer according to the Company's account information, or",
-                    "Automatic deduction from Garage's service deposit (if any)."
-                ],
-                "paymentP4": "In case a Garage is late in payment for more than 07 (seven) working days from the specified deadline, Garage Viet has the right to:",
-                "penalties": [
-                    "Temporarily suspend displaying the Garage in the customer recommendation list;",
-                    "Temporarily lock the partner account;",
-                    "Deduct the platform fee debt from the Garage's subsequent revenues."
-                ],
-                "cancelledTitle": "4. For Cancelled or Changed Transactions",
-                "cancelledP1": "If an order is cancelled before the Garage confirms or begins providing service, the Garage does not have to pay platform fee for that order.",
-                "cancelledP2": "In case of disputes, the Company will base on transaction data stored on the system to determine responsibility and fee amount to be paid.",
-                "invoiceTitle": "5. Invoices and Financial Documents",
-                "invoiceP1": "After the Garage completes the platform fee payment obligation, the Company is responsible for issuing corresponding value-added tax (VAT) invoices and sending them to the Garage via:",
-                "invoiceMethods": [
-                    "Registered email on the system, or",
-                    "Download directly in the revenue management section of the Garage Viet CRM."
-                ],
-                "invoiceP2": "All documents and electronic invoices have the same legal value as paper versions and are stored on the system according to regulations on electronic transactions.",
-                "incentivesTitle": "6. Partner Incentive and Encouragement Policies",
-                "incentivesP1": "Garage Viet may apply temporary platform fee reduction policies (e.g., down to 5%) for new Garages in the first 3 months of cooperation, or for Garages achieving revenue milestones, high reputation ratings, and positive customer feedback.",
-                "incentivesP2": "These incentive programs are notified in writing or through the Garage Viet management system, and applied transparently and fairly to eligible partners.",
-                "complianceTitle": "7. Compliance Responsibilities",
-                "complianceP1": "Garages are responsible for monitoring, reconciling revenue and platform fees generated on the system; promptly respond if there are discrepancies.",
-                "complianceP2": "All cases of intentionally concealing transactions, conducting transactions outside the system, or evading platform fee obligations will be handled according to the Operating Regulations and may lead to permanent termination of cooperation."
-            },
-            "technical": {
-                "title": "VIII. Responsibility in Case of Technical Errors",
-                "p1": "Garage Viet commits to maintaining a stable and secure system. In case technical errors occur on the application side, the Company will immediately handle, resolve and ensure user rights.",
-                "p2": "Members encountering errors can contact via email support@garageviet.vn or hotline (0848.294.369) for support.",
-                "p3": "Garage Viet is not responsible for incidents arising from: user equipment, network errors, or factors beyond control (natural disasters, power outages, cyber attacks...)."
-            },
-            "contentManagement": {
-                "title": "VII. Prohibited Content Management",
-                "postingTitle": "1. Posting Regulations",
-                "postingP1": "Members of the Garage Viet Application (including Vehicle Owners and Garages) are responsible for securing and storing all service usage activities under their registered name and password. Members must promptly notify Garage Viet Technology Platform Company Limited when discovering unauthorized use or security violations for handling measures.",
-                "postingP2": "Members may not use Garage Viet services for illegal purposes, fraud, disruption, infringement of others' rights, or spreading malicious code, viruses harmful to the system. In case of violations, Members must bear full responsibility before the law.",
-                "postingP3": "Members are not permitted to edit, copy, distribute, or provide back services, data, or tools of the Garage Viet Application to third parties without written consent from the Company.",
-                "postingP4": "All actions affecting reputation or causing disunity among Garage Viet members through spreading false information, fake accounts, or misleading information about the platform are prohibited.",
-                "prohibitedTitle": "2. Prohibited or Conditional Goods and Services Catalog",
-                "prohibitedItemsLabel": "Prohibited transaction catalog:",
-                "prohibitedItems": [
-                    "Drugs, weapons, accessories, explosives, toxic chemicals.",
-                    "Wild animals and plants prohibited from exploitation or business.",
-                    "Products and equipment with reactionary, obscene, superstitious content.",
-                    "Personal information (email, customer data, license plates...) traded illegally.",
-                    "Services unrelated to the automotive field, repair, maintenance, upgrade, car care.",
-                    "Products violating intellectual property rights or not licensed for use in Vietnam."
-                ],
-                "conditionalItemsLabel": "Conditional transaction catalog:",
-                "conditionalItems": [
-                    "Garages providing special technical products and services (such as car modification, structural changes, color painting...) must have business licenses or certificates meeting business conditions according to legal regulations.",
-                    "Selling parts, components, oil, replacement materials must ensure clear origin, genuine or declared specific origin."
-                ],
-                "bannedBehaviorsTitle": "3. Prohibited Behaviors in Posting Activities",
-                "bannedBehaviors": [
-                    "False advertising, causing confusion about quality, price or origin of products/services.",
-                    "Advertising with unaesthetic content, violating public morals, insulting individuals or organizations.",
-                    "Using images, trademarks, data of third parties without legal consent.",
-                    "Comparative advertising or direct attacks on competitors.",
-                    "Posting content violating laws on intellectual property, competition or consumer protection."
-                ],
-                "moderationTitle": "4. Content Review and Control Mechanism",
-                "moderationP1": "All Garage posts on the Garage Viet application are automatically and manually moderated before display.",
-                "moderationP2": "The Company has the right to temporarily hide, delete, or adjust posts if violating Regulations or showing signs of fraud.",
-                "moderationP3": "Seriously violating content may result in account lock, access revocation without prior notice."
-            },
-            "adminRights": {
-                "title": "IX. Rights and Obligations of Garage Vietnam Application Management Board",
-                "rightsTitle": "1. Authority",
-                "rights": [
-                    "Provide services to Members after completing valid registration procedures.",
-                    "Refuse, suspend, or terminate usage rights if Members provide false information, violate laws, or affect the platform.",
-                    "Change, upgrade, or adjust fee schedules, service policies (will be notified at least 30 days in advance).",
-                    "Maintain ownership of all content, interface, logos, trademarks and system data.",
-                    "Permitted to provide data to government agencies when legally required."
-                ],
-                "dutiesTitle": "2. Obligations",
-                "duties": [
-                    "Ensure mechanisms for checking and monitoring posted information; remove violating content or prohibited goods and services.",
-                    "Support competent authorities in investigating and handling violations.",
-                    "Receive and mediate disputes between Garages and Vehicle Owners when they arise.",
-                    "Ensure security of personal information and business data of Members.",
-                    "Publicly announce complaint resolution mechanisms and dispute handling measures."
-                ]
-            },
-            "garageRights": {
-                "title": "X. Rights and Obligations of Garage (Service Providers)",
-                "rightsTitle": "Rights",
-                "rights": [
-                    "Post ads and promote repair/upgrade services on the application.",
-                    "Use CRM tools, chat, and quotation management provided by Garage Viet.",
-                    "Contribute opinions and suggest improvements to products and service policies."
-                ],
-                "dutiesTitle": "Obligations",
-                "duties": [
-                    "Provide accurate and transparent information about business, business license, address, price, time, and service warranty.",
-                    "Ensure service quality as committed to customers.",
-                    "Do not post false content, use copyright-violating images, or fake.",
-                    "Compensate for damages if causing losses to customers or affecting platform reputation.",
-                    "Comply with laws on e-commerce, consumer protection, taxation, and intellectual property."
-                ]
-            },
-            "customerRights": {
-                "title": "XI. Rights and Obligations of Vehicle Owners (Service Users)",
-                "rightsTitle": "Rights",
-                "rights": [
-                    "Access, search, compare, and choose reputable Garages to order services.",
-                    "Provide feedback and evaluate service quality after completion.",
-                    "Have personal information and transaction history protected."
-                ],
-                "dutiesTitle": "Obligations",
-                "duties": [
-                    "Provide accurate information when ordering services: vehicle type, requirements, address, time.",
-                    "Do not abuse the system to post fake requests, spam, or harm other Garages.",
-                    "Comply with transaction procedures, evaluate fairly and honestly.",
-                    "Cooperate with Garage Viet when there are verification requests, complaints or disputes."
-                ]
-            },
-            "terms": {
-                "title": "XII. Applicable Terms",
-                "p1": "This Operating Regulation takes effect from the signing date and is published on the Garage Viet website and application.",
-                "p2": "Garage Viet Technology Platform Company Limited has the right to adjust the Regulation to suit actual operations and legal regulations.",
-                "p3": "All changes will be publicly announced at least 07 days before application.",
-                "p4": "Members' continued use of the application after the amended Regulation takes effect means accepting the entire content of the new Regulation."
-            },
-            "commitment": {
-                "title": "XIII. Commitment Terms",
-                "intro": "All Members, including Customers (vehicle owners) and Garages (service provider partners), when registering accounts, accessing, or using the Garage Viet application to conduct transactions, means having read, understood, and agreed to the entire content of this Operating Regulation.",
-                "memberCommitmentLabel": "Members commit:",
-                "memberCommitments": [
-                    "Fully comply with regulations in the GarageViet.vn E-commerce Marketplace Operating Regulation and other policies issued by Garage Viet Technology Platform Company Limited.",
-                    "Bear responsibility before the law and before the Company for all actions, information, content, transactions conducted through their accounts on the Garage Viet system.",
-                    "Not perform any action violating laws, infringing rights, legitimate interests of third parties or affecting the reputation, operations of the Marketplace."
-                ],
-                "companyCommitmentLabel": "Garage Viet Technology Platform Company Limited commits:",
-                "companyCommitments": [
-                    "Operate the system stably, transparently, securely, and ensure legitimate rights of all Members;",
-                    "Promptly resolve complaints and disputes arising during transactions, according to this Regulation and Vietnamese law."
-                ]
-            },
-            "contact": {
-                "title": "Contact",
-                "intro": "For all inquiries, complaints or support requests from Members, please contact:",
-                "departmentLabel": "Customer Service Department",
-                "company": "GARAGE VIET TECHNOLOGY PLATFORM COMPANY LIMITED",
-                "addressLabel": "Address:",
-                "address": "Ky Dong Intersection, Ky Anh Ward, Ha Tinh Province, Vietnam",
-                "phoneLabel": "Phone:",
-                "phone": "0848 294 369",
-                "emailLabel": "Email:",
-                "email": "support@garageviet.vn"
-            }
-        }
-    },
-    "footer": {
-        "copyright": "© {{year}} Garage Viet. All rights reserved."
-    },
-    "site": {
-        "nav": {
-            "label": "Main navigation",
-            "menu": "Open menu",
-            "buy": "Buy & install",
-            "quote": "Get quotes",
-            "garage": "For garages",
-            "faq": "FAQ"
-        },
-        "download": "Get the app",
-        "hotline": "Hotline",
-        "legalEyebrow": "Legal & privacy",
-        "footer": {
-            "product": "Product",
-            "policy": "Policies",
-            "support": "Support",
-            "film": "3M window film",
-            "taxCode": "Tax code",
-            "tagline": "The technology platform for Vietnam’s automotive industry. Genuine accessories at listed prices, installed at a trusted garage near you."
-        }
+    "content": {
+      "intro": {
+        "title": "1. Introduction",
+        "p1": "Welcome to Garage Viet – a platform connecting vehicle owners and auto repair/upgrade garages nationwide, operated by Garage Viet Technology Platform Company Limited (\"we\", \"Garage Viet\").",
+        "p2": "Garage Viet understands that protecting personal data is a critical responsibility. We commit to comply with Decree 13/2023/ND-CP and related Vietnamese legal regulations, as well as international privacy standards.",
+        "p3": "This Policy helps you clearly understand how Garage Viet collects, uses, stores, shares and protects personal information when you use our application or website, along with your rights and choices.",
+        "p4": "By accessing or using Garage Viet services, you confirm that you have read, understood and agreed to the contents of this Policy."
+      },
+      "scopeAndDefinitions": {
+        "title": "2. Scope of Application and Definitions",
+        "scopeTitle": "Scope of Application:",
+        "scope": "This Policy applies to all users, customers, garage partners, technicians and third parties related to the Garage Viet platform.",
+        "definitionTitle": "Personal Information:",
+        "definition": "is information that reflects or can identify an individual's identity (e.g., name, phone number, email, address, license plate, device, etc.)."
+      },
+      "dataCollection": {
+        "title": "3. When We Collect Information",
+        "intro": "Garage Viet may collect personal data in the following cases:",
+        "items": [
+          "When you register an account, use the application or website;",
+          "When you schedule appointments, submit requests, quote, make payments or interact with partners;",
+          "When you participate in surveys, promotional programs, or service reviews."
+        ]
+      },
+      "dataTypes": {
+        "title": "4. Types of Information We Collect",
+        "forCustomerTitle": "4.1 For Vehicle Owners (Customers):",
+        "forCustomer": "Full name, phone number, email, address;",
+        "customerInfo": "License plate, vehicle type, vehicle photos;",
+        "customerPayment": "Payment information, transaction history;",
+        "customerLocation": "Location data to suggest nearest garages.",
+        "forGarageTitle": "4.2 For Garage (Partners):",
+        "forGarage": "Garage owner name, phone number, email, business license;",
+        "garageInfo": "Facility address, photos, services provided;",
+        "garagePayment": "Bank account number and payment information (if any).",
+        "technicalTitle": "4.3 Technical Information:",
+        "technicalInfo": "Device type, operating system, browser, cookies, location data, browsing history, and usage behavior information."
+      },
+      "dataScope": {
+        "title": "3. Scope and Purpose of Information Collection",
+        "scopeTitle": "3.1. Collection Scope",
+        "forCustomer": "For Vehicle Owners (Customers):",
+        "customerInfo": "Full name, phone number, email, address, license plate, vehicle type, vehicle photos, payment information, transaction history, and other necessary information to provide services.",
+        "forGarage": "For Garage (Partners):",
+        "garageInfo": "Garage owner name, phone number, email, business license (if any), bank account number, facility address, photos, services provided, technician information and transaction history.",
+        "technicalInfo": "Technical Information:",
+        "technicalDetails": "IP address, device used, operating system, browsing history, geographic location (GPS), cookies, and data related to application usage activities.",
+        "purposeTitle": "3.2. Purpose of Information Use",
+        "purposeIntro": "Garage Viet collects and uses personal data for the following purposes:",
+        "purposeItems": [
+          "Verify user identity, ensure transaction security;",
+          "Connect and support communication between Vehicle Owners and Garages;",
+          "Process quote requests, scheduling, payments and service reviews;",
+          "Send notifications, promotions, updates or policy changes;",
+          "Technical support, resolve complaints, respond to users;",
+          "Enhance user experience and improve services;",
+          "Comply with legal obligations and requests from competent state agencies."
+        ]
+      },
+      "purposeAndLegal": {
+        "title": "5. Purpose and Legal Basis for Data Processing",
+        "intro": "Garage Viet collects and processes personal data for the following legal purposes:",
+        "purposeItems": [
+          "Provide and operate services – verify identity, process transactions, connect vehicle owners and garages, manage accounts.",
+          "Improve user experience – analyze data to enhance service quality and technical support.",
+          "Communication and customer care – send notifications, promotions, support, and respond to requests.",
+          "Legal compliance – meet government agency requirements, tax obligations, accounting, and data security.",
+          "Prevent fraud and protect the system."
+        ],
+        "legalBasisTitle": "Legal Basis:",
+        "legalBasisItems": [
+          "User consent;",
+          "Contract performance (when you use our services);",
+          "Legal obligation compliance;",
+          "Legitimate interests of Garage Viet in operating and improving the platform."
+        ]
+      },
+      "dataSharing": {
+        "title": "6. Sharing Information with Third Parties",
+        "intro": "Garage Viet does not sell or rent personal data to any party.",
+        "intro2": "We only share information in the following cases:",
+        "items": [
+          "With authorized internal departments (technical, customer care, operations);",
+          "With service providers such as:",
+          "Payment service providers (e.g., VNPay, MoMo);",
+          "Cloud storage service providers (e.g., Amazon Web Services);",
+          "Identity verification partners, or data analysis support;",
+          "When you agree to share to conduct transactions;",
+          "When there is a legal request from competent government agencies."
+        ],
+        "p": "All these third parties are required to strictly comply with personal data protection regulations equivalent to Garage Viet's standards."
+      },
+      "security": {
+        "title": "7. Data Security and Storage",
+        "p1": "Personal data is stored on secure servers located in Vietnam or on cloud platforms meeting international security standards (ISO 27001, GDPR).",
+        "p2": "We apply encryption measures, firewalls, access control and strict internal monitoring.",
+        "storageTime": "Storage Duration:",
+        "p3": "until the user requests deletion, or Garage Viet terminates service provision.",
+        "p4": "When a data breach occurs, Garage Viet will notify users and competent agencies within 72 hours from detection."
+      },
+      "rights": {
+        "title": "8. User Rights",
+        "intro": "You have the following rights regarding your personal data:",
+        "items": [
+          "Access, edit, update or delete personal data;",
+          "Withdraw consent for data processing;",
+          "Request a copy of personal data;",
+          "Complain about privacy violations."
+        ],
+        "howToTitle": "How to Exercise:",
+        "howTo1": "Send a request via email support@garageviet.vn, subject \"Request for Personal Data\".",
+        "howTo2": "Garage Viet will respond within 15 working days from receiving a valid request."
+      },
+      "children": {
+        "title": "9. Protecting Children's Information",
+        "p1": "Garage Viet is not intended for users under 18 years of age.",
+        "p2": "If personal data of a user under 18 is detected, we will delete the data and lock the account within 15 days from confirmation."
+      },
+      "thirdParty": {
+        "title": "10. Links to Third Parties",
+        "p1": "Garage Viet may contain links to third-party websites or services.",
+        "p2": "We are not responsible for the content, privacy policies or cookies of those platforms.",
+        "p3": "Users should carefully review the privacy policies of third parties before providing data."
+      },
+      "dataTransfer": {
+        "title": "11. Transferring Data Abroad (if applicable)",
+        "intro": "If Garage Viet needs to transfer personal data outside Vietnam's territory (e.g., stored on international servers), we will:",
+        "items": [
+          "Ensure data is protected equivalent to Vietnamese legal regulations;",
+          "Only transfer data when there is user consent or in accordance with valid legal requirements."
+        ]
+      },
+      "cookies": {
+        "title": "7. Cookies and Location Data",
+        "intro": "Garage Viet may use cookies, device identifiers, or GPS data to:",
+        "items": [
+          "Remember user preferences and optimize experience;",
+          "Suggest nearest garages or recommend suitable services;",
+          "Analyze user behavior to improve the system."
+        ],
+        "p": "Users can turn off cookies or share location in device settings. However, this may reduce the quality of service experience."
+      },
+      "changes": {
+        "title": "12. Policy Updates",
+        "p1": "Garage Viet may update this Policy from time to time to comply with changes in law or platform operations.",
+        "p2": "Any changes will be notified on the Garage Viet application or website.",
+        "p3": "Continued use of the service after changes is understood as your agreement with the updated version."
+      },
+      "contact": {
+        "title": "13. Contact Information",
+        "company": "Garage Viet Technology Platform Company Limited",
+        "taxCode": "Business Registration Number:",
+        "taxValue": "3002300759",
+        "address": "Address:",
+        "addressValue": "Nga Ba Ky Dong, Ky Anh Commune, Ha Tinh Province, Vietnam",
+        "email": "Email:",
+        "emailValue": "support@garageviet.vn",
+        "phone": "Phone:",
+        "phoneValue": "0848 294 369"
+      }
     }
+  },
+  "accountDeletion": {
+    "title": "Delete Your Garage Viet Account",
+    "subtitle": "Respecting your privacy and control over your data",
+    "nav": {
+      "intro": "Overview",
+      "inApp": "Delete in the app",
+      "effects": "After deletion",
+      "email": "Request via email",
+      "timeline": "Processing time",
+      "faq": "FAQ"
+    },
+    "content": {
+      "intro": {
+        "title": "Introduction",
+        "p1": "Garage Viet respects your privacy and your right to control personal data.",
+        "p2": "You can request account deletion at any time by following the steps below."
+      },
+      "inApp": {
+        "title": "How to delete your account directly in the app",
+        "intro": "Follow these steps in the Garage Viet app:",
+        "steps": [
+          "Open the Garage Viet app.",
+          "Tap the Account icon.",
+          "Select Settings.",
+          "Choose \"Delete account\".",
+          "Confirm the deletion request."
+        ],
+        "noteTitle": "Note:",
+        "note": "Once confirmed, the deletion request is processed immediately."
+      },
+      "effects": {
+        "title": "What happens when you delete your account",
+        "intro": "After your request is completed:",
+        "items": [
+          "All personally identifiable information (full name, phone number, email, profile details, etc.) is removed from our systems.",
+          "Orders, service requests, invoices, transaction history and messages may be retained in anonymized form for transaction tracing, accounting, reconciliation and legal compliance (if required).",
+          "Once deleted, you cannot log back in or restore your personal data.",
+          "Garage Viet does not use anonymized records to identify who you are."
+        ]
+      },
+      "email": {
+        "title": "Account deletion support via email",
+        "intro": "If you experience issues deleting in the app, you can send a request via email for support.",
+        "emailLabel": "Support email:",
+        "email": "support@garageviet.vn",
+        "subjectLabel": "Email subject:",
+        "subject": "Request to delete Garage Viet account",
+        "fieldsTitle": "Please include:",
+        "fields": [
+          "The phone number used to register your account.",
+          "Reason for deletion (optional)."
+        ]
+      },
+      "timeline": {
+        "title": "Processing time",
+        "items": [
+          "In-app deletion requests: processed instantly.",
+          "Email deletion requests: within 48 business hours."
+        ]
+      },
+      "faq": {
+        "title": "Frequently asked questions",
+        "items": [
+          {
+            "question": "Can I recover my account after deleting it?",
+            "answer": "No. Deletion is permanent and cannot be undone."
+          },
+          {
+            "question": "What data does Garage Viet keep after deletion?",
+            "answer": "We do not retain your personally identifiable information. Some transaction data may remain anonymized for investigation, accounting, fraud prevention and legal compliance."
+          }
+        ],
+        "contactNote": "Need more help? Contact us via the support email above. Thank you for using Garage Viet!"
+      }
+    }
+  },
+  "operationPolicy": {
+    "title": "Operating Regulations",
+    "subtitle": "Garage Vietnam E-commerce Marketplace",
+    "sections": {
+      "intro": "I. General Principles",
+      "definitions": "II. General Regulations",
+      "usage": "Usage Guidelines",
+      "brand": "Branding",
+      "transaction": "III. Transaction Process",
+      "security": "IV. Transaction Security",
+      "privacy": "V. Personal Information Protection",
+      "revenue": "VI. Revenue Sharing Mechanism",
+      "contentManagement": "VII. Content Management",
+      "technical": "VIII. Technical Error Responsibilities",
+      "adminRights": "IX. Rights and Obligations of Garage Vietnam Management Board",
+      "garageRights": "X. Rights and Obligations of Garage (Service Providers)",
+      "customerRights": "XI. Rights and Obligations of Vehicle Owners (Service Users)",
+      "terms": "XII. Applicable Terms",
+      "commitment": "XIII. Commitment Terms"
+    },
+    "nav": {
+      "intro": "General Principles",
+      "definitions": "Definitions",
+      "usage": "Usage Guidelines",
+      "brand": "Branding",
+      "transaction": "Transaction Process",
+      "security": "Transaction Security",
+      "privacy": "Information Protection",
+      "revenue": "Revenue Sharing",
+      "contentManagement": "Content Management",
+      "technical": "Technical Errors",
+      "adminRights": "Management Rights",
+      "garageRights": "Garage Rights",
+      "customerRights": "Customer Rights",
+      "terms": "Terms",
+      "commitment": "Commitment",
+      "contact": "Contact"
+    },
+    "content": {
+      "intro": {
+        "title": "I. General Principles",
+        "p1": "Garage Viet E-commerce Marketplace (hereinafter referred to as \"Marketplace\") is built and operated by Garage Viet Technology Platform Company Limited (hereinafter referred to as \"Company\").",
+        "p2": "Members on the Marketplace are garages, merchants, organizations, and individuals with legal commercial activities recognized and allowed to use services by the Garage Viet Marketplace Management Board (\"Management Board\").",
+        "p3": "This principle applies to Members who register to use and participate in activities of posting information, quoting, ordering repair or vehicle upgrade services on the Garage Viet platform.",
+        "p4": "Parties participating in transactions on the Marketplace are free to negotiate based on respecting each other's legitimate rights and interests, without violating regulations of Vietnamese law.",
+        "p5": "Information about participating Members must be transparent and accurate.",
+        "p6": "Services, products, parts, and accessories provided through the Marketplace must be legal, clearly sourced, and not in categories prohibited from business or advertising.",
+        "p7": "All contents in this Regulation comply with Vietnamese law. Members are responsible for learning and fully complying with current legal regulations."
+      },
+      "definitions": {
+        "title": "II. General Regulations",
+        "defTitle": "1. Definitions",
+        "platformLabel": "Platform:",
+        "platform": "is the Garage Viet application developed by Garage Viet Technology Platform Company Limited.",
+        "garageLabel": "Garage/Partner (Seller):",
+        "garage": "are merchants, organizations, and individuals with legal activities in the field of car maintenance, repair, and upgrades who need to introduce services, quote, and receive customers through the Marketplace.",
+        "customerLabel": "Vehicle Owner/Customer (Buyer):",
+        "customer": "are individuals or organizations who own or use cars and need to search, compare prices, and order repair/upgrade services.",
+        "memberLabel": "Member:",
+        "member": "includes both Garages and Vehicle Owners who have registered accounts and been approved by the Management Board.",
+        "productLabel": "Products/Services:",
+        "product": "includes maintenance, repair, replacement, car modification, cleaning, car care, interior and exterior upgrades, car parts and accessories posted and traded on the Garage Viet platform.",
+        "crmLabel": "Garage CRM:",
+        "crm": "customer, order, appointment, and quotation management system exclusively for member garages.",
+        "quoteLabel": "Quotation:",
+        "quote": "is the mechanism for multiple garages to submit bid prices (maximum 5 garages) for a customer's repair request.",
+        "revenueLabel": "Revenue Sharing:",
+        "revenue": "The Company charges 10% transaction/revenue fee on each completed order through the Marketplace."
+      },
+      "usage": {
+        "title": "2. General Usage Guidelines",
+        "p1": "Each Member must register a valid account, provide accurate information, and update promptly when changes occur.",
+        "p2": "Members are fully responsible for account security and all activities that occur.",
+        "p3": "Members may not authorize or transfer accounts to others without written consent from the Company.",
+        "p4": "Use of the Marketplace must be for legal purposes only, and may not be used for fraud, dissemination of false information, illegal advertising, system disruption, or infringement of third-party rights.",
+        "p5": "Members agree to receive marketing information, activity notifications, or promotions from Garage Viet. If they wish to stop receiving, they may send a request to support@garageviet.vn.",
+        "p6": "The Company reserves the right to temporarily lock or terminate accounts if violations of regulations, fraud, or actions affecting the Marketplace's reputation are detected."
+      },
+      "brand": {
+        "title": "3. Branding and Copyright",
+        "p1": "All content, design, software, images, data, source code, logos, and trademarks \"Garage Viet\" are intellectual property of Garage Viet Technology Platform Company Limited and are protected under Vietnamese Intellectual Property Law.",
+        "p2": "Any unauthorized copying, distribution, modification, or exploitation will be handled according to law."
+      },
+      "transaction": {
+        "title": "III. Transaction Process",
+        "customerTitle": "1. For Customers (Vehicle Owners)",
+        "customerStep1": "Log into the Garage Viet application, select \"Create Request\".",
+        "customerStep2": "Enter vehicle information, describe the problem or need, may include images/videos.",
+        "customerStep3": "The system sends requests to suitable garages by area and service type.",
+        "customerStep4": "Garages submit bid quotes (including price, completion time, commitments).",
+        "customerStep5": "Customer selects desired garage, may choose to place a deposit via app (3% of order value) to receive some benefits. Or no deposit.",
+        "customerStep6": "Garage confirms and completes service.",
+        "customerStep7": "Customer pays the remaining amount directly, then evaluates service quality.",
+        "garageTitle": "2. For Garages (Partners)",
+        "garageStep1": "Register Garage account on app, provide business license or ID card. Sign electronic contract",
+        "garageStep2": "Update garage profile: address, workshop images, service categories, basic price list.",
+        "garageStep3": "Receive new request notifications from customers, participate in quoting.",
+        "garageStep4": "After being selected, confirm appointment and perform service.",
+        "garageStep5": "Complete service and update results on system.",
+        "garageStep6": "Pay platform fees periodically",
+        "cancelTitle": "3. Cancellation or Service Changes",
+        "cancelP1": "Customers can cancel requests if garage has not started work, and will be refunded deposit within maximum 7 working days.",
+        "cancelP2": "If canceling after garage has prepared or purchased parts, cancellation fee is 50-100% depending on case.",
+        "cancelP3": "Garage Viet supports negotiation between parties to reach a reasonable agreement.",
+        "complaintTitle": "4. Complaint Resolution",
+        "complaintP1": "Complaints are sent via email support@garageviet.vn or hotline 0848.294.369 within 03 days from incident.",
+        "complaintP2": "Support department confirms and processes within 03 working days.",
+        "complaintP3": "Garage Viet may freeze account, hold deposit in case of unresolved disputes.",
+        "complaintP4": "If parties cannot agree, the Company will mediate or refer to competent authorities."
+      },
+      "security": {
+        "title": "IV. Transaction Security",
+        "p1": "All transactions, payments, data are encrypted and securely stored on the Company's system.",
+        "p2": "The Company is not responsible for transactions conducted outside the Garage Viet platform.",
+        "p3": "All system interference, API abuse, data destruction, or rating fraud are strictly prohibited."
+      },
+      "privacy": {
+        "title": "V. Personal Information Protection",
+        "intro": "Personal information is collected only for the following purposes:",
+        "items": [
+          "Verification and account maintenance;",
+          "Supporting transactions and payments;",
+          "Improving service quality;",
+          "Dispute resolution",
+          "Providing information to government agencies when required."
+        ],
+        "p1": "Personal information includes: name, phone number, email, address, vehicle information.",
+        "p2": "Data is stored on the Company's servers, not disclosed to third parties without the data subject's consent.",
+        "p3": "In case of data breach, the Company is responsible for notifying and coordinating with competent authorities for handling."
+      },
+      "revenue": {
+        "title": "VI. Revenue Sharing Mechanism",
+        "principleTitle": "1. General Principles",
+        "principleP1": "Garage Viet Technology Platform Company Limited (\"Company\") operates the Garage Viet application platform, as an intermediary providing technology infrastructure, marketing, payment, and connection support between Customers (vehicle owners) and Garages (service provider partners).",
+        "principleP2": "To maintain and develop the system, the Company collects platform fees from participating Garages, calculated at a rate of 10% (ten percent) on the initial quote value that the Garage sends to customers through the Garage Viet platform.",
+        "principleP3": "This fee is called the Garage Viet Platform Fee and is a fixed financial obligation of the Garage to the Company on each order generated through the application.",
+        "scopeTitle": "2. Fee Calculation Scope",
+        "scopeP1": "Platform fees are calculated based on the initial quote value that the Garage sends to customers at the time of participating in service quotation.",
+        "scopeP2": "Even if during the transaction, customers use discount codes, vouchers, or promotional programs issued by Garage Viet, the platform fee is still calculated on the initial quote value, not affected by the discount portion.",
+        "paymentTitle": "3. Payment Timing and Methods",
+        "paymentP1": "Garages are responsible for paying platform fees to the Company periodically, monthly cycle, or depending on the cooperation form and agreement between the two parties.",
+        "paymentP2": "At the beginning of each period, Garage Viet will aggregate revenue from orders completed during the fee period and send detailed reports to Garages via the CRM system or registered email.",
+        "paymentP3": "After receiving the report, Garages are responsible for reconciling data and paying platform fees to the Company within 03 (three) working days.",
+        "paymentMethodsLabel": "Payment methods include:",
+        "paymentMethods": [
+          "Bank transfer according to the Company's account information, or",
+          "Automatic deduction from Garage's service deposit (if any)."
+        ],
+        "paymentP4": "In case a Garage is late in payment for more than 07 (seven) working days from the specified deadline, Garage Viet has the right to:",
+        "penalties": [
+          "Temporarily suspend displaying the Garage in the customer recommendation list;",
+          "Temporarily lock the partner account;",
+          "Deduct the platform fee debt from the Garage's subsequent revenues."
+        ],
+        "cancelledTitle": "4. For Cancelled or Changed Transactions",
+        "cancelledP1": "If an order is cancelled before the Garage confirms or begins providing service, the Garage does not have to pay platform fee for that order.",
+        "cancelledP2": "In case of disputes, the Company will base on transaction data stored on the system to determine responsibility and fee amount to be paid.",
+        "invoiceTitle": "5. Invoices and Financial Documents",
+        "invoiceP1": "After the Garage completes the platform fee payment obligation, the Company is responsible for issuing corresponding value-added tax (VAT) invoices and sending them to the Garage via:",
+        "invoiceMethods": [
+          "Registered email on the system, or",
+          "Download directly in the revenue management section of the Garage Viet CRM."
+        ],
+        "invoiceP2": "All documents and electronic invoices have the same legal value as paper versions and are stored on the system according to regulations on electronic transactions.",
+        "incentivesTitle": "6. Partner Incentive and Encouragement Policies",
+        "incentivesP1": "Garage Viet may apply temporary platform fee reduction policies (e.g., down to 5%) for new Garages in the first 3 months of cooperation, or for Garages achieving revenue milestones, high reputation ratings, and positive customer feedback.",
+        "incentivesP2": "These incentive programs are notified in writing or through the Garage Viet management system, and applied transparently and fairly to eligible partners.",
+        "complianceTitle": "7. Compliance Responsibilities",
+        "complianceP1": "Garages are responsible for monitoring, reconciling revenue and platform fees generated on the system; promptly respond if there are discrepancies.",
+        "complianceP2": "All cases of intentionally concealing transactions, conducting transactions outside the system, or evading platform fee obligations will be handled according to the Operating Regulations and may lead to permanent termination of cooperation."
+      },
+      "technical": {
+        "title": "VIII. Responsibility in Case of Technical Errors",
+        "p1": "Garage Viet commits to maintaining a stable and secure system. In case technical errors occur on the application side, the Company will immediately handle, resolve and ensure user rights.",
+        "p2": "Members encountering errors can contact via email support@garageviet.vn or hotline (0848.294.369) for support.",
+        "p3": "Garage Viet is not responsible for incidents arising from: user equipment, network errors, or factors beyond control (natural disasters, power outages, cyber attacks...)."
+      },
+      "contentManagement": {
+        "title": "VII. Prohibited Content Management",
+        "postingTitle": "1. Posting Regulations",
+        "postingP1": "Members of the Garage Viet Application (including Vehicle Owners and Garages) are responsible for securing and storing all service usage activities under their registered name and password. Members must promptly notify Garage Viet Technology Platform Company Limited when discovering unauthorized use or security violations for handling measures.",
+        "postingP2": "Members may not use Garage Viet services for illegal purposes, fraud, disruption, infringement of others' rights, or spreading malicious code, viruses harmful to the system. In case of violations, Members must bear full responsibility before the law.",
+        "postingP3": "Members are not permitted to edit, copy, distribute, or provide back services, data, or tools of the Garage Viet Application to third parties without written consent from the Company.",
+        "postingP4": "All actions affecting reputation or causing disunity among Garage Viet members through spreading false information, fake accounts, or misleading information about the platform are prohibited.",
+        "prohibitedTitle": "2. Prohibited or Conditional Goods and Services Catalog",
+        "prohibitedItemsLabel": "Prohibited transaction catalog:",
+        "prohibitedItems": [
+          "Drugs, weapons, accessories, explosives, toxic chemicals.",
+          "Wild animals and plants prohibited from exploitation or business.",
+          "Products and equipment with reactionary, obscene, superstitious content.",
+          "Personal information (email, customer data, license plates...) traded illegally.",
+          "Services unrelated to the automotive field, repair, maintenance, upgrade, car care.",
+          "Products violating intellectual property rights or not licensed for use in Vietnam."
+        ],
+        "conditionalItemsLabel": "Conditional transaction catalog:",
+        "conditionalItems": [
+          "Garages providing special technical products and services (such as car modification, structural changes, color painting...) must have business licenses or certificates meeting business conditions according to legal regulations.",
+          "Selling parts, components, oil, replacement materials must ensure clear origin, genuine or declared specific origin."
+        ],
+        "bannedBehaviorsTitle": "3. Prohibited Behaviors in Posting Activities",
+        "bannedBehaviors": [
+          "False advertising, causing confusion about quality, price or origin of products/services.",
+          "Advertising with unaesthetic content, violating public morals, insulting individuals or organizations.",
+          "Using images, trademarks, data of third parties without legal consent.",
+          "Comparative advertising or direct attacks on competitors.",
+          "Posting content violating laws on intellectual property, competition or consumer protection."
+        ],
+        "moderationTitle": "4. Content Review and Control Mechanism",
+        "moderationP1": "All Garage posts on the Garage Viet application are automatically and manually moderated before display.",
+        "moderationP2": "The Company has the right to temporarily hide, delete, or adjust posts if violating Regulations or showing signs of fraud.",
+        "moderationP3": "Seriously violating content may result in account lock, access revocation without prior notice."
+      },
+      "adminRights": {
+        "title": "IX. Rights and Obligations of Garage Vietnam Application Management Board",
+        "rightsTitle": "1. Authority",
+        "rights": [
+          "Provide services to Members after completing valid registration procedures.",
+          "Refuse, suspend, or terminate usage rights if Members provide false information, violate laws, or affect the platform.",
+          "Change, upgrade, or adjust fee schedules, service policies (will be notified at least 30 days in advance).",
+          "Maintain ownership of all content, interface, logos, trademarks and system data.",
+          "Permitted to provide data to government agencies when legally required."
+        ],
+        "dutiesTitle": "2. Obligations",
+        "duties": [
+          "Ensure mechanisms for checking and monitoring posted information; remove violating content or prohibited goods and services.",
+          "Support competent authorities in investigating and handling violations.",
+          "Receive and mediate disputes between Garages and Vehicle Owners when they arise.",
+          "Ensure security of personal information and business data of Members.",
+          "Publicly announce complaint resolution mechanisms and dispute handling measures."
+        ]
+      },
+      "garageRights": {
+        "title": "X. Rights and Obligations of Garage (Service Providers)",
+        "rightsTitle": "Rights",
+        "rights": [
+          "Post ads and promote repair/upgrade services on the application.",
+          "Use CRM tools, chat, and quotation management provided by Garage Viet.",
+          "Contribute opinions and suggest improvements to products and service policies."
+        ],
+        "dutiesTitle": "Obligations",
+        "duties": [
+          "Provide accurate and transparent information about business, business license, address, price, time, and service warranty.",
+          "Ensure service quality as committed to customers.",
+          "Do not post false content, use copyright-violating images, or fake.",
+          "Compensate for damages if causing losses to customers or affecting platform reputation.",
+          "Comply with laws on e-commerce, consumer protection, taxation, and intellectual property."
+        ]
+      },
+      "customerRights": {
+        "title": "XI. Rights and Obligations of Vehicle Owners (Service Users)",
+        "rightsTitle": "Rights",
+        "rights": [
+          "Access, search, compare, and choose reputable Garages to order services.",
+          "Provide feedback and evaluate service quality after completion.",
+          "Have personal information and transaction history protected."
+        ],
+        "dutiesTitle": "Obligations",
+        "duties": [
+          "Provide accurate information when ordering services: vehicle type, requirements, address, time.",
+          "Do not abuse the system to post fake requests, spam, or harm other Garages.",
+          "Comply with transaction procedures, evaluate fairly and honestly.",
+          "Cooperate with Garage Viet when there are verification requests, complaints or disputes."
+        ]
+      },
+      "terms": {
+        "title": "XII. Applicable Terms",
+        "p1": "This Operating Regulation takes effect from the signing date and is published on the Garage Viet website and application.",
+        "p2": "Garage Viet Technology Platform Company Limited has the right to adjust the Regulation to suit actual operations and legal regulations.",
+        "p3": "All changes will be publicly announced at least 07 days before application.",
+        "p4": "Members' continued use of the application after the amended Regulation takes effect means accepting the entire content of the new Regulation."
+      },
+      "commitment": {
+        "title": "XIII. Commitment Terms",
+        "intro": "All Members, including Customers (vehicle owners) and Garages (service provider partners), when registering accounts, accessing, or using the Garage Viet application to conduct transactions, means having read, understood, and agreed to the entire content of this Operating Regulation.",
+        "memberCommitmentLabel": "Members commit:",
+        "memberCommitments": [
+          "Fully comply with regulations in the GarageViet.vn E-commerce Marketplace Operating Regulation and other policies issued by Garage Viet Technology Platform Company Limited.",
+          "Bear responsibility before the law and before the Company for all actions, information, content, transactions conducted through their accounts on the Garage Viet system.",
+          "Not perform any action violating laws, infringing rights, legitimate interests of third parties or affecting the reputation, operations of the Marketplace."
+        ],
+        "companyCommitmentLabel": "Garage Viet Technology Platform Company Limited commits:",
+        "companyCommitments": [
+          "Operate the system stably, transparently, securely, and ensure legitimate rights of all Members;",
+          "Promptly resolve complaints and disputes arising during transactions, according to this Regulation and Vietnamese law."
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "intro": "For all inquiries, complaints or support requests from Members, please contact:",
+        "departmentLabel": "Customer Service Department",
+        "company": "GARAGE VIET TECHNOLOGY PLATFORM COMPANY LIMITED",
+        "addressLabel": "Address:",
+        "address": "Ky Dong Intersection, Ky Anh Ward, Ha Tinh Province, Vietnam",
+        "phoneLabel": "Phone:",
+        "phone": "0848 294 369",
+        "emailLabel": "Email:",
+        "email": "support@garageviet.vn"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Garage Viet. All rights reserved."
+  },
+  "site": {
+    "nav": {
+      "label": "Main navigation",
+      "menu": "Open menu",
+      "buy": "Buy & install",
+      "quote": "Get quotes",
+      "garage": "For garages",
+      "faq": "FAQ"
+    },
+    "download": "Get the app",
+    "hotline": "Hotline",
+    "legalEyebrow": "Legal & privacy",
+    "footer": {
+      "product": "Product",
+      "policy": "Policies",
+      "support": "Support",
+      "film": "3M window film",
+      "taxCode": "Tax code",
+      "tagline": "The technology platform for Vietnam’s automotive industry. Genuine accessories at listed prices, installed at a trusted garage near you."
+    }
+  },
+  "imageCredits": {
+    "title": "Image credits",
+    "subtitle": "Credits for car model photos used in the Garage Việt app",
+    "note": "Car model photos in the app come from Wikimedia Commons under Creative Commons licenses. Thanks to the authors. Photos were cropped and reframed; adaptations keep the original license.",
+    "photo": "Photo:"
+  }
 }
