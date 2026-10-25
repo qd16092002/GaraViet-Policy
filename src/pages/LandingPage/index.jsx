@@ -33,10 +33,13 @@ const useReveal = () => {
     return ref;
 };
 
-const Phone = ({ src, alt, className = "" }) => (
+// eager: ảnh nằm ngay màn đầu (hero) thì tải ngay, không đợi lazy-load
+const Phone = ({ src, alt, className = "", eager = false }) => (
     <div className={`phone ${className}`}>
         <div className="phone__screen">
-            <img src={src} alt={alt} loading="lazy" />
+            <img src={src} alt={alt} loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : undefined} />
+            <span className="phone__time" aria-hidden="true">9:41</span>
+            <span className="phone__status" aria-hidden="true"><i /><i /></span>
             <span className="phone__island" />
         </div>
     </div>
@@ -81,8 +84,8 @@ const Hero = () => (
                 </dl>
             </div>
             <div className="lp-hero__art">
-                <Phone src={SITE_IMG.appProduct} alt="Trang sản phẩm Mua & lắp" className="phone--back" />
-                <Phone src={SITE_IMG.appHome} alt="Trang chủ ứng dụng Garage Việt" className="phone--front" />
+                <Phone src={SITE_IMG.appProduct} alt="Trang sản phẩm Mua & lắp" className="phone--back" eager />
+                <Phone src={SITE_IMG.appHome} alt="Trang chủ ứng dụng Garage Việt" className="phone--front" eager />
                 <div className="lp-hero__toast">
                     <span>
                         <Icon name="calendar" size={20} />
