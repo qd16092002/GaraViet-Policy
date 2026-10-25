@@ -33,14 +33,34 @@ const useReveal = () => {
     return ref;
 };
 
-// eager: ảnh nằm ngay màn đầu (hero) thì tải ngay, không đợi lazy-load
+const SIGNAL = (
+    <svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="0.8" /><rect x="5" y="5.5" width="3" height="6.5" rx="0.8" /><rect x="10" y="3" width="3" height="9" rx="0.8" /><rect x="15" y="0" width="3" height="12" rx="0.8" /></svg>
+);
+const WIFI = (
+    <svg viewBox="0 0 16 12"><path d="M8 2.2c2.4 0 4.6.9 6.3 2.5l1.2-1.3C13.5 1.5 10.9.4 8 .4S2.5 1.5.5 3.4l1.2 1.3C3.4 3.1 5.6 2.2 8 2.2z" /><path d="M8 5.6c1.5 0 2.9.6 4 1.6l1.2-1.3C11.8 4.6 10 3.8 8 3.8s-3.8.8-5.2 2.1L4 7.2c1.1-1 2.5-1.6 4-1.6z" /><path d="M8 9c.7 0 1.3.3 1.8.7L8 11.6 6.2 9.7C6.7 9.3 7.3 9 8 9z" /></svg>
+);
+const BATTERY = (
+    <svg viewBox="0 0 27 12"><rect x="0.6" y="0.6" width="22.8" height="10.8" rx="3.2" fill="none" stroke="currentColor" strokeOpacity="0.4" strokeWidth="1.1" /><rect x="2.3" y="2.3" width="19.4" height="7.4" rx="1.8" /><path d="M24.6 4v4c.8-.3 1.4-1.1 1.4-2s-.6-1.7-1.4-2z" fillOpacity="0.45" /></svg>
+);
+
+// Khung iPhone giống máy thật (skill iphone-mockup). Ảnh chụp app không có status bar nên đặt dưới 54pt,
+// Dynamic Island không che đầu app. eager: ảnh ở màn đầu (hero) tải ngay.
 const Phone = ({ src, alt, className = "", eager = false }) => (
-    <div className={`phone ${className}`}>
-        <div className="phone__screen">
-            <img src={src} alt={alt} loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : undefined} />
-            <span className="phone__time" aria-hidden="true">9:41</span>
-            <span className="phone__status" aria-hidden="true"><i /><i /></span>
-            <span className="phone__island" />
+    <div className={`iph phone ${className}`}>
+        <span className="iph__btn iph__btn--action" />
+        <span className="iph__btn iph__btn--volup" />
+        <span className="iph__btn iph__btn--voldn" />
+        <span className="iph__btn iph__btn--power" />
+        <div className="iph__body">
+            <div className="iph__screen">
+                <img className="iph__shot" src={src} alt={alt} loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : undefined} />
+                <div className="iph__status" aria-hidden="true">
+                    <span className="iph__time">9:41</span>
+                    <span className="iph__icons">{SIGNAL}{WIFI}{BATTERY}</span>
+                </div>
+                <span className="iph__island" />
+                {/* không vẽ thanh Home: ảnh 390×844 bị cắt đáy nên tab bar sát mép, thanh Home sẽ đè lên icon */}
+            </div>
         </div>
     </div>
 );
