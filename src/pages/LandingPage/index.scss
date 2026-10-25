@@ -162,7 +162,11 @@
   display: block;
   flex: none;
   width: calc(var(--w) * 1359 / 1179);
+  max-width: none;
   height: auto;
+  // trong khung flex: không để bị kéo giãn theo chiều cao khung (méo ảnh)
+  align-self: flex-start;
+  aspect-ratio: 1359 / 2736;
   // ảnh nền trong suốt: bóng theo dáng máy, không theo khung chữ nhật
   filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.28)) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.16));
 }
