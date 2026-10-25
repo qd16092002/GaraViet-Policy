@@ -168,7 +168,7 @@
   align-self: flex-start;
   aspect-ratio: 1359 / 2736;
   // ảnh nền trong suốt: bóng theo dáng máy, không theo khung chữ nhật
-  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.28)) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.22)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.14));
 }
 
 // ---------- hero ----------
@@ -442,9 +442,12 @@
       margin-top: 6px;
     }
   }
+  // đủ cao để thấy khung giá và phần chọn dòng xe của màn sản phẩm (khối nói về giá niêm yết)
   &__shot {
-    height: 300px;
-    margin-top: 32px;
+    height: 500px;
+    margin-top: 8px;
+    // chừa chỗ trên cho bóng đổ, tránh bị cắt thẳng ở mép trên
+    padding-top: 30px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -473,7 +476,7 @@
       }
     }
     &__shot {
-      height: 260px;
+      height: 460px;
     }
   }
 }
