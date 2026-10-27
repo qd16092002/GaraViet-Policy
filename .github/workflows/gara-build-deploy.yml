@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+# Các lần push liên tiếp cùng ghi đè tag :latest: chỉ để lần mới nhất chạy, tránh deploy nhầm image cũ
+concurrency:
+  group: policy-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-and-push-image:
     name: Build and Push Docker Image

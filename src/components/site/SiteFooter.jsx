@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/garageviet.svg";
+import logo from "../../assets/images/garageviet-logo.webp";
 import { StoreButtons } from "./StoreButton";
 import { COMPANY } from "./constants";
 import { useSiteT } from "./useSiteT";
@@ -40,7 +40,7 @@ const SiteFooter = ({ lockVietnamese = false }) => {
             <div className="site-footer__inner">
                 <div className="site-footer__top">
                     <div className="site-footer__brand">
-                        <img src={logo} alt="Garage Việt" width="206" height="30" />
+                        <img src={logo} alt="Garage Việt" width="186" height="30" />
                         <p>{t("site.footer.tagline")}</p>
                         <StoreButtons small />
                     </div>

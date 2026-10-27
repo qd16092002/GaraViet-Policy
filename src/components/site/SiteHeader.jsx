@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/images/garageviet.svg";
+import logo from "../../assets/images/garageviet-logo.webp";
 import Icon from "./Icon";
 import LanguageSwitcher from "../LanguageSwitcher";
 import { COMPANY, NAV } from "./constants";
@@ -27,7 +27,7 @@ const SiteHeader = ({ dark = false, showLanguage = false }) => {
         <header className={cls}>
             <div className="site-header__bar">
                 <Link to="/" className="site-header__logo" aria-label="Garage Việt">
-                    <img src={logo} alt="Garage Việt" width="179" height="26" />
+                    <img src={logo} alt="Garage Việt" width="161" height="26" />
                 </Link>
                 <nav className="site-header__nav" aria-label={t("site.nav.label")}>
                     {NAV.map((n) => (
